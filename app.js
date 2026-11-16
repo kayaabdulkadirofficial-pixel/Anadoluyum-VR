@@ -48,14 +48,7 @@ function buildEmbedUrl(item, mode) {
     const heading = item.heading ?? 0;
     const pitch = item.pitch ?? 5;
     const fov = item.fov ?? 85;
-    return `https://www.google.com/maps/embed/v1/streetview?key=${encodeURIComponent(key)}&location=${item.lat},${item.lng}&heading=${heading}&pitch=${pitch}&fov=${fov}`;
-  }
-  if (key && hasCoords) {
-    return `https://www.google.com/maps/embed/v1/view?key=${encodeURIComponent(key)}&center=${item.lat},${item.lng}&zoom=16&maptype=satellite`;
-  }
-  if (key) {
-    const query = encodeURIComponent(`${item.place || item.title}, ${item.city}, Türkiye`);
-    return `https://www.google.com/maps/embed/v1/place?key=${encodeURIComponent(key)}&q=${query}&maptype=satellite`;
+    return `https://www.google.com/maps/embed/v1/streetview?key=${encodeURIComponent(key)}&location=${item.lat},${item.lng}&heading=${heading}&pitch=${pitch}&fov=${fov}&radius=50000&source=outdoor`;
   }
   const q = hasCoords ? `${item.lat},${item.lng}` : encodeURIComponent(`${item.place || item.title}, ${item.city}, Türkiye`);
   return `https://maps.google.com/maps?q=${q}&t=k&z=15&ie=UTF8&iwloc=&output=embed`;
