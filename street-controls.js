@@ -21,7 +21,7 @@ function enhance(frame,modeSelector) {
  const host=frame.parentElement;
  const overlay=document.createElement("div");
  overlay.setAttribute("aria-label","Street View yürüyüş alanı");
- overlay.style.cssText="position:absolute;inset:0;z-index:25;background:#102d39;display:none;grid-template-rows:minmax(0,1fr) auto";
+ overlay.style.cssText="position:absolute;inset:0;z-index:25;background:#102d39;display:none;grid-template-rows:minmax(0,1fr) auto;min-height:360px;";
  const viewer=document.createElement("div");viewer.style.cssText="min-height:200px;width:100%;height:100%";
  const bar=document.createElement("div");bar.style.cssText="display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px;background:#102d39;color:white";
  const status=document.createElement("span");status.style.cssText="font-size:12px;flex:1 1 160px";status.setAttribute("role","status");
@@ -64,13 +64,14 @@ function enhance(frame,modeSelector) {
  const src=frame.getAttribute("src")||"";
  if(!src.includes("/streetview")){overlay.style.display="none";return;}
  bar.style.display="flex";
+ bar.style.zIndex="30";
  status.textContent="Street View yön kontrolleri hazırlanıyor…";
  try{
  await loadMaps();if(versionNow!==version)return;
  const url=new URL(src);const coords=url.searchParams.get("location")?.split(",").map(Number);
  if(!coords||coords.length!==2)throw new Error("Konum bilgisi bulunamadı");
  const service=new google.maps.StreetViewService();
- const result=await service.getPanorama({location:{lat:coords[0],lng:coords[1]},radius:50000,preference:google.maps.StreetViewPreference.NEAREST,source:google.maps.StreetViewSource.OUTDOOR});
+ const result=await service.getPanorama({location:{lat:coords[0],lng:coords[1]},radius:50000,preference:google.maps.StreetViewPreference.NEAREST});
  if(versionNow!==version)return;
  overlay.style.display="block"; viewer.style.height="100%";
  if(!panorama){
