@@ -2221,7 +2221,13 @@ window.ACTIVITIES = [
     "body": "Afyonkarahisar-Denizli sınırlarındaki Akdağ Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Akda%C4%9F_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Akdağ Millî Parkı · Afyonkarahisar",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Akda%C4%9F_Milli_Park%C4%B1.jpg",
+    "imageArtist": "dogadakiler.com",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Akdağ Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-2",
@@ -2240,7 +2246,13 @@ window.ACTIVITIES = [
     "body": "Afyonkarahisar-Kütahya-Uşak sınırlarındaki Başkomutan Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Zafertepe_%C3%87alk%C3%B6y_Zafer_An%C4%B1t%C4%B1%2C_K%C3%BCtahya.jpg/1280px-Zafertepe_%C3%87alk%C3%B6y_Zafer_An%C4%B1t%C4%B1%2C_K%C3%BCtahya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Başkomutan Tarihî Millî Parkı · Afyonkarahisar",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Zafertepe_%C3%87alk%C3%B6y_Zafer_An%C4%B1t%C4%B1,_K%C3%BCtahya.jpg",
+    "imageArtist": "Uzak esme",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Zafertepe Çalköy Zafer Anıtı, Kütahya.jpg"
   },
   {
     "id": "dkmp-milli-3",
@@ -2258,7 +2270,13 @@ window.ACTIVITIES = [
     "body": "Ağrı-Iğdır sınırlarındaki Ağrı Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/A%C4%9Fr%C4%B1_da%C4%9F%C4%B1_milli_park%C4%B1_ve_ishakpa%C5%9Fa_saray%C4%B1.jpg/1280px-A%C4%9Fr%C4%B1_da%C4%9F%C4%B1_milli_park%C4%B1_ve_ishakpa%C5%9Fa_saray%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ağrı Dağı Millî Parkı · Ağrı",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:A%C4%9Fr%C4%B1_da%C4%9F%C4%B1_milli_park%C4%B1_ve_ishakpa%C5%9Fa_saray%C4%B1.jpg",
+    "imageArtist": "Mdiler04",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Ağrı dağı milli parkı ve ishakpaşa sarayı.jpg"
   },
   {
     "id": "dkmp-milli-4",
@@ -2275,7 +2293,13 @@ window.ACTIVITIES = [
     "body": "Ankara sınırlarındaki Soğuksu Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/So%C4%9Fuksu_Milli_Park%C4%B1.jpg/1280px-So%C4%9Fuksu_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Soğuksu Millî Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:So%C4%9Fuksu_Milli_Park%C4%B1.jpg",
+    "imageArtist": "YasinYasa2003",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Soğuksu Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-5",
@@ -2292,7 +2316,13 @@ window.ACTIVITIES = [
     "body": "Ankara sınırlarındaki Sakarya Meydan Muharebesi Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Sakarya_Meydan_Muharebesi_Tarih%C3%AE_Mill%C3%AE_Park%C4%B1_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Sakarya Meydan Muharebesi Tarihî Millî Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sakarya_Meydan_Muharebesi_Tarih%C3%AE_Mill%C3%AE_Park%C4%B1_2023.jpg",
+    "imageArtist": "Emin1906",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sakarya Meydan Muharebesi Tarihî Millî Parkı 2023.jpg"
   },
   {
     "id": "dkmp-milli-6",
@@ -2326,7 +2356,13 @@ window.ACTIVITIES = [
     "body": "Antalya sınırlarındaki Güllük Dağı - Termessos Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Gulluk_Mountain_National_Park_from_Termessos_-_September_2016.jpg/1280px-Gulluk_Mountain_National_Park_from_Termessos_-_September_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Güllük Dağı - Termessos Millî Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Gulluk_Mountain_National_Park_from_Termessos_-_September_2016.jpg",
+    "imageArtist": "Ilkerulker",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Gulluk Mountain National Park from Termessos - September 2016.jpg"
   },
   {
     "id": "dkmp-milli-8",
@@ -2360,7 +2396,13 @@ window.ACTIVITIES = [
     "body": "Antalya sınırlarındaki Altınbeşik Mağarası Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Alt%C4%B1nbe%C5%9Fik_Cave_National_Park.jpg/1280px-Alt%C4%B1nbe%C5%9Fik_Cave_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Altınbeşik Mağarası Millî Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Alt%C4%B1nbe%C5%9Fik_Cave_National_Park.jpg",
+    "imageArtist": "Damira Fedorova",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Altınbeşik Cave National Park.jpg"
   },
   {
     "id": "dkmp-milli-10",
@@ -2378,7 +2420,13 @@ window.ACTIVITIES = [
     "body": "Antalya-Isparta sınırlarındaki Köprülü Kanyon Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/K%C3%B6pr%C3%BCl%C3%BC_Kanyon_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Köprülü Kanyon Millî Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C3%B6pr%C3%BCl%C3%BC_Kanyon_Milli_Park%C4%B1.jpg",
+    "imageArtist": "BubbleAero24",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Köprülü Kanyon Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-11",
@@ -2395,7 +2443,13 @@ window.ACTIVITIES = [
     "body": "Artvin sınırlarındaki Hatila Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Hatila_Vadisi_Milli_Park%C4%B1.jpg/1280px-Hatila_Vadisi_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Hatila Vadisi Millî Parkı · Artvin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Hatila_Vadisi_Milli_Park%C4%B1.jpg",
+    "imageArtist": "Gezgin renkler",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Hatila Vadisi Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-12",
@@ -2412,7 +2466,13 @@ window.ACTIVITIES = [
     "body": "Artvin sınırlarındaki Kaçkar Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Rize%2C_Ka%C3%A7kar_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1.jpg/1280px-Rize%2C_Ka%C3%A7kar_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kaçkar Dağları Millî Parkı · Artvin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Rize,_Ka%C3%A7kar_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1.jpg",
+    "imageArtist": "Merve ÇELİK",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Rize, Kaçkar Dağları Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-13",
@@ -2446,7 +2506,13 @@ window.ACTIVITIES = [
     "body": "Balıkesir sınırlarındaki Kuşcenneti Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Manyas_Ku%C5%9F_Cenneti.jpg/1280px-Manyas_Ku%C5%9F_Cenneti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kuşcenneti Millî Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Manyas_Ku%C5%9F_Cenneti.jpg",
+    "imageArtist": "Ibrahimarslanca",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Manyas Kuş Cenneti.jpg"
   },
   {
     "id": "dkmp-milli-15",
@@ -2463,7 +2529,13 @@ window.ACTIVITIES = [
     "body": "Balıkesir sınırlarındaki Kazdağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Kazda%C4%9F%C4%B1_Milli_Park%C4%B1.jpg/1280px-Kazda%C4%9F%C4%B1_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kazdağı Millî Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kazda%C4%9F%C4%B1_Milli_Park%C4%B1.jpg",
+    "imageArtist": "Kirmazeytin",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kazdağı Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-16",
@@ -2481,7 +2553,13 @@ window.ACTIVITIES = [
     "body": "Bayburt-Erzurum sınırlarındaki Kop Dağı Müdafaası Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/KOP_GE%C3%87%C4%B0D%C4%B0_2.jpg/1280px-KOP_GE%C3%87%C4%B0D%C4%B0_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kop Dağı Müdafaası Tarihî Millî Parkı · Bayburt",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:KOP_GE%C3%87%C4%B0D%C4%B0_2.jpg",
+    "imageArtist": "Yenertan",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:KOP GEÇİDİ 2.jpg"
   },
   {
     "id": "dkmp-milli-21",
@@ -2498,7 +2576,13 @@ window.ACTIVITIES = [
     "body": "Çorum sınırlarındaki Boğazköy – Alacahöyük Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Lion_Gate%2C_Hattusa_01.jpg/1280px-Lion_Gate%2C_Hattusa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Boğazköy – Alacahöyük Millî Parkı · Çorum",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lion_Gate,_Hattusa_01.jpg",
+    "imageArtist": "Bernard Gagnon",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Lion Gate, Hattusa 01.jpg"
   },
   {
     "id": "dkmp-milli-22",
@@ -2515,7 +2599,13 @@ window.ACTIVITIES = [
     "body": "Denizli sınırlarındaki Honaz Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Karl%C4%B1_Honaz_Da%C4%9F%C4%B1.jpg/1280px-Karl%C4%B1_Honaz_Da%C4%9F%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Honaz Dağı Millî Parkı · Denizli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karl%C4%B1_Honaz_Da%C4%9F%C4%B1.jpg",
+    "imageArtist": "Himmet401",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Karlı Honaz Dağı.jpg"
   },
   {
     "id": "dkmp-milli-23",
@@ -2532,7 +2622,13 @@ window.ACTIVITIES = [
     "body": "Edirne sınırlarındaki Gala Gölü Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_Day_in_Gala_Lake_National_Park.jpg/1280px-A_Day_in_Gala_Lake_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Gala Gölü Millî Parkı · Edirne",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:A_Day_in_Gala_Lake_National_Park.jpg",
+    "imageArtist": "Cems77",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:A Day in Gala Lake National Park.jpg"
   },
   {
     "id": "dkmp-milli-24",
@@ -2549,7 +2645,13 @@ window.ACTIVITIES = [
     "body": "Erzurum sınırlarındaki Nene Hatun Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Nene_Hatun_Historical_National_Park.jpg/1280px-Nene_Hatun_Historical_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Nene Hatun Tarihî Millî Parkı · Erzurum",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Nene_Hatun_Historical_National_Park.jpg",
+    "imageArtist": "Muhammed Yahya Kaya",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Nene Hatun Historical National Park.jpg"
   },
   {
     "id": "dkmp-milli-25",
@@ -2566,7 +2668,13 @@ window.ACTIVITIES = [
     "body": "Hakkari sınırlarındaki Hakkari Cilo ve Sat Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Hakk%C3%A2ri_Cilo_and_Sat_Mountains_jully_2023.jpg/1280px-Hakk%C3%A2ri_Cilo_and_Sat_Mountains_jully_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Hakkari Cilo ve Sat Dağları Millî Parkı · Hakkari",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Hakk%C3%A2ri_Cilo_and_Sat_Mountains_jully_2023.jpg",
+    "imageArtist": "Arcmem",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Hakkâri Cilo and Sat Mountains jully 2023.jpg"
   },
   {
     "id": "dkmp-milli-26",
@@ -2583,7 +2691,13 @@ window.ACTIVITIES = [
     "body": "Isparta sınırlarındaki Kızıldağ Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/K%C4%B1z%C4%B1lda%C4%9F_milli_park%C4%B1-%C5%9Earkikaraaga%C3%A7.jpg/1280px-K%C4%B1z%C4%B1lda%C4%9F_milli_park%C4%B1-%C5%9Earkikaraaga%C3%A7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kızıldağ Millî Parkı · Isparta",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C4%B1z%C4%B1lda%C4%9F_milli_park%C4%B1-%C5%9Earkikaraaga%C3%A7.jpg",
+    "imageArtist": "Nazmi32",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kızıldağ milli parkı-Şarkikaraagaç.jpg"
   },
   {
     "id": "dkmp-milli-27",
@@ -2600,7 +2714,13 @@ window.ACTIVITIES = [
     "body": "Isparta sınırlarındaki Kovada Gölü Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kovada_G%C3%B6l%C3%BC_Milli_Park%C4%B1.jpg/1280px-Kovada_G%C3%B6l%C3%BC_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kovada Gölü Millî Parkı · Isparta",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kovada_G%C3%B6l%C3%BC_Milli_Park%C4%B1.jpg",
+    "imageArtist": "BilgeKorkmaz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kovada Gölü Milli Parkı.jpg"
   },
   {
     "id": "dkmp-milli-28",
@@ -2617,7 +2737,13 @@ window.ACTIVITIES = [
     "body": "Kahramanmaraş sınırlarındaki Geben Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Halkal%C4%B1_Yaylas%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Geben Vadisi Millî Parkı · Kahramanmaraş",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Halkal%C4%B1_Yaylas%C4%B1.jpg",
+    "imageArtist": "",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Halkalı Yaylası.jpg"
   },
   {
     "id": "dkmp-milli-29",
@@ -2635,7 +2761,13 @@ window.ACTIVITIES = [
     "body": "Kars-Erzurum sınırlarındaki Sarıkamış-Allahuekber Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Sar%C4%B1kam%C4%B1%C5%9F-Allahuekber_da%C4%9Flar%C4%B1_milli_park%C4%B1._Sar%C4%B1_%C3%A7am_a%C4%9Fa%C3%A7lar%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Sarıkamış-Allahuekber Dağları Millî Parkı · Kars",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sar%C4%B1kam%C4%B1%C5%9F-Allahuekber_da%C4%9Flar%C4%B1_milli_park%C4%B1._Sar%C4%B1_%C3%A7am_a%C4%9Fa%C3%A7lar%C4%B1.jpg",
+    "imageArtist": "Karagozerkan",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sarıkamış-Allahuekber dağları milli parkı. Sarı çam ağaçları.jpg"
   },
   {
     "id": "dkmp-milli-30",
@@ -2653,7 +2785,13 @@ window.ACTIVITIES = [
     "body": "Kastamonu-Bartın sınırlarındaki Küre Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/K%C3%BCre_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1_%28Horma_Kanyonu_-_3%29_%282024-06-20%29.jpg/1280px-K%C3%BCre_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1_%28Horma_Kanyonu_-_3%29_%282024-06-20%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Küre Dağları Millî Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C3%BCre_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1_(Horma_Kanyonu_-_3)_(2024-06-20).jpg",
+    "imageArtist": "37BK",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Küre Dağları Milli Parkı (Horma Kanyonu - 3) (2024-06-20).jpg"
   },
   {
     "id": "dkmp-milli-31",
@@ -2671,7 +2809,13 @@ window.ACTIVITIES = [
     "body": "Kastamonu-Çankırı sınırlarındaki Ilgaz Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ilgaz_Da%C4%9F%C4%B1_Milli_Park%C4%B1_%2812991492923%29.jpg/1280px-Ilgaz_Da%C4%9F%C4%B1_Milli_Park%C4%B1_%2812991492923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ilgaz Dağı Millî Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ilgaz_Da%C4%9F%C4%B1_Milli_Park%C4%B1_(12991492923).jpg",
+    "imageArtist": "Jorge Franganillo",
+    "imageLicense": "CC BY 2.0",
+    "imageFile": "File:Ilgaz Dağı Milli Parkı (12991492923).jpg"
   },
   {
     "id": "dkmp-milli-32",
@@ -2706,7 +2850,13 @@ window.ACTIVITIES = [
     "body": "Kayseri sınırlarındaki Sultan Sazlığı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sultan_Sazl%C4%B1%C4%9F%C4%B1_Mill%C3%AE_Park%C4%B1_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Sultan Sazlığı Millî Parkı · Kayseri",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sultan_Sazl%C4%B1%C4%9F%C4%B1_Mill%C3%AE_Park%C4%B1_2022.jpg",
+    "imageArtist": "Gülsara Alagöz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sultan Sazlığı Millî Parkı 2022.jpg"
   },
   {
     "id": "dkmp-milli-34",
@@ -2723,7 +2873,13 @@ window.ACTIVITIES = [
     "body": "Kırklareli sınırlarındaki İğneada Longoz Ormanları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%C4%B0%C4%9Fneada_Longoz_Ormanlar%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "İğneada Longoz Ormanları Millî Parkı · Kırklareli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C4%B0%C4%9Fneada_Longoz_Ormanlar%C4%B1.jpg",
+    "imageArtist": "Rstsvs",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:İğneada Longoz Ormanları.jpg"
   },
   {
     "id": "dkmp-milli-35",
@@ -2740,7 +2896,13 @@ window.ACTIVITIES = [
     "body": "Konya sınırlarındaki Beyşehir Gölü Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Lake_Bey%C5%9Fehir_National_Park-Aug_2023.jpg/1280px-Lake_Bey%C5%9Fehir_National_Park-Aug_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Beyşehir Gölü Millî Parkı · Konya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lake_Bey%C5%9Fehir_National_Park-Aug_2023.jpg",
+    "imageArtist": "Ayşe Güllüoğlu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Lake Beyşehir National Park-Aug 2023.jpg"
   },
   {
     "id": "dkmp-milli-36",
@@ -2757,7 +2919,13 @@ window.ACTIVITIES = [
     "body": "Konya sınırlarındaki Derebucak Çamlık Mağaraları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Gavurbe%C5%9Fi%C4%9Fi_Ma%C4%9Faras%C4%B1.jpg/1280px-Gavurbe%C5%9Fi%C4%9Fi_Ma%C4%9Faras%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Derebucak Çamlık Mağaraları Millî Parkı · Konya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Gavurbe%C5%9Fi%C4%9Fi_Ma%C4%9Faras%C4%B1.jpg",
+    "imageArtist": "Kaandegeroglu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Gavurbeşiği Mağarası.jpg"
   },
   {
     "id": "dkmp-milli-37",
@@ -2774,7 +2942,13 @@ window.ACTIVITIES = [
     "body": "Manisa sınırlarındaki Spil Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
     "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
     "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
-    "sourceLabel": "DKMP resmî park listesi"
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Spil_Da%C4%9F%C4%B1_Milli_Park%C4%B1_-_09.jpg/1280px-Spil_Da%C4%9F%C4%B1_Milli_Park%C4%B1_-_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Spil Dağı Millî Parkı · Manisa",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Spil_Da%C4%9F%C4%B1_Milli_Park%C4%B1_-_09.jpg",
+    "imageArtist": "Ğ harfi",
+    "imageLicense": "CC0",
+    "imageFile": "File:Spil Dağı Milli Parkı - 09.jpg"
   },
   {
     "id": "dkmp-milli-38",
