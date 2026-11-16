@@ -148,13 +148,16 @@ function updateModalEmbed() {
     modalPanoViewer = window.pannellum.viewer("d-pano", {
       type: "equirectangular",
       panorama: currentModalItem.image,
+      crossOrigin: "anonymous",
       autoLoad: true,
       autoRotate: -2,
-      haov: 150,
-      vaov: 75,
-      minPitch: -35,
-      maxPitch: 35,
-      hfov: 75,
+      haov: 180,
+      vaov: 85,
+      minYaw: -55,
+      maxYaw: 55,
+      minPitch: -25,
+      maxPitch: 25,
+      hfov: 70,
       title: currentModalItem.title,
       author: `Alagök VR · ${currentModalItem.city}`
     });
@@ -163,7 +166,7 @@ function updateModalEmbed() {
 
   destroyModalPano();
   pano.hidden = true;
-  const url = buildEmbedUrl(currentModalItem, currentModalMode);
+  const url = buildEmbedUrl(currentModalItem, "map");
   if (url) {
     iframe.src = url;
     iframe.hidden = false;
@@ -278,20 +281,23 @@ if (tourScene) {
       return;
     }
 
-    if (tourMode === "vr360" && window.pannellum && tourPano) {
+    if (tourMode === "vr360" && window.pannellum && tourPano && item.image) {
       if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
       tourPano.hidden = false;
       destroyTourPano();
       tourPanoViewer = window.pannellum.viewer("tour-pano", {
         type: "equirectangular",
         panorama: item.image,
+        crossOrigin: "anonymous",
         autoLoad: true,
         autoRotate: -2,
-        haov: 150,
-        vaov: 75,
-        minPitch: -35,
-        maxPitch: 35,
-        hfov: 75,
+        haov: 180,
+        vaov: 85,
+        minYaw: -55,
+        maxYaw: 55,
+        minPitch: -25,
+        maxPitch: 25,
+        hfov: 70,
         title: item.title,
         author: `Alagök VR · ${item.city}`
       });
@@ -300,7 +306,7 @@ if (tourScene) {
 
     destroyTourPano();
     if (tourPano) tourPano.hidden = true;
-    const embedUrl = buildEmbedUrl(item, tourMode);
+    const embedUrl = buildEmbedUrl(item, "map");
     if (embedUrl && tourEmbed) {
       tourEmbed.src = embedUrl;
       tourEmbed.hidden = false;
@@ -370,6 +376,7 @@ if (tourScene) {
   document.getElementById("tour-next").addEventListener("click", () => showTourSlide(tourIndex + 1));
   document.getElementById("tour-toggle").addEventListener("click", () => setTourPlaying(!tourPlaying));
   showTourSlide(0);
+  setTourMode("vr360");
   setTourPlaying(tourPlaying);
 }
 
