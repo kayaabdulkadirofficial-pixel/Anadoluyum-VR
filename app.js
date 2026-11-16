@@ -297,6 +297,10 @@ if (tourScene) {
       btn.classList.toggle("active", active);
       btn.setAttribute("aria-selected", String(active));
     });
+    if (tourScene) {
+      tourScene.classList.remove("tour-mode-photo", "tour-mode-streetview", "tour-mode-vr360", "tour-mode-map");
+      tourScene.classList.add(`tour-mode-${mode}`);
+    }
     if (mode !== "photo" && tourPlaying) setTourPlaying(false);
     updateTourModeView(tourSlides[tourIndex]);
   }

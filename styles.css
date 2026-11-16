@@ -366,15 +366,16 @@ footer {
 /* Video-like destination photo tour (non-VR preview) */
 .visual-tour-panel { max-width: 1320px; }
 .visual-tour { overflow: hidden; border: 1px solid var(--line); border-radius: 22px; background: var(--panel); }
-.tour-scene { position: relative; min-height: clamp(360px, 52vw, 620px); overflow: hidden; background: #10232b; isolation: isolate; }
+.tour-scene { position: relative; min-height: clamp(380px, 52vw, 620px); overflow: hidden; background: #10232b; isolation: isolate; }
 .tour-scene img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform:scale(1.08); }
 .tour-scene.is-moving img { animation: tour-drift 8s ease-in-out both; }
 @keyframes tour-drift { from { transform:scale(1.08) translate3d(1.2%,0,0); } to { transform:scale(1.2) translate3d(-1.2%,-1%,0); } }
-.tour-shade { position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,rgba(2,10,14,.76),rgba(2,10,14,.28) 62%,rgba(2,10,14,.08)),linear-gradient(0deg,rgba(2,10,14,.42),transparent 52%); }
-.tour-caption { position:absolute; z-index:2; left:clamp(1.2rem,5vw,4rem); bottom:clamp(1.4rem,5vw,3.5rem); max-width:620px; }
-.tour-caption h3 { font-size:clamp(2rem,5vw,3.8rem); margin:.45rem 0; }
-.tour-caption p:last-child { color:#e4eeea; font-size:1rem; line-height:1.55; }
-.tour-counter { position:absolute; z-index:2; right:1.2rem; top:1.2rem; padding:.45rem .7rem; border-radius:999px; background:rgba(2,10,14,.65); color:var(--text); font-variant-numeric:tabular-nums; }
+.tour-shade { position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,rgba(2,10,14,.88),rgba(2,10,14,.4) 62%,rgba(2,10,14,.15)),linear-gradient(0deg,rgba(2,10,14,.75),transparent 65%); pointer-events:none; }
+.tour-caption { position:absolute; z-index:2; left:clamp(1.2rem,5vw,3rem); bottom:clamp(1.2rem,5vw,2.5rem); max-width:min(600px, 85%); pointer-events:none; }
+.tour-caption h3 { font-size:clamp(1.6rem,4vw,2.8rem); margin:.4rem 0; line-height:1.2; }
+.tour-caption p:last-child { color:#e4eeea; font-size:.95rem; line-height:1.55; margin:.4rem 0; }
+.tour-mode-streetview .tour-caption, .tour-mode-map .tour-caption { display:none; }
+.tour-counter { position:absolute; z-index:4; right:1.2rem; top:1.2rem; padding:.45rem .7rem; border-radius:999px; background:rgba(2,10,14,.75); color:var(--text); font-variant-numeric:tabular-nums; border:1px solid var(--line); }
 .tour-controls { display:flex; justify-content:center; gap:.7rem; padding:1rem; }
 .tour-button { border:1px solid var(--line); border-radius:999px; padding:.7rem 1rem; color:var(--text); background:rgba(111,211,176,.08); cursor:pointer; }
 .tour-button:hover,.tour-stop:hover,.tour-stop.active { border-color:var(--teal); background:rgba(111,211,176,.16); }
