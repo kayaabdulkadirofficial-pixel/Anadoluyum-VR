@@ -8,7 +8,7 @@
       name="description"
       content="Alagök VR: Yerin Rengi, Göğün Ufku: Keşfetmenin Yeni Boyutu. Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi."
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=81-rota-1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -57,15 +57,15 @@
         </div>
         <dl class="stats">
           <div>
-            <dt id="route-count">43</dt>
+            <dt id="route-count">100</dt>
             <dd>rota</dd>
           </div>
           <div>
-            <dt id="city-count">27</dt>
+            <dt id="city-count">81</dt>
             <dd>şehir</dd>
           </div>
           <div>
-            <dt>6</dt>
+            <dt id="category-count">14</dt>
             <dd>kategori</dd>
           </div>
         </dl>
@@ -73,11 +73,16 @@
 
       <section id="gorsel-tur" class="panel visual-tour-panel">
         <div class="section-head">
-          <p class="eyebrow">Gözlüksüz önizleme</p>
+          <p class="eyebrow">Gözlüksüz 360° &amp; harita önizleme</p>
           <h2>Türkiye destinasyon atlası</h2>
-          <p>Görseller arasında ilerle, şehir durağını seç, rota bilgilerini incele ve Google Haritalar’da konuma geç.</p>
+          <p>Görseller arasında ilerle, 360° Sokak Görünümü veya Uydu Harita moduna geçerek rotaları yerinde keşfet.</p>
         </div>
-        <div class="visual-tour" aria-label="Destinasyon görsel önizlemesi">
+        <div class="visual-tour" aria-label="Destinasyon görsel ve 360° önizlemesi">
+          <div class="tour-mode-bar" role="tablist" aria-label="Görünüm modu">
+            <button class="tour-mode-btn active" type="button" data-tour-mode="photo" role="tab" aria-selected="true">🖼️ Görsel Tur</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="streetview" role="tab" aria-selected="false">🌐 360° Sokak Görünümü</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="map" role="tab" aria-selected="false">🛰️ Uydu &amp; Harita</button>
+          </div>
           <div class="tour-scene" id="tour-scene">
             <img id="tour-image" src="" alt="" />
             <div class="tour-shade" aria-hidden="true"></div>
@@ -88,16 +93,42 @@
               <p id="tour-description"></p>
               <p class="tour-tip" id="tour-tip"></p>
             </div>
+            <iframe
+              id="tour-embed"
+              class="tour-embed"
+              title="Google Maps 360° ve Harita Gömülü Görünüm"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              hidden
+            ></iframe>
+            <div id="tour-sv-fallback" class="tour-sv-fallback" hidden>
+              <div class="sv-fallback-card">
+                <p class="eyebrow">Google Maps Embed API · Street View</p>
+                <h3 id="sv-fallback-title">360° Sokak Görünümü</h3>
+                <p>Bu rotayı sayfa içinde gömülü 360° Street View olarak gezmek için Google Maps Embed API anahtarınızı girin veya doğrudan Google Haritalar 360° görünümünü açın.</p>
+                <div class="sv-actions">
+                  <a id="sv-direct-link" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Street View'da Aç ↗</a>
+                </div>
+                <form id="gmaps-key-form" class="gmaps-key-form">
+                  <label class="sr-only" for="gmaps-key-input">Google Maps Embed API Anahtarı</label>
+                  <input id="gmaps-key-input" type="password" placeholder="Google Maps Embed API Key (AIza...)" autocomplete="off" />
+                  <button class="tour-button" type="submit">Anahtarı Kaydet</button>
+                  <button id="gmaps-key-clear" class="tour-button" type="button" hidden>Temizle</button>
+                </form>
+              </div>
+            </div>
             <span class="tour-counter" id="tour-counter"></span>
           </div>
           <div class="tour-controls">
             <button class="tour-button" id="tour-prev" type="button" aria-label="Önceki destinasyon">←</button>
             <button class="tour-button tour-play" id="tour-toggle" type="button" aria-pressed="true">⏸ Duraklat</button>
             <button class="tour-button" id="tour-next" type="button" aria-label="Sonraki destinasyon">Sonraki →</button>
+            <a class="tour-button map-link" id="tour-sv-link" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a>
             <a class="tour-button map-link" id="tour-map-link" href="#" target="_blank" rel="noopener noreferrer">📍 Google Haritalar’da aç</a>
           </div>
           <div class="tour-stops" id="tour-stops" aria-label="Destinasyon seç"></div>
-          <p class="tour-note"><strong>Şu an:</strong> gözlük gerekmez; görseller hareket efekti verir ve Google Haritalar bağlantısı konumu açar. <strong>Henüz:</strong> sayfa içine gömülü harita veya gerçek 360° panorama yok. Sonraki aşamada harita ve kapsama bulunan yerlerde Street View eklenebilir.</p>
+          <p class="tour-note"><strong>Google Maps Embed entegrasyonu:</strong> Rotalar koordinat (<code>lat/lng</code>) ve 360° kamera açılarıyla (<code>heading</code>, <code>pitch</code>, <code>fov</code>) yapılandırılmıştır. Uydu haritası doğrudan gömülü çalışır; sayfa içi gömülü 360° Street View için Google Cloud Maps Embed API anahtarı bağlayabilir veya <strong>360° Gez</strong> butonuyla doğrudan açabilirsiniz.</p>
         </div>
       </section>
 
@@ -105,21 +136,122 @@
       <section id="kesfet" class="panel">
         <div class="section-head">
           <h2>Keşfet</h2>
-          <p>Süre, şehir veya türe göre süz. Kartlara tıklayınca ayrıntı açılır.</p>
+          <p>81 ilde 100 rota: şehrini ve 12 kategoriden birini seç. Kartlardan gezi ayrıntılarını ve kaynakları aç.</p>
         </div>
         <div class="filters" role="toolbar" aria-label="Aktivite filtreleri">
-          <button class="chip active" data-filter="all"><span aria-hidden="true">✦</span> Tümü</button>
-          <button class="chip" data-filter="doga"><span aria-hidden="true">🌿</span> Doğa</button>
-          <button class="chip" data-filter="sehir"><span aria-hidden="true">🏙️</span> Şehir</button>
-          <button class="chip" data-filter="kultur"><span aria-hidden="true">🏛️</span> Kültür</button>
-          <button class="chip" data-filter="su"><span aria-hidden="true">🌊</span> Su</button>
-          <button class="chip" data-filter="spor"><span aria-hidden="true">🚴</span> Hareket</button>
-          <button class="chip" data-filter="aile"><span aria-hidden="true">👨‍👩‍👧</span> Aile</button>
+          <button class="chip active" data-filter="all" aria-pressed="true"><span aria-hidden="true">✦</span> Tümü</button>
+          <button class="chip active" data-filter="doga" aria-pressed="true"><span aria-hidden="true">🌿</span> Doğa</button>
+          <button class="chip" data-filter="sehir" aria-pressed="false"><span aria-hidden="true">🏙️</span> Şehir</button>
+          <button class="chip" data-filter="kultur" aria-pressed="false"><span aria-hidden="true">🏛️</span> Kültür</button>
+          <button class="chip" data-filter="su" aria-pressed="false"><span aria-hidden="true">🌊</span> Su</button>
+          <button class="chip" data-filter="spor" aria-pressed="false"><span aria-hidden="true">🚴</span> Hareket</button>
+          <button class="chip" data-filter="aile" aria-pressed="false"><span aria-hidden="true">👨‍👩‍👧</span> Aile</button>
+          <button class="chip" data-filter="muze" aria-pressed="false"><span aria-hidden="true">🖼️</span> Müzeler</button>
+          <button class="chip" data-filter="arkeoloji" aria-pressed="false"><span aria-hidden="true">🏺</span> Arkeoloji</button>
+          <button class="chip" data-filter="inanc" aria-pressed="false"><span aria-hidden="true">🕌</span> İnanç</button>
+          <button class="chip" data-filter="magara" aria-pressed="false"><span aria-hidden="true">🪨</span> Mağaralar</button>
+          <button class="chip" data-filter="selale" aria-pressed="false"><span aria-hidden="true">💧</span> Şelaleler</button>
+          <button class="chip" data-filter="termal" aria-pressed="false"><span aria-hidden="true">♨️</span> Termal</button>
+          <button class="chip" data-filter="milli" aria-pressed="false"><span aria-hidden="true">🏞️</span> Millî Parklar</button>
+          <button class="chip" data-filter="tabiat" aria-pressed="false"><span aria-hidden="true">🌲</span> Tabiat Parkları</button>
+        </div>
+        <div class="city-picker">
+          <label for="city-select">Şehir seç · Türkiye'nin 81 ili</label>
+          <select id="city-select" aria-describedby="city-summary">
+            <option value="">Tüm şehirler</option>
+            <option value="Adana">Adana</option>
+            <option value="Adıyaman">Adıyaman</option>
+            <option value="Afyonkarahisar">Afyonkarahisar</option>
+            <option value="Ağrı">Ağrı</option>
+            <option value="Aksaray">Aksaray</option>
+            <option value="Amasya">Amasya</option>
+            <option value="Ankara">Ankara</option>
+            <option value="Antalya">Antalya</option>
+            <option value="Ardahan">Ardahan</option>
+            <option value="Artvin">Artvin</option>
+            <option value="Aydın">Aydın</option>
+            <option value="Balıkesir">Balıkesir</option>
+            <option value="Bartın">Bartın</option>
+            <option value="Batman">Batman</option>
+            <option value="Bayburt">Bayburt</option>
+            <option value="Bilecik">Bilecik</option>
+            <option value="Bingöl">Bingöl</option>
+            <option value="Bitlis">Bitlis</option>
+            <option value="Bolu">Bolu</option>
+            <option value="Burdur">Burdur</option>
+            <option value="Bursa">Bursa</option>
+            <option value="Çanakkale">Çanakkale</option>
+            <option value="Çankırı">Çankırı</option>
+            <option value="Çorum">Çorum</option>
+            <option value="Denizli">Denizli</option>
+            <option value="Diyarbakır">Diyarbakır</option>
+            <option value="Düzce">Düzce</option>
+            <option value="Edirne">Edirne</option>
+            <option value="Elazığ">Elazığ</option>
+            <option value="Erzincan">Erzincan</option>
+            <option value="Erzurum">Erzurum</option>
+            <option value="Eskişehir">Eskişehir</option>
+            <option value="Gaziantep">Gaziantep</option>
+            <option value="Giresun">Giresun</option>
+            <option value="Gümüşhane">Gümüşhane</option>
+            <option value="Hakkari">Hakkari</option>
+            <option value="Hatay">Hatay</option>
+            <option value="Iğdır">Iğdır</option>
+            <option value="Isparta">Isparta</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="İzmir">İzmir</option>
+            <option value="Kahramanmaraş">Kahramanmaraş</option>
+            <option value="Karabük">Karabük</option>
+            <option value="Karaman">Karaman</option>
+            <option value="Kars">Kars</option>
+            <option value="Kastamonu">Kastamonu</option>
+            <option value="Kayseri">Kayseri</option>
+            <option value="Kırıkkale">Kırıkkale</option>
+            <option value="Kırklareli">Kırklareli</option>
+            <option value="Kırşehir">Kırşehir</option>
+            <option value="Kilis">Kilis</option>
+            <option value="Kocaeli">Kocaeli</option>
+            <option value="Konya">Konya</option>
+            <option value="Kütahya">Kütahya</option>
+            <option value="Malatya">Malatya</option>
+            <option value="Manisa">Manisa</option>
+            <option value="Mardin">Mardin</option>
+            <option value="Mersin">Mersin</option>
+            <option value="Muğla">Muğla</option>
+            <option value="Muş">Muş</option>
+            <option value="Nevşehir">Nevşehir</option>
+            <option value="Niğde">Niğde</option>
+            <option value="Ordu">Ordu</option>
+            <option value="Osmaniye">Osmaniye</option>
+            <option value="Rize">Rize</option>
+            <option value="Sakarya">Sakarya</option>
+            <option value="Samsun">Samsun</option>
+            <option value="Siirt">Siirt</option>
+            <option value="Sinop">Sinop</option>
+            <option value="Sivas">Sivas</option>
+            <option value="Şanlıurfa">Şanlıurfa</option>
+            <option value="Şırnak">Şırnak</option>
+            <option value="Tekirdağ">Tekirdağ</option>
+            <option value="Tokat">Tokat</option>
+            <option value="Trabzon">Trabzon</option>
+            <option value="Tunceli">Tunceli</option>
+            <option value="Uşak">Uşak</option>
+            <option value="Van">Van</option>
+            <option value="Yalova">Yalova</option>
+            <option value="Yozgat">Yozgat</option>
+            <option value="Zonguldak">Zonguldak</option>
+          </select>
+          <div class="city-summary">
+            <p id="city-summary" aria-live="polite"></p>
+            <a id="city-google-map" class="btn ghost" target="_blank" rel="noopener noreferrer" hidden>Google Maps ↗</a><a id="city-yandex-map" class="btn ghost" target="_blank" rel="noopener noreferrer" hidden>Yandex Maps ↗</a>
+          </div>
         </div>
         <label class="search">
           <span class="sr-only">Ara</span>
           <input id="search" type="search" placeholder="Park, müze, yürüyüş, şehir…" />
         </label>
+        <p id="result-count" class="result-count" role="status"></p>
+        <button id="reset-filters" class="chip" type="button">Seçimleri temizle</button>
         <div id="grid" class="grid"></div>
       </section>
 
@@ -161,6 +293,7 @@
           </ol>
         </div>
       </section>
+      <section id="rota-rehberi" class="panel route-guide"><div class="section-head"><p class="eyebrow">81 il · 100 gezi önerisi</p><h2>Detaylı rota rehberi</h2><p>Her rota için gezi özeti, planlama aşamaları, süre ve harita bağlantıları.</p></div><div id="route-directory" class="route-directory"></div></section>
     </main>
 
     <!-- ── Modal ──────────────────────────────────── -->
@@ -172,7 +305,27 @@
         <p id="d-meta" class="meta"></p>
         <p id="d-body"></p>
         <p id="d-tip" class="tip"></p>
-        <a id="d-map-link" class="btn ghost map-link" href="#" target="_blank" rel="noopener noreferrer">📍 Google Haritalar’da aç</a>
+        <div class="modal-embed-box">
+          <div class="modal-embed-tabs" role="tablist" aria-label="Rota harita görünümü">
+            <button class="tour-mode-btn active" type="button" data-modal-mode="map">🛰️ Uydu &amp; Konum</button>
+            <button class="tour-mode-btn" type="button" data-modal-mode="streetview">🌐 360° Street View</button>
+          </div>
+          <div class="modal-embed-frame">
+            <iframe
+              id="d-embed"
+              title="Rota Google Maps Gömülü Görünümü"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div id="d-sv-fallback" class="modal-sv-fallback" hidden>
+              <p>Gömülü 360° Street View için üstteki Türkiye Destinasyon Atlası'ndan API anahtarı bağlayabilir veya doğrudan 360° görünümü açabilirsiniz.</p>
+              <a id="d-sv-direct" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Street View'da Aç ↗</a>
+            </div>
+          </div>
+        </div>
+        <p><a id="d-source" target="_blank" rel="noopener noreferrer" hidden>Resmî kaynak ↗</a></p>
+        <div class="map-links"><a id="d-streetview-map" class="btn primary map-link" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a><a id="d-google-map" class="btn ghost map-link" href="#" target="_blank" rel="noopener noreferrer">📍 Google Maps ↗</a><a id="d-yandex-map" class="btn ghost map-link" href="#" target="_blank" rel="noopener noreferrer">Yandex Maps ↗</a></div>
       </article>
     </dialog>
 
@@ -180,8 +333,8 @@
       <p>Alagök VR (@alagokvr) · Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi · 2026</p><p><a href="image-credits.html">Fotoğraf kaynakları ve lisanslar</a></p>
     </footer>
 
-    <script src="data.js"></script>
-    <script src="app.js"></script>
+    <script src="data.js?v=81-rota-1"></script>
+    <script src="app.js?v=81-rota-1"></script>
   </body>
 </html>
 
