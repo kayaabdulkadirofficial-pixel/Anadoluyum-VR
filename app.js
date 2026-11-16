@@ -87,6 +87,19 @@ function render() {
     )
     .join("");
 
+  const routesList = document.getElementById("routes-list");
+  if (routesList) {
+    document.getElementById("routes-list-count").textContent = `Toplam ${window.ACTIVITIES.length} rotadan ${items.length} rota listeleniyor.`;
+    routesList.innerHTML = items.length ? items.map(item => `
+      <article>
+        <p class="tag">${item.tag} · ${(item.cities || [item.city]).join(", ")}</p>
+        <h3>${item.title}</h3>
+        <p>${item.body}</p>
+        <p>${item.duration}</p>
+        <button type="button" class="btn primary" data-route-open="${item.id}">Rota ayrıntıları</button>
+        <a class="btn ghost" href="${mapsSearchUrl(item)}" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>
+      </article>`).join("") : '<p>Bu seçimle eşleşen rota yok. Keşfet bölümünden filtreleri temizleyebilirsin.</p>';
+  }
   routeDirectory.innerHTML = items.map(item => {
     const place = item.place || item.title;
     let steps;
@@ -350,3 +363,8 @@ if (tourScene) {
   showTourSlide(0);
   setTourPlaying(tourPlaying);
 }
+
+document.getElementById("routes-list")?.addEventListener("click", event => {
+ const button = event.target.closest("[data-route-open]");
+ if (button) openDetail(button.dataset.routeOpen);
+});
