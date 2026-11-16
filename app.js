@@ -72,7 +72,7 @@ function render() {
     if (city) link.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(city + ", Türkiye")}`;
     else link.removeAttribute("href");
   }
-  document.getElementById("result-count").textContent = `${city || "Tüm şehirler"} · ${items.length} rota gösteriliyor`;
+  document.getElementById("result-count").textContent = `${city || "Tüm şehirler"} · Toplam ${window.ACTIVITIES.length} rotadan ${items.length} rota gösteriliyor`;
   grid.innerHTML = items
     .map(
       (item) => `
