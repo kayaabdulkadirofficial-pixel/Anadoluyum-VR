@@ -17,6 +17,13 @@ if (routeCount) routeCount.textContent = window.ACTIVITIES.length;
 if (cityCount) cityCount.textContent = new Set(window.ACTIVITIES.map(item => item.city)).size;
 const categoryCount = document.getElementById("category-count");
 if (categoryCount) categoryCount.textContent = new Set(window.ACTIVITIES.map(item => item.category)).size;
+chips.forEach(chip => {
+ const key = chip.dataset.filter;
+ const count = key === "all" ? window.ACTIVITIES.length : window.ACTIVITIES.filter(item => item.category === key).length;
+ const label = chip.textContent.replace(/\s*\(\d+\)\s*$/, "").trim();
+ chip.textContent = label + " (" + count + ")";
+});
+
 
 function getGoogleMapsApiKey() {
   return "AIzaSyCMRZZwKdNxXekhQw05xEKv9PmRXBxYZHc";
@@ -238,7 +245,7 @@ render();
 // Lightweight photo tour preview + Keyless 360° Pannellum VR & Google Maps Satellite Embed
 const tourScene = document.getElementById("tour-scene");
 if (tourScene) {
-  const tourSlides = window.ACTIVITIES.filter((item) => item.image);
+  const tourSlides = window.ACTIVITIES;
   const tourImage = document.getElementById("tour-image");
   const tourStops = document.getElementById("tour-stops");
   const tourEmbed = document.getElementById("tour-embed");
@@ -320,7 +327,9 @@ if (tourScene) {
     tourIndex = (index + tourSlides.length) % tourSlides.length;
     const item = tourSlides[tourIndex];
     tourScene.classList.remove("is-moving");
-    tourImage.src = item.image;
+    tourImage.hidden = !item.image;
+    if (item.image) tourImage.src = item.image;
+    else tourImage.removeAttribute("src");
     tourImage.alt = item.imageAlt || `${item.city} destinasyon görünümü`;
     document.getElementById("tour-location").textContent = `${item.city} · ${item.tag}`;
     document.getElementById("tour-title").textContent = item.title;
@@ -352,7 +361,7 @@ if (tourScene) {
     btn.addEventListener("click", () => setTourMode(btn.dataset.tourMode));
   });
 
-  tourStops.innerHTML = tourSlides.map((item, i) => `<button type="button" class="tour-stop" data-index="${i}" aria-label="${item.city}: ${item.title}" aria-current="false"><img src="${item.image}" alt="" loading="lazy"><span>${item.city}<small>${item.tag} · ${item.duration}</small></span></button>`).join("");
+  tourStops.innerHTML = tourSlides.map((item, i) => `<button type="button" class="tour-stop" data-index="${i}" aria-label="${item.city}: ${item.title}" aria-current="false">${item.image ? `<img src="${item.image}" alt="" loading="lazy">` : `<span aria-hidden="true">${item.icon || "🌿"}</span>`}<span>${item.city}<small>${item.tag} · ${item.duration}</small></span></button>`).join("");
   tourStops.addEventListener("click", (event) => {
     const stop = event.target.closest("button[data-index]");
     if (stop) { showTourSlide(Number(stop.dataset.index)); setTourPlaying(false); }
