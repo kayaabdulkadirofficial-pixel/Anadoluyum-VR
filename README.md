@@ -1,17 +1,21 @@
-# 🌍 Nova Geosfer VR — Rekreasyon Rehberi
+# 🦅 Alagök VR
+**Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi**
 
-Türkiye'de doğa, kültür, su, spor, aile ve şehir rekreasyon rotalarını tek bir harita ve görsel atlasta toplayan açık kaynaklı web rehberi (**44 Rota · 25 Şehir · 6 Kategori**).
+> *"Yerin Rengi, Göğün Ufku: Keşfetmenin Yeni Boyutu."*
+
+## Anlam ve Ruh
+- **Ala:** Yeryüzünün renklerini, çeşitliliğini, canlılığını ve rekreasyonun (eğlence, yenilenme, keşif) enerjisini temsil eder.
+- **Gök:** Sınırları aşan kuşbakışı vizyonu, drone ve 360° sanal gerçeklik teknolojisinin özgürlüğünü simgeler.
 
 ## 🚀 Canlı Web Sitesini Açmak İçin Tıklayın:
 👉 **[https://kayaabdulkadirofficial-pixel.github.io/NovaGeosferVR-/](https://kayaabdulkadirofficial-pixel.github.io/NovaGeosferVR-/)**
 
 ---
 
-## Bilgisayarda Çalıştırma
-İndirdiğiniz klasördeki `index.html` dosyasına çift tıklayarak tarayıcıda açabilirsiniz. Ekstra kurulum veya sunucu gerekmez.
+## Dijital Kullanım Standartları
+- **Platform / Kanal Adı:** Alagök VR
+- **Kullanıcı Adı / Domain:** `@alagokvr` / `alagokvr.com`
+- **Yazım Kuralı:** Şapkasız ve bitişik şekilde **Alagök VR**
 
-## İçerik ve Yapı
-- **`index.html`**: Ana sayfa, Türkiye Destinasyon Atlası (Görsel Tur), Keşfet filtreleri, Hazır Gezi Paketleri ve VR Yol Haritası.
-- **`data.js`**: Tüm rotaların, şehirlerin, ipuçlarının ve görsel bağlantılarının bulunduğu veri dosyası.
-- **`app.js`**: Arama, kategori filtreleme, görsel tur oynatıcısı ve Google Haritalar entegrasyonu.
-- **`styles.css`**: Mobil ve masaüstü uyumlu modern arayüz tasarımı.
+## Bilgisayarda Çalıştırma
+`index.html` dosyasını tarayıcıda açın. Ekstra sunucu gerekmez.
