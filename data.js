@@ -1419,7 +1419,12 @@ window.ACTIVITIES = [
     "lng": 33.4856,
     "heading": 120,
     "pitch": 8,
-    "fov": 85
+    "fov": 85,
+    "image": "https://www.kulturportali.gov.tr/repoKulturPortali/small/08022013/ba0c87e1-c5ca-4ca1-af05-8399887da3f3.jpg",
+    "imageSource": "https://www.kulturportali.gov.tr/turkiye/karaman/gezilecekyer/manazan-magaralari",
+    "imageArtist": "Muhittin SUNAOĞLU",
+    "imageLicense": "Kaynak: Türkiye Kültür Portalı",
+    "imageAlt": "Manazan Mağaraları · Karaman"
   },
   {
     "id": "il-44",
@@ -1713,7 +1718,12 @@ window.ACTIVITIES = [
     "lng": 34.1058,
     "heading": 170,
     "pitch": -5,
-    "fov": 85
+    "fov": 85,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Cennet_Cehennem_CENNET_-_panoramio.jpg/1280px-Cennet_Cehennem_CENNET_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Cennet_Cehennem_CENNET_-_panoramio.jpg",
+    "imageArtist": "Korkut Tas",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageAlt": "Cennet ve Cehennem Obrukları · Mersin"
   },
   {
     "id": "il-59",
@@ -1732,7 +1742,12 @@ window.ACTIVITIES = [
     "lng": 42.5333,
     "heading": 90,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "image": "https://www.kulturportali.gov.tr/contents/images/MALAZG%c4%b0RT%20M%c3%9cZES%c4%b0-SERVET%20UYGUN%20(50)%20kopya.jpg",
+    "imageSource": "https://www.kulturportali.gov.tr/turkiye/mus/gezilecekyer/malazgirt-muzesi-",
+    "imageArtist": "Tanıtma Genel Müdürlüğü Arşivi",
+    "imageLicense": "Kaynak: Türkiye Kültür Portalı",
+    "imageAlt": "Malazgirt Müzesi · Muş"
   },
   {
     "id": "il-61",
@@ -2076,7 +2091,12 @@ window.ACTIVITIES = [
     "lng": 29.1706,
     "heading": 140,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Yalova_Termal_Swimming_Pool.JPG/1280px-Yalova_Termal_Swimming_Pool.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Yalova_Termal_Swimming_Pool.JPG",
+    "imageArtist": "Annikat53",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageAlt": "Termal Kaplıcaları · Yalova"
   },
   {
     "id": "il-79",
