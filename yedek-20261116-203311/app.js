@@ -19,7 +19,7 @@ const categoryCount = document.getElementById("category-count");
 if (categoryCount) categoryCount.textContent = new Set(window.ACTIVITIES.map(item => item.category)).size;
 
 function getGoogleMapsApiKey() {
-  return "AIzaSyCMRZZwKdNxXekhQw05xEKv9PmRXBxYZHc";
+  return "";
 }
 
 function mapsSearchUrl(item) {

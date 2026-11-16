@@ -26,7 +26,7 @@ chips.forEach(chip => {
 
 
 function getGoogleMapsApiKey() {
-  return "AIzaSyCMRZZwKdNxXekhQw05xEKv9PmRXBxYZHc";
+  return "";
 }
 
 function mapsSearchUrl(item) {
@@ -44,16 +44,8 @@ function streetViewDirectUrl(item) {
   return mapsSearchUrl(item);
 }
 
-function buildEmbedUrl(item, mode) {
-  const key = getGoogleMapsApiKey();
+function buildEmbedUrl(item) {
   const hasCoords = item.lat != null && item.lng != null;
-  if (mode === "streetview") {
-    if (!key || !hasCoords) return null;
-    const heading = item.heading ?? 0;
-    const pitch = item.pitch ?? 5;
-    const fov = item.fov ?? 85;
-    return `https://www.google.com/maps/embed/v1/streetview?key=${encodeURIComponent(key)}&location=${item.lat},${item.lng}&heading=${heading}&pitch=${pitch}&fov=${fov}&radius=50000&source=outdoor`;
-  }
   const q = hasCoords ? `${item.lat},${item.lng}` : encodeURIComponent(`${item.place || item.title}, ${item.city}, Türkiye`);
   return `https://maps.google.com/maps?q=${q}&t=k&z=15&ie=UTF8&iwloc=&output=embed`;
 }
