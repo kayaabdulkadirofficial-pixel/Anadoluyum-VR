@@ -20,7 +20,7 @@ const categoryCount = document.getElementById("category-count");
 if (categoryCount) categoryCount.textContent = new Set(window.ACTIVITIES.map(item => item.category)).size;
 
 function getGoogleMapsApiKey() {
-  return (window.ALAGOK_MAPS_KEY || localStorage.getItem("alagok_gmaps_key") || "").trim();
+  return "AIzaSyCMRZZwKdNxXekhQw05xEKv9PmRXBxYZHc";
 }
 
 function mapsSearchUrl(item, provider = "google") {
@@ -112,7 +112,7 @@ function render() {
 }
 
 let currentModalItem = null;
-let currentModalMode = "map";
+let currentModalMode = "streetview";
 let modalPanoViewer = null;
 
 function destroyModalPano() {
@@ -151,7 +151,7 @@ function updateModalEmbed() {
 
   destroyModalPano();
   pano.hidden = true;
-  const url = buildEmbedUrl(currentModalItem, "map");
+  const url = buildEmbedUrl(currentModalItem, currentModalMode);
   if (url) {
     iframe.src = url;
     iframe.hidden = false;
@@ -283,7 +283,7 @@ if (tourScene) {
 
     destroyTourPano();
     if (tourPano) tourPano.hidden = true;
-    const embedUrl = buildEmbedUrl(item, "map");
+    const embedUrl = buildEmbedUrl(item, tourMode);
     if (embedUrl && tourEmbed) {
       tourEmbed.src = embedUrl;
       tourEmbed.hidden = false;

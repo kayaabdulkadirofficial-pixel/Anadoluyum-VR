@@ -81,7 +81,8 @@
         <div class="visual-tour" aria-label="Destinasyon görsel ve 360° önizlemesi">
           <div class="tour-mode-bar" role="tablist" aria-label="Görünüm modu">
             <button class="tour-mode-btn active" type="button" data-tour-mode="photo" role="tab" aria-selected="true">🖼️ Görsel Tur</button>
-            <button class="tour-mode-btn" type="button" data-tour-mode="vr360" role="tab" aria-selected="false">🥽 360° Küresel Bakış (API'siz)</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="streetview" role="tab" aria-selected="false">🌐 Google Street View 360°</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="vr360" role="tab" aria-selected="false">🥽 Küresel Panorama</button>
             <button class="tour-mode-btn" type="button" data-tour-mode="map" role="tab" aria-selected="false">🛰️ Uydu &amp; Harita</button>
           </div>
           <div class="tour-scene" id="tour-scene">
@@ -293,8 +294,9 @@
         <p id="d-tip" class="tip"></p>
         <div class="modal-embed-box">
           <div class="modal-embed-tabs" role="tablist" aria-label="Rota harita görünümü">
-            <button class="tour-mode-btn active" type="button" data-modal-mode="map">🛰️ Uydu &amp; Konum</button>
-            <button class="tour-mode-btn" type="button" data-modal-mode="vr360">🥽 360° Küresel Bakış</button>
+            <button class="tour-mode-btn active" type="button" data-modal-mode="streetview">🌐 Street View 360°</button>
+            <button class="tour-mode-btn" type="button" data-modal-mode="map">🛰️ Uydu &amp; Konum</button>
+            <button class="tour-mode-btn" type="button" data-modal-mode="vr360">🥽 Küresel Panorama</button>
           </div>
           <div class="modal-embed-frame">
             <iframe
