@@ -124,7 +124,7 @@ function render() {
 }
 
 let currentModalItem = null;
-let currentModalMode = "streetview";
+let currentModalMode = "vr360";
 let modalPanoViewer = null;
 
 function destroyModalPano() {
@@ -255,8 +255,8 @@ if (tourScene) {
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let tourIndex = 0;
   let tourTimer = null;
-  let tourPlaying = !reducedMotion;
-  let tourMode = "photo";
+  let tourPlaying = false;
+  let tourMode = "vr360";
   let tourPanoViewer = null;
 
   function destroyTourPano() {

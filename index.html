@@ -76,10 +76,9 @@
         </div>
         <div class="visual-tour" aria-label="Destinasyon görsel ve 360° önizlemesi">
           <div class="tour-mode-bar" role="tablist" aria-label="Görünüm modu">
-            <button class="tour-mode-btn active" type="button" data-tour-mode="photo" role="tab" aria-selected="true">🖼️ Görsel Tur</button>
-            <button class="tour-mode-btn" type="button" data-tour-mode="streetview" role="tab" aria-selected="false">🌐 Google Street View 360°</button>
-            <button class="tour-mode-btn" type="button" data-tour-mode="vr360" role="tab" aria-selected="false">🥽 Küresel Panorama</button>
-            <button class="tour-mode-btn" type="button" data-tour-mode="map" role="tab" aria-selected="false">🛰️ Uydu &amp; Harita</button>
+            <button class="tour-mode-btn active" type="button" data-tour-mode="vr360" role="tab" aria-selected="true">🥽 360° Küresel Panorama (VR)</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="photo" role="tab" aria-selected="false">🖼️ Görsel Tur</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="map" role="tab" aria-selected="false">🛰️ Uydu &amp; Konum</button>
           </div>
           <div class="tour-scene" id="tour-scene">
             <img id="tour-image" src="" alt="" />
@@ -111,6 +110,7 @@
           <div class="tour-stops" id="tour-stops" aria-label="Destinasyon seç"></div>
           <p class="tour-note"><strong>360° keşif:</strong> <em>Google Street View 360°</em> sekmesinde sokak görünümünde gezebilir, <em>Küresel Panorama</em> modunda fareyle veya parmağınızla görüntüyü döndürüp tam ekran inceleyebilirsiniz.</p>
           <div class="tour-footer-actions">
+            <a class="tour-button map-link" id="tour-sv-link" href="#" target="_blank" rel="noopener noreferrer" style="background:var(--teal);color:var(--ink);font-weight:600;margin-right:8px;">🌐 Google Street View 360° Aç ↗</a>
             <a class="tour-button map-link" id="tour-map-link" href="#" target="_blank" rel="noopener noreferrer">📍 Google Haritalar’da aç</a>
           </div>
         </div>
@@ -281,9 +281,8 @@
         <p id="d-tip" class="tip"></p>
         <div class="modal-embed-box">
           <div class="modal-embed-tabs" role="tablist" aria-label="Rota harita görünümü">
-            <button class="tour-mode-btn active" type="button" data-modal-mode="streetview">🌐 Street View 360°</button>
+            <button class="tour-mode-btn active" type="button" data-modal-mode="vr360">🥽 360° Küresel Panorama (VR)</button>
             <button class="tour-mode-btn" type="button" data-modal-mode="map">🛰️ Uydu &amp; Konum</button>
-            <button class="tour-mode-btn" type="button" data-modal-mode="vr360">🥽 Küresel Panorama</button>
           </div>
           <div class="modal-embed-frame">
             <iframe
@@ -310,7 +309,6 @@
     <script src="app.js?v=atlas-picker-420"></script>
     <script src="photo-credits.js"></script>
     <script src="atlas-selector.js"></script>
-    <script src="street-controls.js?v=3"></script>
   </body>
 </html>
 
