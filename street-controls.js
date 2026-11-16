@@ -21,7 +21,7 @@ function enhance(frame,modeSelector) {
  const host=frame.parentElement;
  const overlay=document.createElement("div");
  overlay.setAttribute("aria-label","Street View yürüyüş alanı");
- overlay.style.cssText="position:absolute;inset:0;z-index:25;background:#102d39;display:none;grid-template-rows:minmax(0,1fr) auto;min-height:360px;";
+ overlay.style.cssText="position:absolute;inset:0;z-index:25;background:transparent;display:none;grid-template-rows:minmax(0,1fr) auto;min-height:360px;";
  const viewer=document.createElement("div");viewer.style.cssText="min-height:200px;width:100%;height:100%";
  const bar=document.createElement("div");bar.style.cssText="display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px;background:#102d39;color:white";
  const status=document.createElement("span");status.style.cssText="font-size:12px;flex:1 1 160px";status.setAttribute("role","status");
