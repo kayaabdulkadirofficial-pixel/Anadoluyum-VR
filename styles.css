@@ -439,3 +439,7 @@ footer {
 .modal-embed-frame { position:relative; height:260px; }
 .modal-sv-fallback { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:1.2rem; background:rgba(7,19,28,.9); gap:.8rem; }
 .modal-sv-fallback p { margin:0; color:var(--muted); font-size:.88rem; max-width:42ch; }
+
+/* Google Haritalar butonu bölümün en altında */
+.tour-footer-actions { display:flex; justify-content:center; padding:.2rem 1rem 1.4rem; }
+.tour-footer-actions .map-link { background:var(--gold); color:var(--ink); border-color:transparent; font-weight:600; }
