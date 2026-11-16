@@ -24,13 +24,8 @@
 
     <header class="topbar">
       <a class="brand" href="#anasayfa">
-        <span class="brand-mark" aria-hidden="true">
-          <svg class="brand-bird" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M3 18.5C8.2 12.2 13.8 11.4 16.5 15.2C19.6 9.6 24.8 7.5 29.5 8.5C25.2 11.4 22.4 15.1 20.6 19.6C23.5 19.2 26.2 19.8 28.2 21.3C23.6 22.4 19.3 22.2 15.4 20.4C11.5 22.3 7.1 21.8 3 18.5Z"
-              fill="currentColor"
-            />
-          </svg>
+        <span class="brand-mark ataturk-logo" style="display:block;width:72px;height:84px;min-width:72px;flex-shrink:0;background:transparent;transform:none;padding:0;border:0;overflow:hidden;border-radius:14px">
+          <img src="ataturk-logo.svg?v=2" alt="Mustafa Kemal Atatürk portreli Alagök VR logosu" width="72" height="84" style="display:block;width:72px;height:84px;max-width:none;object-fit:contain" fetchpriority="high" />
         </span>
         <span>
           <strong>Alagök VR</strong>
@@ -40,7 +35,7 @@
       <nav>
         <a href="#kesfet">Keşfet</a>
         <a href="#gorsel-tur">360° Atlas</a>
-        <a href="#rotalar">Paketler</a>
+        <a href="#rotalar">420 Rota</a>
         <a href="#vr">VR Vizyonu</a>
       </nav>
     </header>
@@ -59,7 +54,7 @@
         </div>
         <dl class="stats">
           <div>
-            <dt id="route-count">100</dt>
+            <dt id="route-count">420</dt>
             <dd>rota</dd>
           </div>
           <div>
@@ -76,7 +71,7 @@
       <section id="gorsel-tur" class="panel visual-tour-panel">
         <div class="section-head">
           <p class="eyebrow">Gözlüksüz 360° &amp; harita önizleme</p>
-          <h2>Türkiye destinasyon atlası</h2>
+          <h2>Türkiye destinasyon atlası · 420 rota</h2>
           <p>Görseller arasında ilerle, 360° Sokak Görünümü veya Uydu Harita moduna geçerek rotaları yerinde keşfet.</p>
         </div>
         <div class="visual-tour" aria-label="Destinasyon görsel ve 360° önizlemesi">
@@ -125,11 +120,11 @@
       <section id="kesfet" class="panel">
         <div class="section-head">
           <h2>Keşfet</h2>
-          <p>81 ilde 100 rota: şehrini ve 12 kategoriden birini seç. Kartlardan gezi ayrıntılarını ve kaynakları aç.</p>
+          <p>81 ilde 420 gezi önerisi: 54 millî park ve 279 tabiat parkını şehir ve kategoriye göre keşfet. Park adı veya şehir yazarak ara.</p>
         </div>
         <div class="filters" role="toolbar" aria-label="Aktivite filtreleri">
           <button class="chip active" data-filter="all" aria-pressed="true"><span aria-hidden="true">✦</span> Tümü</button>
-          <button class="chip active" data-filter="doga" aria-pressed="true"><span aria-hidden="true">🌿</span> Doğa</button>
+          <button class="chip" data-filter="doga" aria-pressed="false"><span aria-hidden="true">🌿</span> Doğa</button>
           <button class="chip" data-filter="sehir" aria-pressed="false"><span aria-hidden="true">🏙️</span> Şehir</button>
           <button class="chip" data-filter="kultur" aria-pressed="false"><span aria-hidden="true">🏛️</span> Kültür</button>
           <button class="chip" data-filter="su" aria-pressed="false"><span aria-hidden="true">🌊</span> Su</button>
@@ -141,8 +136,8 @@
           <button class="chip" data-filter="magara" aria-pressed="false"><span aria-hidden="true">🪨</span> Mağaralar</button>
           <button class="chip" data-filter="selale" aria-pressed="false"><span aria-hidden="true">💧</span> Şelaleler</button>
           <button class="chip" data-filter="termal" aria-pressed="false"><span aria-hidden="true">♨️</span> Termal</button>
-          <button class="chip" data-filter="milli" aria-pressed="false"><span aria-hidden="true">🏞️</span> Millî Parklar</button>
-          <button class="chip" data-filter="tabiat" aria-pressed="false"><span aria-hidden="true">🌲</span> Tabiat Parkları</button>
+          <button class="chip" data-filter="milli" aria-pressed="false"><span aria-hidden="true">🏞️</span> Millî Parklar (54)</button>
+          <button class="chip" data-filter="tabiat" aria-pressed="false"><span aria-hidden="true">🌲</span> Tabiat Parkları (279)</button>
         </div>
         <div class="city-picker">
           <label for="city-select">Şehir seç · Türkiye'nin 81 ili</label>
@@ -235,10 +230,10 @@
             <a id="city-google-map" class="btn ghost" target="_blank" rel="noopener noreferrer" hidden>Google Maps ↗</a>
           </div>
         </div>
-        <label class="search">
+        <form id="search-form" role="search"><label class="search">
           <span class="sr-only">Ara</span>
-          <input id="search" type="search" placeholder="Park, müze, yürüyüş, şehir…" />
-        </label>
+          <input id="search" type="search" placeholder="Park adı, millî park, tabiat parkı veya şehir ara…" />
+        </label><button class="btn primary" type="submit">Ara</button></form>
         <p id="result-count" class="result-count" role="status"></p>
         <button id="reset-filters" class="chip" type="button">Seçimleri temizle</button>
         <div id="grid" class="grid"></div>
@@ -247,42 +242,13 @@
       <!-- ── Rotalar ────────────────────────────────── -->
       <section id="rotalar" class="panel">
         <div class="section-head">
-          <p class="eyebrow">Planlı Seyahat Önerileri</p>
-          <h2>Hazır Gezi &amp; Rekreasyon Paketleri</h2>
-          <p>Kısa şehir molasından çok günlük coğrafi keşiflere uzanan 6 tematik rota kurgusu.</p>
+          <p class="eyebrow">81 il · 420 gezi önerisi</p>
+          <h2>420 rota · Şehir şehir keşfet</h2>
+          <p>54 millî park, 279 tabiat parkı ve 87 diğer gezi rotası. Her kaydın ayrıntılarını ve Google Maps bağlantısını açabilirsin.</p>
+          <p id="routes-list-count" role="status">420 rota listeleniyor.</p>
+          <a class="btn primary" href="#kesfet">Şehir, kategori veya park adıyla filtrele ↑</a>
         </div>
-        <div class="routes">
-          <article>
-            <div class="route-badge">⏱️ 90 Dakika</div>
-            <h3>Şehir Nefesi &amp; Sahil Hattı</h3>
-            <p>Sahil yürüyüşü, bir kahve molası ve küçük bir bakı terası (Kadıköy Moda, İzmir Kordon, Balat Haliç, Amasya Yeşilırmak).</p>
-          </article>
-          <article>
-            <div class="route-badge">⏱️ Yarım Gün</div>
-            <h3>Yeşil Halka &amp; Göl Parkurları</h3>
-            <p>Göl kenarı düz yürüyüş, orman içi patika ve piknik molası. Aile ve arkadaş grupları için (Bolu Abant, Emirgan Korusu, Eymir).</p>
-          </article>
-          <article>
-            <div class="route-badge">⏱️ Tam Gün</div>
-            <h3>Kültür, Tarih &amp; Açık Hava</h3>
-            <p>Sabah antik kent veya müze ziyareti, öğleden sonra kanyon ve doğa yürüyüşü (Sümela Manastırı, Pamukkale Hierapolis, Efes).</p>
-          </article>
-          <article>
-            <div class="route-badge">🧭 Hafta Sonu</div>
-            <h3>Jeomiras &amp; Yeryüzü Şekilleri</h3>
-            <p>Peri bacaları, traverten basamakları, heyelan gölleri ve beyaz adacıklar (Kapadokya Göreme, Salda Gölü, Bolu Yedigöller).</p>
-          </article>
-          <article>
-            <div class="route-badge">🌊 Kıyı &amp; Mavi</div>
-            <h3>Durgun Lagünler &amp; Ada Geçişi</h3>
-            <p>Dalgasız turkuaz koylar, tarihi fenerler ve tekneyle ulaşılan ada manzaraları (Ölüdeniz Kumburnu, Amasra Kalesi, Van Akdamar).</p>
-          </article>
-          <article>
-            <div class="route-badge">⛰️ Yayla &amp; Zirve</div>
-            <h3>Yüksek Rakım &amp; Ufuk Çizgisi</h3>
-            <p>Kaçkar ormanları, serin yayla havası ve 2.000+ metrede anıtsal gün doğumu (Ayder Yaylası, Nemrut Dağı, Erzurum Palandöken).</p>
-          </article>
-        </div>
+        <div id="routes-list" class="routes"></div>
       </section>
 
       <!-- ── VR ─────────────────────────────────────── -->
@@ -301,7 +267,7 @@
           </ol>
         </div>
       </section>
-      <section id="rota-rehberi" class="panel route-guide"><div class="section-head"><p class="eyebrow">81 il · 100 gezi önerisi</p><h2>Detaylı rota rehberi</h2><p>Her rota için gezi özeti, planlama aşamaları, süre ve harita bağlantıları.</p></div><div id="route-directory" class="route-directory"></div></section>
+      <section id="rota-rehberi" class="panel route-guide"><div class="section-head"><p class="eyebrow">81 il · 420 gezi önerisi</p><h2>Detaylı rota rehberi</h2><p>Her rota için gezi özeti, planlama aşamaları, süre ve harita bağlantıları.</p></div><div id="route-directory" class="route-directory"></div></section>
     </main>
 
     <!-- ── Modal ──────────────────────────────────── -->
@@ -340,9 +306,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <script src="data.js?v=all-100-photos"></script>
-    <script src="app.js?v=referrer-fix-4"></script>
+    <script src="data.js?v=park-photo-update-225"></script>
+    <script src="app.js?v=atlas-picker-420"></script>
     <script src="photo-credits.js"></script>
+    <script src="atlas-selector.js"></script>
+    <script src="street-controls.js?v=4"></script>
   </body>
 </html>
 

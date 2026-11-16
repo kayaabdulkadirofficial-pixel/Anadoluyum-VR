@@ -67,8 +67,8 @@ window.ACTIVITIES = [
     "id": "adalar",
     "title": "Büyükada bisiklet turu",
     "city": "İstanbul",
-    "category": "spor",
-    "tag": "Hareket",
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
     "duration": "3–5 saat",
     "image": "images/adalar.jpg",
     "body": "Arabalar yok, sadece faytonlar ve bisikletler. Adanın çevresini pedal çevirerek dolaş, Yücetepe'ye çık.",
@@ -77,7 +77,12 @@ window.ACTIVITIES = [
     "lng": 29.1267,
     "heading": 160,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "İstanbul"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "anitkabir",
@@ -259,8 +264,8 @@ window.ACTIVITIES = [
     "id": "uludag",
     "title": "Uludağ orman bandı",
     "city": "Bursa",
-    "category": "spor",
-    "tag": "Hareket",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "duration": "Yarım gün",
     "image": "images/uludag.jpg",
     "body": "Yükseklik, çam kokusu ve mevsimine göre kar veya yayla havası.",
@@ -269,7 +274,12 @@ window.ACTIVITIES = [
     "lng": 29.1289,
     "heading": 130,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Bursa"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "bursa-koza",
@@ -291,8 +301,8 @@ window.ACTIVITIES = [
     "id": "uzungol",
     "title": "Uzungöl doğa yürüyüşü",
     "city": "Trabzon",
-    "category": "doga",
-    "tag": "Doğa",
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
     "duration": "2–4 saat",
     "image": "images/uzungol.jpg",
     "body": "Sis ve çam içinde göl kenarı patika. Karadeniz yaylalarının sakin hali.",
@@ -301,7 +311,12 @@ window.ACTIVITIES = [
     "lng": 40.295,
     "heading": 115,
     "pitch": 8,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Trabzon"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "sumela",
@@ -443,8 +458,8 @@ window.ACTIVITIES = [
     "id": "nemrut",
     "title": "Nemrut Dağı gün doğumu rotası",
     "city": "Adıyaman",
-    "category": "doga",
-    "tag": "Doğa",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "duration": "Yarım gün",
     "image": "images/nemrut.jpg",
     "body": "Yüksek rakımlı manzara rotasında gün doğumu ve anıtsal heykelleri deneyimle.",
@@ -455,7 +470,13 @@ window.ACTIVITIES = [
     "lng": 38.7408,
     "heading": 90,
     "pitch": 10,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Adıyaman",
+      "Malatya"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "van-akdamar",
@@ -497,8 +518,8 @@ window.ACTIVITIES = [
     "id": "saklikent",
     "title": "Saklıkent kanyon doğa yürüyüşü",
     "city": "Muğla",
-    "category": "doga",
-    "tag": "Doğa",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "duration": "Yarım gün",
     "image": "images/saklikent.jpg",
     "body": "Kanyon çevresinde serin hava ve su sesleri eşliğinde doğa gezisi yap.",
@@ -509,7 +530,13 @@ window.ACTIVITIES = [
     "lng": 29.4036,
     "heading": 110,
     "pitch": 10,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Muğla",
+      "Antalya"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "kackar",
@@ -587,8 +614,8 @@ window.ACTIVITIES = [
     "id": "salda",
     "title": "Salda Gölü kıyı yürüyüşü",
     "city": "Burdur",
-    "category": "su",
-    "tag": "Su",
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
     "duration": "2–3 saat",
     "image": "images/salda.jpg",
     "body": "Hidromanyezit mineralli beyaz kumsalı ve turkuaz suyuyla krater gölü. Jeolojik yapısı Mars yüzeyiyle benzerlik gösterir.",
@@ -599,7 +626,12 @@ window.ACTIVITIES = [
     "lng": 29.6694,
     "heading": 45,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Burdur"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "ayder",
@@ -641,8 +673,8 @@ window.ACTIVITIES = [
     "id": "yedigoller",
     "title": "Yedigöller Milli Parkı patikası",
     "city": "Bolu",
-    "category": "doga",
-    "tag": "Doğa",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "duration": "3–5 saat",
     "image": "images/yedigoller.jpg",
     "body": "Büyükgöl, Seringöl ve Deringöl başta olmak üzere yedi heyelan gölü arasında yaprak döken orman yürüyüşü ve Kapankaya seyir terası.",
@@ -653,14 +685,19 @@ window.ACTIVITIES = [
     "lng": 31.7472,
     "heading": 80,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Bolu"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "abant",
     "title": "Abant Gölü çevre turu",
     "city": "Bolu",
-    "category": "aile",
-    "tag": "Aile",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "duration": "2–3 saat",
     "image": "images/abant.jpg",
     "body": "Çam ve köknar ağaçlarıyla çevrili 7 kilometrelik göl etrafında düz yürüyüş, bisiklet veya piknik molası.",
@@ -671,7 +708,12 @@ window.ACTIVITIES = [
     "lng": 31.2806,
     "heading": 190,
     "pitch": 5,
-    "fov": 85
+    "fov": 85,
+    "cities": [
+      "Bolu"
+    ],
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
   },
   {
     "id": "ishakpasa",
@@ -1007,14 +1049,14 @@ window.ACTIVITIES = [
     "city": "Çanakkale",
     "title": "Troya Ören Yeri gezisi",
     "place": "Troya Ören Yeri",
-    "category": "arkeoloji",
-    "tag": "Arkeoloji",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "icon": "🏺",
     "duration": "2–4 saat (öneri)",
     "body": "Troya'nın ziyaret güzergâhında arkeolojik alan gezisi.",
     "tip": "Süre ulaşım hariç planlama önerisidir. Ziyaret öncesinde güncel açılış, erişim ve rezervasyon bilgilerini resmî kaynaktan kontrol edin.",
-    "source": "https://izmir.ktb.gov.tr/Eklenti/9446,gezi-programipdf.pdf?0=",
-    "sourceLabel": "Kültür ve Turizm Bakanlığı · gezi yerleri listesi",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
     "lat": 39.9575,
     "lng": 26.2389,
     "heading": 110,
@@ -1025,7 +1067,10 @@ window.ACTIVITIES = [
     "imageSource": "https://commons.wikimedia.org/wiki/File:Troy_archaeological_site_-_Turkey_(3).jpg",
     "imageArtist": "Radosław Botev",
     "imageLicense": "CC BY 3.0 pl",
-    "imageFile": "File:Troy archaeological site - Turkey (3).jpg"
+    "imageFile": "File:Troy archaeological site - Turkey (3).jpg",
+    "cities": [
+      "Çanakkale"
+    ]
   },
   {
     "id": "il-22",
@@ -1107,14 +1152,14 @@ window.ACTIVITIES = [
     "city": "Düzce",
     "title": "Güzeldere Şelalesi gezisi",
     "place": "Güzeldere Şelalesi",
-    "category": "selale",
-    "tag": "Şelaleler",
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
     "icon": "💧",
     "duration": "1–2 saat (öneri)",
     "body": "Gölyaka'da şelale seyri ve orman çevresinde doğa molası.",
     "tip": "Süre ulaşım hariç planlama önerisidir. Ziyaret öncesinde güncel açılış, erişim ve rezervasyon bilgilerini resmî kaynaktan kontrol edin.",
-    "source": "https://kulturportali.gov.tr/turkiye/duzce/gezilecekyer/tabiat-parklari",
-    "sourceLabel": "Resmî ziyaret noktası bilgisi",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
     "lat": 40.72,
     "lng": 31.0539,
     "heading": 160,
@@ -1125,7 +1170,10 @@ window.ACTIVITIES = [
     "imageSource": "https://commons.wikimedia.org/wiki/File:G%C3%BCzeldere_%C5%9Eelalesi_-_panoramio.jpg",
     "imageArtist": "Oğuz Han Erol",
     "imageLicense": "CC BY 3.0",
-    "imageFile": "File:Güzeldere Şelalesi - panoramio.jpg"
+    "imageFile": "File:Güzeldere Şelalesi - panoramio.jpg",
+    "cities": [
+      "Düzce"
+    ]
   },
   {
     "id": "il-27",
@@ -1804,14 +1852,14 @@ window.ACTIVITIES = [
     "city": "Osmaniye",
     "title": "Karatepe-Aslantaş Ören Yeri gezisi",
     "place": "Karatepe-Aslantaş Ören Yeri",
-    "category": "arkeoloji",
-    "tag": "Arkeoloji",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "icon": "🏺",
     "duration": "2–4 saat (öneri)",
     "body": "Millî park içindeki arkeolojik alan ve açık hava eserlerini tanıma.",
     "tip": "Süre ulaşım hariç planlama önerisidir. Ziyaret öncesinde güncel açılış, erişim ve rezervasyon bilgilerini resmî kaynaktan kontrol edin.",
-    "source": "https://kulturportali.gov.tr/turkiye/osmaniye/gezilecekyer/karatepe-aslantas-milli-parki",
-    "sourceLabel": "Resmî ziyaret noktası bilgisi",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
     "lat": 37.295,
     "lng": 36.2533,
     "heading": 140,
@@ -1822,7 +1870,10 @@ window.ACTIVITIES = [
     "imageSource": "https://commons.wikimedia.org/wiki/File:Tree_in_Karatepe-Aslanta%C5%9F_National_Park.jpg",
     "imageArtist": "Nur Çağlar",
     "imageLicense": "CC BY-SA 4.0",
-    "imageFile": "File:Tree in Karatepe-Aslantaş National Park.jpg"
+    "imageFile": "File:Tree in Karatepe-Aslantaş National Park.jpg",
+    "cities": [
+      "Osmaniye"
+    ]
   },
   {
     "id": "il-65",
@@ -2004,14 +2055,14 @@ window.ACTIVITIES = [
     "city": "Tokat",
     "title": "Ballıca Mağarası gezisi",
     "place": "Ballıca Mağarası",
-    "category": "magara",
-    "tag": "Mağaralar",
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
     "icon": "🪨",
     "duration": "1–2 saat (öneri)",
     "body": "Pazar ilçesinde mağara oluşumlarını ziyaret yollarından gözlemleme.",
     "tip": "Süre ulaşım hariç planlama önerisidir. Ziyaret öncesinde güncel açılış, erişim ve rezervasyon bilgilerini resmî kaynaktan kontrol edin.",
-    "source": "https://www.kulturportali.gov.tr/turkiye/tokat/gezilecekyer/ballica-magarasi",
-    "sourceLabel": "Resmî ziyaret noktası bilgisi",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
     "lat": 40.2289,
     "lng": 36.3017,
     "heading": 150,
@@ -2022,7 +2073,10 @@ window.ACTIVITIES = [
     "imageSource": "https://commons.wikimedia.org/wiki/File:Tokat_Ball%C4%B1ca_Ma%C4%9Faras%C4%B1.jpg",
     "imageArtist": "Aybike Kaplan",
     "imageLicense": "CC BY-SA 4.0",
-    "imageFile": "File:Tokat Ballıca Mağarası.jpg"
+    "imageFile": "File:Tokat Ballıca Mağarası.jpg",
+    "cities": [
+      "Tokat"
+    ]
   },
   {
     "id": "il-75",
@@ -2103,14 +2157,14 @@ window.ACTIVITIES = [
     "city": "Yozgat",
     "title": "Yozgat Çamlığı Milli Parkı gezisi",
     "place": "Yozgat Çamlığı Milli Parkı",
-    "category": "doga",
-    "tag": "Doğa",
+    "category": "milli",
+    "tag": "Millî Parklar",
     "icon": "🌿",
     "duration": "2–4 saat (öneri)",
     "body": "Çamlık'ta orman yürüyüşü ve açık hava molası.",
     "tip": "Süre ulaşım hariç planlama önerisidir. Ziyaret öncesinde güncel açılış, erişim ve rezervasyon bilgilerini resmî kaynaktan kontrol edin.",
-    "source": "https://www.kulturportali.gov.tr/turkiye/yozgat/gezilecekyer/camlik-milli-parki",
-    "sourceLabel": "Resmî ziyaret noktası bilgisi",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
     "lat": 39.8067,
     "lng": 34.8033,
     "heading": 180,
@@ -2121,7 +2175,10 @@ window.ACTIVITIES = [
     "imageSource": "https://commons.wikimedia.org/wiki/File:Yozgat-%C3%A7aml%C4%B1%C4%9F%C4%B1-milli-park%C4%B1.jpg",
     "imageArtist": "Sevdeartun",
     "imageLicense": "CC BY-SA 4.0",
-    "imageFile": "File:Yozgat-çamlığı-milli-parkı.jpg"
+    "imageFile": "File:Yozgat-çamlığı-milli-parkı.jpg",
+    "cities": [
+      "Yozgat"
+    ]
   },
   {
     "id": "il-80",
@@ -2147,5 +2204,6214 @@ window.ACTIVITIES = [
     "imageArtist": "İncelemeelemani",
     "imageLicense": "CC BY-SA 4.0",
     "imageFile": "File:Gökgöl Mağarası Zonguldak (3).jpg"
+  },
+  {
+    "id": "dkmp-milli-1",
+    "title": "Akdağ Millî Parkı",
+    "place": "Akdağ Millî Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar",
+      "Denizli"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar-Denizli sınırlarındaki Akdağ Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Akda%C4%9F_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Akdağ Millî Parkı · Afyonkarahisar",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Akda%C4%9F_Milli_Park%C4%B1.jpg",
+    "imageArtist": "dogadakiler.com",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Akdağ Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-2",
+    "title": "Başkomutan Tarihî Millî Parkı",
+    "place": "Başkomutan Tarihî Millî Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar",
+      "Kütahya",
+      "Uşak"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar-Kütahya-Uşak sınırlarındaki Başkomutan Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Zafertepe_%C3%87alk%C3%B6y_Zafer_An%C4%B1t%C4%B1%2C_K%C3%BCtahya.jpg/1280px-Zafertepe_%C3%87alk%C3%B6y_Zafer_An%C4%B1t%C4%B1%2C_K%C3%BCtahya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Başkomutan Tarihî Millî Parkı · Afyonkarahisar",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Zafertepe_%C3%87alk%C3%B6y_Zafer_An%C4%B1t%C4%B1,_K%C3%BCtahya.jpg",
+    "imageArtist": "Uzak esme",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Zafertepe Çalköy Zafer Anıtı, Kütahya.jpg"
+  },
+  {
+    "id": "dkmp-milli-3",
+    "title": "Ağrı Dağı Millî Parkı",
+    "place": "Ağrı Dağı Millî Parkı",
+    "city": "Ağrı",
+    "cities": [
+      "Ağrı",
+      "Iğdır"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Ağrı-Iğdır sınırlarındaki Ağrı Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/A%C4%9Fr%C4%B1_da%C4%9F%C4%B1_milli_park%C4%B1_ve_ishakpa%C5%9Fa_saray%C4%B1.jpg/1280px-A%C4%9Fr%C4%B1_da%C4%9F%C4%B1_milli_park%C4%B1_ve_ishakpa%C5%9Fa_saray%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ağrı Dağı Millî Parkı · Ağrı",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:A%C4%9Fr%C4%B1_da%C4%9F%C4%B1_milli_park%C4%B1_ve_ishakpa%C5%9Fa_saray%C4%B1.jpg",
+    "imageArtist": "Mdiler04",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Ağrı dağı milli parkı ve ishakpaşa sarayı.jpg"
+  },
+  {
+    "id": "dkmp-milli-4",
+    "title": "Soğuksu Millî Parkı",
+    "place": "Soğuksu Millî Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Soğuksu Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/So%C4%9Fuksu_Milli_Park%C4%B1.jpg/1280px-So%C4%9Fuksu_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Soğuksu Millî Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:So%C4%9Fuksu_Milli_Park%C4%B1.jpg",
+    "imageArtist": "YasinYasa2003",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Soğuksu Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-5",
+    "title": "Sakarya Meydan Muharebesi Tarihî Millî Parkı",
+    "place": "Sakarya Meydan Muharebesi Tarihî Millî Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Sakarya Meydan Muharebesi Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/Sakarya_Meydan_Muharebesi_Tarih%C3%AE_Mill%C3%AE_Park%C4%B1_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Sakarya Meydan Muharebesi Tarihî Millî Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sakarya_Meydan_Muharebesi_Tarih%C3%AE_Mill%C3%AE_Park%C4%B1_2023.jpg",
+    "imageArtist": "Emin1906",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sakarya Meydan Muharebesi Tarihî Millî Parkı 2023.jpg"
+  },
+  {
+    "id": "dkmp-milli-6",
+    "title": "Sarıçalı Dağı Millî Parkı",
+    "place": "Sarıçalı Dağı Millî Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Sarıçalı Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-7",
+    "title": "Güllük Dağı - Termessos Millî Parkı",
+    "place": "Güllük Dağı - Termessos Millî Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Güllük Dağı - Termessos Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Gulluk_Mountain_National_Park_from_Termessos_-_September_2016.jpg/1280px-Gulluk_Mountain_National_Park_from_Termessos_-_September_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Güllük Dağı - Termessos Millî Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Gulluk_Mountain_National_Park_from_Termessos_-_September_2016.jpg",
+    "imageArtist": "Ilkerulker",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Gulluk Mountain National Park from Termessos - September 2016.jpg"
+  },
+  {
+    "id": "dkmp-milli-8",
+    "title": "Beydağları Sahil Millî Parkı",
+    "place": "Beydağları Sahil Millî Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Beydağları Sahil Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-9",
+    "title": "Altınbeşik Mağarası Millî Parkı",
+    "place": "Altınbeşik Mağarası Millî Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Altınbeşik Mağarası Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Alt%C4%B1nbe%C5%9Fik_Cave_National_Park.jpg/1280px-Alt%C4%B1nbe%C5%9Fik_Cave_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Altınbeşik Mağarası Millî Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Alt%C4%B1nbe%C5%9Fik_Cave_National_Park.jpg",
+    "imageArtist": "Damira Fedorova",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Altınbeşik Cave National Park.jpg"
+  },
+  {
+    "id": "dkmp-milli-10",
+    "title": "Köprülü Kanyon Millî Parkı",
+    "place": "Köprülü Kanyon Millî Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya",
+      "Isparta"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya-Isparta sınırlarındaki Köprülü Kanyon Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/K%C3%B6pr%C3%BCl%C3%BC_Kanyon_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Köprülü Kanyon Millî Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C3%B6pr%C3%BCl%C3%BC_Kanyon_Milli_Park%C4%B1.jpg",
+    "imageArtist": "BubbleAero24",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Köprülü Kanyon Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-11",
+    "title": "Hatila Vadisi Millî Parkı",
+    "place": "Hatila Vadisi Millî Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Hatila Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Hatila_Vadisi_Milli_Park%C4%B1.jpg/1280px-Hatila_Vadisi_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Hatila Vadisi Millî Parkı · Artvin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Hatila_Vadisi_Milli_Park%C4%B1.jpg",
+    "imageArtist": "Gezgin renkler",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Hatila Vadisi Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-12",
+    "title": "Kaçkar Dağları Millî Parkı",
+    "place": "Kaçkar Dağları Millî Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Kaçkar Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Rize%2C_Ka%C3%A7kar_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1.jpg/1280px-Rize%2C_Ka%C3%A7kar_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kaçkar Dağları Millî Parkı · Artvin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Rize,_Ka%C3%A7kar_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1.jpg",
+    "imageArtist": "Merve ÇELİK",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Rize, Kaçkar Dağları Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-13",
+    "title": "Dilek Y. – B. Menderes D. Millî Parkı",
+    "place": "Dilek Y. – B. Menderes D. Millî Parkı",
+    "city": "Aydın",
+    "cities": [
+      "Aydın"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Aydın sınırlarındaki Dilek Y. – B. Menderes D. Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-14",
+    "title": "Kuşcenneti Millî Parkı",
+    "place": "Kuşcenneti Millî Parkı",
+    "city": "Balıkesir",
+    "cities": [
+      "Balıkesir"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Balıkesir sınırlarındaki Kuşcenneti Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Manyas_Ku%C5%9F_Cenneti.jpg/1280px-Manyas_Ku%C5%9F_Cenneti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kuşcenneti Millî Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Manyas_Ku%C5%9F_Cenneti.jpg",
+    "imageArtist": "Ibrahimarslanca",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Manyas Kuş Cenneti.jpg"
+  },
+  {
+    "id": "dkmp-milli-15",
+    "title": "Kazdağı Millî Parkı",
+    "place": "Kazdağı Millî Parkı",
+    "city": "Balıkesir",
+    "cities": [
+      "Balıkesir"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Balıkesir sınırlarındaki Kazdağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Kazda%C4%9F%C4%B1_Milli_Park%C4%B1.jpg/1280px-Kazda%C4%9F%C4%B1_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kazdağı Millî Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kazda%C4%9F%C4%B1_Milli_Park%C4%B1.jpg",
+    "imageArtist": "Kirmazeytin",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kazdağı Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-16",
+    "title": "Kop Dağı Müdafaası Tarihî Millî Parkı",
+    "place": "Kop Dağı Müdafaası Tarihî Millî Parkı",
+    "city": "Bayburt",
+    "cities": [
+      "Bayburt",
+      "Erzurum"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Bayburt-Erzurum sınırlarındaki Kop Dağı Müdafaası Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/KOP_GE%C3%87%C4%B0D%C4%B0_2.jpg/1280px-KOP_GE%C3%87%C4%B0D%C4%B0_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kop Dağı Müdafaası Tarihî Millî Parkı · Bayburt",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:KOP_GE%C3%87%C4%B0D%C4%B0_2.jpg",
+    "imageArtist": "Yenertan",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:KOP GEÇİDİ 2.jpg"
+  },
+  {
+    "id": "dkmp-milli-21",
+    "title": "Boğazköy – Alacahöyük Millî Parkı",
+    "place": "Boğazköy – Alacahöyük Millî Parkı",
+    "city": "Çorum",
+    "cities": [
+      "Çorum"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Çorum sınırlarındaki Boğazköy – Alacahöyük Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Lion_Gate%2C_Hattusa_01.jpg/1280px-Lion_Gate%2C_Hattusa_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Boğazköy – Alacahöyük Millî Parkı · Çorum",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lion_Gate,_Hattusa_01.jpg",
+    "imageArtist": "Bernard Gagnon",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Lion Gate, Hattusa 01.jpg"
+  },
+  {
+    "id": "dkmp-milli-22",
+    "title": "Honaz Dağı Millî Parkı",
+    "place": "Honaz Dağı Millî Parkı",
+    "city": "Denizli",
+    "cities": [
+      "Denizli"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Denizli sınırlarındaki Honaz Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Karl%C4%B1_Honaz_Da%C4%9F%C4%B1.jpg/1280px-Karl%C4%B1_Honaz_Da%C4%9F%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Honaz Dağı Millî Parkı · Denizli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karl%C4%B1_Honaz_Da%C4%9F%C4%B1.jpg",
+    "imageArtist": "Himmet401",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Karlı Honaz Dağı.jpg"
+  },
+  {
+    "id": "dkmp-milli-23",
+    "title": "Gala Gölü Millî Parkı",
+    "place": "Gala Gölü Millî Parkı",
+    "city": "Edirne",
+    "cities": [
+      "Edirne"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Edirne sınırlarındaki Gala Gölü Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/A_Day_in_Gala_Lake_National_Park.jpg/1280px-A_Day_in_Gala_Lake_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Gala Gölü Millî Parkı · Edirne",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:A_Day_in_Gala_Lake_National_Park.jpg",
+    "imageArtist": "Cems77",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:A Day in Gala Lake National Park.jpg"
+  },
+  {
+    "id": "dkmp-milli-24",
+    "title": "Nene Hatun Tarihî Millî Parkı",
+    "place": "Nene Hatun Tarihî Millî Parkı",
+    "city": "Erzurum",
+    "cities": [
+      "Erzurum"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Erzurum sınırlarındaki Nene Hatun Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Nene_Hatun_Historical_National_Park.jpg/1280px-Nene_Hatun_Historical_National_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Nene Hatun Tarihî Millî Parkı · Erzurum",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Nene_Hatun_Historical_National_Park.jpg",
+    "imageArtist": "Muhammed Yahya Kaya",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Nene Hatun Historical National Park.jpg"
+  },
+  {
+    "id": "dkmp-milli-25",
+    "title": "Hakkari Cilo ve Sat Dağları Millî Parkı",
+    "place": "Hakkari Cilo ve Sat Dağları Millî Parkı",
+    "city": "Hakkari",
+    "cities": [
+      "Hakkari"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Hakkari sınırlarındaki Hakkari Cilo ve Sat Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Hakk%C3%A2ri_Cilo_and_Sat_Mountains_jully_2023.jpg/1280px-Hakk%C3%A2ri_Cilo_and_Sat_Mountains_jully_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Hakkari Cilo ve Sat Dağları Millî Parkı · Hakkari",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Hakk%C3%A2ri_Cilo_and_Sat_Mountains_jully_2023.jpg",
+    "imageArtist": "Arcmem",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Hakkâri Cilo and Sat Mountains jully 2023.jpg"
+  },
+  {
+    "id": "dkmp-milli-26",
+    "title": "Kızıldağ Millî Parkı",
+    "place": "Kızıldağ Millî Parkı",
+    "city": "Isparta",
+    "cities": [
+      "Isparta"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Isparta sınırlarındaki Kızıldağ Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/K%C4%B1z%C4%B1lda%C4%9F_milli_park%C4%B1-%C5%9Earkikaraaga%C3%A7.jpg/1280px-K%C4%B1z%C4%B1lda%C4%9F_milli_park%C4%B1-%C5%9Earkikaraaga%C3%A7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kızıldağ Millî Parkı · Isparta",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C4%B1z%C4%B1lda%C4%9F_milli_park%C4%B1-%C5%9Earkikaraaga%C3%A7.jpg",
+    "imageArtist": "Nazmi32",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kızıldağ milli parkı-Şarkikaraagaç.jpg"
+  },
+  {
+    "id": "dkmp-milli-27",
+    "title": "Kovada Gölü Millî Parkı",
+    "place": "Kovada Gölü Millî Parkı",
+    "city": "Isparta",
+    "cities": [
+      "Isparta"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Isparta sınırlarındaki Kovada Gölü Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Kovada_G%C3%B6l%C3%BC_Milli_Park%C4%B1.jpg/1280px-Kovada_G%C3%B6l%C3%BC_Milli_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kovada Gölü Millî Parkı · Isparta",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kovada_G%C3%B6l%C3%BC_Milli_Park%C4%B1.jpg",
+    "imageArtist": "BilgeKorkmaz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kovada Gölü Milli Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-28",
+    "title": "Geben Vadisi Millî Parkı",
+    "place": "Geben Vadisi Millî Parkı",
+    "city": "Kahramanmaraş",
+    "cities": [
+      "Kahramanmaraş"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kahramanmaraş sınırlarındaki Geben Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Halkal%C4%B1_Yaylas%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Geben Vadisi Millî Parkı · Kahramanmaraş",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Halkal%C4%B1_Yaylas%C4%B1.jpg",
+    "imageArtist": "",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Halkalı Yaylası.jpg"
+  },
+  {
+    "id": "dkmp-milli-29",
+    "title": "Sarıkamış-Allahuekber Dağları Millî Parkı",
+    "place": "Sarıkamış-Allahuekber Dağları Millî Parkı",
+    "city": "Kars",
+    "cities": [
+      "Kars",
+      "Erzurum"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kars-Erzurum sınırlarındaki Sarıkamış-Allahuekber Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Sar%C4%B1kam%C4%B1%C5%9F-Allahuekber_da%C4%9Flar%C4%B1_milli_park%C4%B1._Sar%C4%B1_%C3%A7am_a%C4%9Fa%C3%A7lar%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Sarıkamış-Allahuekber Dağları Millî Parkı · Kars",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sar%C4%B1kam%C4%B1%C5%9F-Allahuekber_da%C4%9Flar%C4%B1_milli_park%C4%B1._Sar%C4%B1_%C3%A7am_a%C4%9Fa%C3%A7lar%C4%B1.jpg",
+    "imageArtist": "Karagozerkan",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sarıkamış-Allahuekber dağları milli parkı. Sarı çam ağaçları.jpg"
+  },
+  {
+    "id": "dkmp-milli-30",
+    "title": "Küre Dağları Millî Parkı",
+    "place": "Küre Dağları Millî Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu",
+      "Bartın"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu-Bartın sınırlarındaki Küre Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/K%C3%BCre_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1_%28Horma_Kanyonu_-_3%29_%282024-06-20%29.jpg/1280px-K%C3%BCre_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1_%28Horma_Kanyonu_-_3%29_%282024-06-20%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Küre Dağları Millî Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C3%BCre_Da%C4%9Flar%C4%B1_Milli_Park%C4%B1_(Horma_Kanyonu_-_3)_(2024-06-20).jpg",
+    "imageArtist": "37BK",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Küre Dağları Milli Parkı (Horma Kanyonu - 3) (2024-06-20).jpg"
+  },
+  {
+    "id": "dkmp-milli-31",
+    "title": "Ilgaz Dağı Millî Parkı",
+    "place": "Ilgaz Dağı Millî Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu",
+      "Çankırı"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu-Çankırı sınırlarındaki Ilgaz Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ilgaz_Da%C4%9F%C4%B1_Milli_Park%C4%B1_%2812991492923%29.jpg/1280px-Ilgaz_Da%C4%9F%C4%B1_Milli_Park%C4%B1_%2812991492923%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ilgaz Dağı Millî Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ilgaz_Da%C4%9F%C4%B1_Milli_Park%C4%B1_(12991492923).jpg",
+    "imageArtist": "Jorge Franganillo",
+    "imageLicense": "CC BY 2.0",
+    "imageFile": "File:Ilgaz Dağı Milli Parkı (12991492923).jpg"
+  },
+  {
+    "id": "dkmp-milli-32",
+    "title": "İstiklal Yolu Tarihî Millî Parkı",
+    "place": "İstiklal Yolu Tarihî Millî Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu",
+      "Çankırı"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu-Çankırı sınırlarındaki İstiklal Yolu Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-33",
+    "title": "Sultan Sazlığı Millî Parkı",
+    "place": "Sultan Sazlığı Millî Parkı",
+    "city": "Kayseri",
+    "cities": [
+      "Kayseri"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kayseri sınırlarındaki Sultan Sazlığı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Sultan_Sazl%C4%B1%C4%9F%C4%B1_Mill%C3%AE_Park%C4%B1_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Sultan Sazlığı Millî Parkı · Kayseri",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sultan_Sazl%C4%B1%C4%9F%C4%B1_Mill%C3%AE_Park%C4%B1_2022.jpg",
+    "imageArtist": "Gülsara Alagöz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sultan Sazlığı Millî Parkı 2022.jpg"
+  },
+  {
+    "id": "dkmp-milli-34",
+    "title": "İğneada Longoz Ormanları Millî Parkı",
+    "place": "İğneada Longoz Ormanları Millî Parkı",
+    "city": "Kırklareli",
+    "cities": [
+      "Kırklareli"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Kırklareli sınırlarındaki İğneada Longoz Ormanları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/%C4%B0%C4%9Fneada_Longoz_Ormanlar%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "İğneada Longoz Ormanları Millî Parkı · Kırklareli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C4%B0%C4%9Fneada_Longoz_Ormanlar%C4%B1.jpg",
+    "imageArtist": "Rstsvs",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:İğneada Longoz Ormanları.jpg"
+  },
+  {
+    "id": "dkmp-milli-35",
+    "title": "Beyşehir Gölü Millî Parkı",
+    "place": "Beyşehir Gölü Millî Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Beyşehir Gölü Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Lake_Bey%C5%9Fehir_National_Park-Aug_2023.jpg/1280px-Lake_Bey%C5%9Fehir_National_Park-Aug_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Beyşehir Gölü Millî Parkı · Konya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lake_Bey%C5%9Fehir_National_Park-Aug_2023.jpg",
+    "imageArtist": "Ayşe Güllüoğlu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Lake Beyşehir National Park-Aug 2023.jpg"
+  },
+  {
+    "id": "dkmp-milli-36",
+    "title": "Derebucak Çamlık Mağaraları Millî Parkı",
+    "place": "Derebucak Çamlık Mağaraları Millî Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Derebucak Çamlık Mağaraları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Gavurbe%C5%9Fi%C4%9Fi_Ma%C4%9Faras%C4%B1.jpg/1280px-Gavurbe%C5%9Fi%C4%9Fi_Ma%C4%9Faras%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Derebucak Çamlık Mağaraları Millî Parkı · Konya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Gavurbe%C5%9Fi%C4%9Fi_Ma%C4%9Faras%C4%B1.jpg",
+    "imageArtist": "Kaandegeroglu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Gavurbeşiği Mağarası.jpg"
+  },
+  {
+    "id": "dkmp-milli-37",
+    "title": "Spil Dağı Millî Parkı",
+    "place": "Spil Dağı Millî Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki Spil Dağı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Spil_Da%C4%9F%C4%B1_Milli_Park%C4%B1_-_09.jpg/1280px-Spil_Da%C4%9F%C4%B1_Milli_Park%C4%B1_-_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Spil Dağı Millî Parkı · Manisa",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Spil_Da%C4%9F%C4%B1_Milli_Park%C4%B1_-_09.jpg",
+    "imageArtist": "Ğ harfi",
+    "imageLicense": "CC0",
+    "imageFile": "File:Spil Dağı Milli Parkı - 09.jpg"
+  },
+  {
+    "id": "dkmp-milli-38",
+    "title": "Marmaris Millî Parkı",
+    "place": "Marmaris Millî Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Marmaris Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Marmaris_Mili_Park%C4%B1.jpg/1280px-Marmaris_Mili_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Marmaris Millî Parkı · Muğla",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Marmaris_Mili_Park%C4%B1.jpg",
+    "imageArtist": "SanR48",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Marmaris Mili Parkı.jpg"
+  },
+  {
+    "id": "dkmp-milli-40",
+    "title": "Malazgirt Meydan Muharebesi Tarihî Millî Parkı",
+    "place": "Malazgirt Meydan Muharebesi Tarihî Millî Parkı",
+    "city": "Muş",
+    "cities": [
+      "Muş"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Muş sınırlarındaki Malazgirt Meydan Muharebesi Tarihî Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-41",
+    "title": "Aladağlar Millî Parkı",
+    "place": "Aladağlar Millî Parkı",
+    "city": "Niğde",
+    "cities": [
+      "Niğde",
+      "Adana",
+      "Kayseri"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Niğde-Adana-Kayseri sınırlarındaki Aladağlar Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Alada%C4%9Flar_Milli_Park%C4%B1_-_Aladaglar_National_Park_01.jpg/1280px-Alada%C4%9Flar_Milli_Park%C4%B1_-_Aladaglar_National_Park_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Aladağlar Millî Parkı · Niğde",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Alada%C4%9Flar_Milli_Park%C4%B1_-_Aladaglar_National_Park_01.jpg",
+    "imageArtist": "Zeynel Cebeci",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Aladağlar Milli Parkı - Aladaglar National Park 01.jpg"
+  },
+  {
+    "id": "dkmp-milli-43",
+    "title": "Karagöl – Sahara Millî Parkı",
+    "place": "Karagöl – Sahara Millî Parkı",
+    "city": "Rize",
+    "cities": [
+      "Rize",
+      "Artvin"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Rize-Artvin sınırlarındaki Karagöl – Sahara Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Karag%C3%B6l-Sahara_National_Park_entrance.jpg/1280px-Karag%C3%B6l-Sahara_National_Park_entrance.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Karagöl – Sahara Millî Parkı · Rize",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karag%C3%B6l-Sahara_National_Park_entrance.jpg",
+    "imageArtist": "BSRF",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Karagöl-Sahara National Park entrance.jpg"
+  },
+  {
+    "id": "dkmp-milli-44",
+    "title": "Botan Vadisi Millî Parkı",
+    "place": "Botan Vadisi Millî Parkı",
+    "city": "Siirt",
+    "cities": [
+      "Siirt"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Siirt sınırlarındaki Botan Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Botan_Vadisi_Milli_Park%C4%B1_Ku%C5%9F_Bak%C4%B1%C5%9F%C4%B1.jpg/1280px-Botan_Vadisi_Milli_Park%C4%B1_Ku%C5%9F_Bak%C4%B1%C5%9F%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Botan Vadisi Millî Parkı · Siirt",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Botan_Vadisi_Milli_Park%C4%B1_Ku%C5%9F_Bak%C4%B1%C5%9F%C4%B1.jpg",
+    "imageArtist": "Ceydanur Duygu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Botan Vadisi Milli Parkı Kuş Bakışı.jpg"
+  },
+  {
+    "id": "dkmp-milli-45",
+    "title": "Divriği Millî Parkı",
+    "place": "Divriği Millî Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Divriği Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-46",
+    "title": "Tek Tek Dağları Millî Parkı",
+    "place": "Tek Tek Dağları Millî Parkı",
+    "city": "Şanlıurfa",
+    "cities": [
+      "Şanlıurfa"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Şanlıurfa sınırlarındaki Tek Tek Dağları Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Urfa_1997_Desert_tour_179.jpg/1280px-Urfa_1997_Desert_tour_179.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Tek Tek Dağları Millî Parkı · Şanlıurfa",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Urfa_1997_Desert_tour_179.jpg",
+    "imageArtist": "Dosseman",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Urfa 1997 Desert tour 179.jpg"
+  },
+  {
+    "id": "dkmp-milli-47",
+    "title": "Altındere Vadisi Millî Parkı",
+    "place": "Altındere Vadisi Millî Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Altındere Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Alt%C4%B1ndere_Valley_National_Park_02.jpg/1280px-Alt%C4%B1ndere_Valley_National_Park_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Altındere Vadisi Millî Parkı · Trabzon",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Alt%C4%B1ndere_Valley_National_Park_02.jpg",
+    "imageArtist": "BSRF",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Altındere Valley National Park 02.jpg"
+  },
+  {
+    "id": "dkmp-milli-48",
+    "title": "Munzur Vadisi Millî Parkı",
+    "place": "Munzur Vadisi Millî Parkı",
+    "city": "Tunceli",
+    "cities": [
+      "Tunceli"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Tunceli sınırlarındaki Munzur Vadisi Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Munzur_Vadisi_Milli_Park%C4%B1_Munzur_G%C3%B6zeleri.jpg/1280px-Munzur_Vadisi_Milli_Park%C4%B1_Munzur_G%C3%B6zeleri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Munzur Vadisi Millî Parkı · Tunceli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Munzur_Vadisi_Milli_Park%C4%B1_Munzur_G%C3%B6zeleri.jpg",
+    "imageArtist": "Zgcnkygsz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Munzur Vadisi Milli Parkı Munzur Gözeleri.jpg"
+  },
+  {
+    "id": "dkmp-milli-50",
+    "title": "Fethiye - Kaş Deniz Milli Parkı Millî Parkı",
+    "place": "Fethiye - Kaş Deniz Milli Parkı Millî Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla",
+      "Antalya"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla - Antalya sınırlarındaki Fethiye - Kaş Deniz Milli Parkı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-51",
+    "title": "Kuzey Ege Deniz Milli Parkı Millî Parkı",
+    "place": "Kuzey Ege Deniz Milli Parkı Millî Parkı",
+    "city": "Çanakkale",
+    "cities": [
+      "Çanakkale",
+      "Tekirdağ"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Çanakkale - Tekirdağ sınırlarındaki Kuzey Ege Deniz Milli Parkı Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-milli-52",
+    "title": "Nemrut Kalderası Millî Parkı",
+    "place": "Nemrut Kalderası Millî Parkı",
+    "city": "Bitlis",
+    "cities": [
+      "Bitlis"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Bitlis sınırlarındaki Nemrut Kalderası Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Nemrut_Caldera_aerial.jpg/1280px-Nemrut_Caldera_aerial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Nemrut Kalderası Millî Parkı · Bitlis",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Nemrut_Caldera_aerial.jpg",
+    "imageArtist": "Erturac",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Nemrut Caldera aerial.jpg"
+  },
+  {
+    "id": "dkmp-milli-53",
+    "title": "Van Gölü Deveboynu Yarımadası Millî Parkı",
+    "place": "Van Gölü Deveboynu Yarımadası Millî Parkı",
+    "city": "Van",
+    "cities": [
+      "Van",
+      "Bitlis"
+    ],
+    "category": "milli",
+    "tag": "Millî Parklar",
+    "icon": "🏞️",
+    "duration": "Ziyaret planına göre",
+    "body": "Van - Bitlis sınırlarındaki Van Gölü Deveboynu Yarımadası Millî Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/27/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-54",
+    "title": "Dağılcak Tabiat Parkı",
+    "place": "Dağılcak Tabiat Parkı",
+    "city": "Adana",
+    "cities": [
+      "Adana"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Adana sınırlarındaki Dağılcak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Da%C4%9F%C4%B1lcak_Tabiat_Park%C4%B1%2C_Kozan_01.jpg/1280px-Da%C4%9F%C4%B1lcak_Tabiat_Park%C4%B1%2C_Kozan_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Dağılcak Tabiat Parkı · Adana",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Da%C4%9F%C4%B1lcak_Tabiat_Park%C4%B1,_Kozan_01.jpg",
+    "imageArtist": "Zeynel Cebeci",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Dağılcak Tabiat Parkı, Kozan 01.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-55",
+    "title": "Karataş Tabiat Parkı",
+    "place": "Karataş Tabiat Parkı",
+    "city": "Adana",
+    "cities": [
+      "Adana"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Adana sınırlarındaki Karataş Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Karata%C5%9F_tabiat_park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Karataş Tabiat Parkı · Adana",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karata%C5%9F_tabiat_park%C4%B1.jpg",
+    "imageArtist": "Abakbigan fatma",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Karataş tabiat parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-56",
+    "title": "Belemedik Tabiat Parkı",
+    "place": "Belemedik Tabiat Parkı",
+    "city": "Adana",
+    "cities": [
+      "Adana"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Adana sınırlarındaki Belemedik Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Belemedik_Tabiat_Park%C4%B1.jpg/1280px-Belemedik_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Belemedik Tabiat Parkı · Adana",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Belemedik_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Tipi01",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Belemedik Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-57",
+    "title": "Obruk Şelalesi Tabiat Parkı",
+    "place": "Obruk Şelalesi Tabiat Parkı",
+    "city": "Adana",
+    "cities": [
+      "Adana"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Adana sınırlarındaki Obruk Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-58",
+    "title": "Gölbaşı Gölleri Tabiat Parkı",
+    "place": "Gölbaşı Gölleri Tabiat Parkı",
+    "city": "Adıyaman",
+    "cities": [
+      "Adıyaman"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Adıyaman sınırlarındaki Gölbaşı Gölleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Lake_Golbasi_seat.jpg/1280px-Lake_Golbasi_seat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Gölbaşı Gölleri Tabiat Parkı · Adıyaman",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lake_Golbasi_seat.jpg",
+    "imageArtist": "Murseloz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Lake Golbasi seat.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-59",
+    "title": "26 Agustos Tabiat Parkı",
+    "place": "26 Agustos Tabiat Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar sınırlarındaki 26 Agustos Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/26_August_Nature_Park.jpg/1280px-26_August_Nature_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "26 Agustos Tabiat Parkı · Afyonkarahisar",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:26_August_Nature_Park.jpg",
+    "imageArtist": "Mustafacetin03",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:26 August Nature Park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-60",
+    "title": "Frig Vadisi Tabiat Parkı",
+    "place": "Frig Vadisi Tabiat Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar sınırlarındaki Frig Vadisi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Frig_Vadisi_Tabiat_Park%C4%B1.jpg/1280px-Frig_Vadisi_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Frig Vadisi Tabiat Parkı · Afyonkarahisar",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Frig_Vadisi_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Thecatcherintherye",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Frig Vadisi Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-61",
+    "title": "Erkmen Tabiat Parkı",
+    "place": "Erkmen Tabiat Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar sınırlarındaki Erkmen Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-62",
+    "title": "Yedikapı Tabiat Parkı",
+    "place": "Yedikapı Tabiat Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar sınırlarındaki Yedikapı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-63",
+    "title": "Dinar Pınarlı Tabiat Parkı",
+    "place": "Dinar Pınarlı Tabiat Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar sınırlarındaki Dinar Pınarlı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-64",
+    "title": "Sultandağı Tabiat Parkı",
+    "place": "Sultandağı Tabiat Parkı",
+    "city": "Afyonkarahisar",
+    "cities": [
+      "Afyonkarahisar"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Afyonkarahisar sınırlarındaki Sultandağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-65",
+    "title": "Boraboy Tabiat Parkı",
+    "place": "Boraboy Tabiat Parkı",
+    "city": "Amasya",
+    "cities": [
+      "Amasya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Amasya sınırlarındaki Boraboy Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Boraboy_G%C3%B6l%C3%BC_Tab%C4%B0at_Park%C4%B1.jpg/1280px-Boraboy_G%C3%B6l%C3%BC_Tab%C4%B0at_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Boraboy Tabiat Parkı · Amasya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Boraboy_G%C3%B6l%C3%BC_Tab%C4%B0at_Park%C4%B1.jpg",
+    "imageArtist": "gokhan guven batir",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Boraboy Gölü Tabİat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-66",
+    "title": "Çamkoru Tabiat Parkı",
+    "place": "Çamkoru Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Çamkoru Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%C3%87amkoru%2C_kurumu%C5%9F_a%C4%9Fa%C3%A7.jpg/1280px-%C3%87amkoru%2C_kurumu%C5%9F_a%C4%9Fa%C3%A7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Çamkoru Tabiat Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C3%87amkoru,_kurumu%C5%9F_a%C4%9Fa%C3%A7.jpg",
+    "imageArtist": "Adnan Bozkurt",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Çamkoru, kurumuş ağaç.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-67",
+    "title": "Şahinler Tabiat Parkı",
+    "place": "Şahinler Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Şahinler Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/2019_%C5%9Fahinler_nature_park.jpg/1280px-2019_%C5%9Fahinler_nature_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Şahinler Tabiat Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:2019_%C5%9Fahinler_nature_park.jpg",
+    "imageArtist": "Melike altinbas",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:2019 şahinler nature park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-68",
+    "title": "Eğriova Tabiat Parkı",
+    "place": "Eğriova Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Eğriova Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-69",
+    "title": "Sorgun Göleti Tabiat Parkı",
+    "place": "Sorgun Göleti Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Sorgun Göleti Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Sorgun_G%C3%B6leti_Tabiat_Park%C4%B1.jpg/1280px-Sorgun_G%C3%B6leti_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Sorgun Göleti Tabiat Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sorgun_G%C3%B6leti_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Kewocewo",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sorgun Göleti Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-70",
+    "title": "Kartaltepe Tabiat Parkı",
+    "place": "Kartaltepe Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Kartaltepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-71",
+    "title": "Aluçdağı Tabiat Parkı",
+    "place": "Aluçdağı Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Aluçdağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-72",
+    "title": "Tekkedağı Tabiat Parkı",
+    "place": "Tekkedağı Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Tekkedağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-73",
+    "title": "Çubuk Karagöl Tabiat Parkı",
+    "place": "Çubuk Karagöl Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Çubuk Karagöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/%C3%87ubuk_Karag%C3%B6l_Tabiat_Park%C4%B1_Resim_2.jpg/1280px-%C3%87ubuk_Karag%C3%B6l_Tabiat_Park%C4%B1_Resim_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Çubuk Karagöl Tabiat Parkı · Ankara",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C3%87ubuk_Karag%C3%B6l_Tabiat_Park%C4%B1_Resim_2.jpg",
+    "imageArtist": "Esma.Ünal.23",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Çubuk Karagöl Tabiat Parkı Resim 2.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-74",
+    "title": "Kelebekler Vadisi Tabiat Parkı",
+    "place": "Kelebekler Vadisi Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Kelebekler Vadisi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-75",
+    "title": "Durasan Şah Tabiat Parkı",
+    "place": "Durasan Şah Tabiat Parkı",
+    "city": "Ankara",
+    "cities": [
+      "Ankara"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ankara sınırlarındaki Durasan Şah Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-76",
+    "title": "Kurşunlu Şelalesi Tabiat Parkı",
+    "place": "Kurşunlu Şelalesi Tabiat Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Kurşunlu Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Kur%C5%9Funlu_%C5%9Eelalesi_Tabiat_Park%C4%B1.jpg/1280px-Kur%C5%9Funlu_%C5%9Eelalesi_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kurşunlu Şelalesi Tabiat Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kur%C5%9Funlu_%C5%9Eelalesi_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Murad Ahmedzade",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kurşunlu Şelalesi Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-77",
+    "title": "İncekum Tabiat Parkı",
+    "place": "İncekum Tabiat Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki İncekum Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/%C4%B0ncekum_sahili_4.jpg/1280px-%C4%B0ncekum_sahili_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "İncekum Tabiat Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C4%B0ncekum_sahili_4.jpg",
+    "imageArtist": "Satirdan kahraman",
+    "imageLicense": "CC0",
+    "imageFile": "File:İncekum sahili 4.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-78",
+    "title": "Mavikent Tabiat Parkı",
+    "place": "Mavikent Tabiat Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Mavikent Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Mavikent_Park.jpg/1280px-Mavikent_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Mavikent Tabiat Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Mavikent_Park.jpg",
+    "imageArtist": "Krystsina Kashtanava",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Mavikent Park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-79",
+    "title": "Tekirova Tabiat Parkı",
+    "place": "Tekirova Tabiat Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Tekirova Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-80",
+    "title": "Güver Kanyonu Tabiat Parkı",
+    "place": "Güver Kanyonu Tabiat Parkı",
+    "city": "Antalya",
+    "cities": [
+      "Antalya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Antalya sınırlarındaki Güver Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Lovely_day_in_G%C3%BCver.jpg/1280px-Lovely_day_in_G%C3%BCver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Güver Kanyonu Tabiat Parkı · Antalya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lovely_day_in_G%C3%BCver.jpg",
+    "imageArtist": "Coachkayee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Lovely day in Güver.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-81",
+    "title": "Cemal Tural Tabiat Parkı",
+    "place": "Cemal Tural Tabiat Parkı",
+    "city": "Ardahan",
+    "cities": [
+      "Ardahan"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ardahan sınırlarındaki Cemal Tural Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-82",
+    "title": "Borçka Karagöl Tabiat Parkı",
+    "place": "Borçka Karagöl Tabiat Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Borçka Karagöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Bor%C3%A7ka_Karag%C3%B6l_Tabiat_Park%C4%B1.jpg/1280px-Bor%C3%A7ka_Karag%C3%B6l_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Borçka Karagöl Tabiat Parkı · Artvin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bor%C3%A7ka_Karag%C3%B6l_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Mutlu88",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Borçka Karagöl Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-83",
+    "title": "Altıparmak Tabiat Parkı",
+    "place": "Altıparmak Tabiat Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Altıparmak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Alt%C4%B1parmak_range.jpg/1280px-Alt%C4%B1parmak_range.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Altıparmak Tabiat Parkı · Artvin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Alt%C4%B1parmak_range.jpg",
+    "imageArtist": "Scott Dexter",
+    "imageLicense": "CC BY-SA 2.0",
+    "imageFile": "File:Altıparmak range.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-84",
+    "title": "Balıklı Güneşli Şelaleleri Tabiat Parkı",
+    "place": "Balıklı Güneşli Şelaleleri Tabiat Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Balıklı Güneşli Şelaleleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-85",
+    "title": "Tavşan Tepesi Tabiat Parkı",
+    "place": "Tavşan Tepesi Tabiat Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Tavşan Tepesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-86",
+    "title": "Cehennem Deresi Kanyonu Tabiat Parkı",
+    "place": "Cehennem Deresi Kanyonu Tabiat Parkı",
+    "city": "Artvin",
+    "cities": [
+      "Artvin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Artvin sınırlarındaki Cehennem Deresi Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-87",
+    "title": "Tavşanburnu Tabiat Parkı",
+    "place": "Tavşanburnu Tabiat Parkı",
+    "city": "Aydın",
+    "cities": [
+      "Aydın"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Aydın sınırlarındaki Tavşanburnu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Tav%C5%9Fan_Burnu_Tabiat_Park%C4%B1_1_Kas%C4%B1m_2020.jpg/1280px-Tav%C5%9Fan_Burnu_Tabiat_Park%C4%B1_1_Kas%C4%B1m_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Tavşanburnu Tabiat Parkı · Aydın",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Tav%C5%9Fan_Burnu_Tabiat_Park%C4%B1_1_Kas%C4%B1m_2020.jpg",
+    "imageArtist": "Furkan2821144",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Tavşan Burnu Tabiat Parkı 1 Kasım 2020.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-88",
+    "title": "Şarlan Tabiat Parkı",
+    "place": "Şarlan Tabiat Parkı",
+    "city": "Aydın",
+    "cities": [
+      "Aydın"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Aydın sınırlarındaki Şarlan Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-89",
+    "title": "Çağlayan Tabiat Parkı",
+    "place": "Çağlayan Tabiat Parkı",
+    "city": "Aydın",
+    "cities": [
+      "Aydın"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Aydın sınırlarındaki Çağlayan Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-90",
+    "title": "Bafa Gölü Tabiat Parkı",
+    "place": "Bafa Gölü Tabiat Parkı",
+    "city": "Aydın",
+    "cities": [
+      "Aydın",
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Aydın-Muğla sınırlarındaki Bafa Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Bafa_G%C3%B6l%C3%BC_Tabiat_Park%C4%B1.jpg/1280px-Bafa_G%C3%B6l%C3%BC_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Bafa Gölü Tabiat Parkı · Aydın",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bafa_G%C3%B6l%C3%BC_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Bya~trwiki",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Bafa Gölü Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-91",
+    "title": "Ayvalık Adaları Tabiat Parkı",
+    "place": "Ayvalık Adaları Tabiat Parkı",
+    "city": "Balıkesir",
+    "cities": [
+      "Balıkesir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Balıkesir sınırlarındaki Ayvalık Adaları Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Comet_NEOWISE_over_Ayval%C4%B1k_Islands_Nature_Park.jpg/1280px-Comet_NEOWISE_over_Ayval%C4%B1k_Islands_Nature_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ayvalık Adaları Tabiat Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Comet_NEOWISE_over_Ayval%C4%B1k_Islands_Nature_Park.jpg",
+    "imageArtist": "Otemiz (Oğulcan Temiz)",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Comet NEOWISE over Ayvalık Islands Nature Park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-92",
+    "title": "Sarımsaklı Tabiat Parkı",
+    "place": "Sarımsaklı Tabiat Parkı",
+    "city": "Balıkesir",
+    "cities": [
+      "Balıkesir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Balıkesir sınırlarındaki Sarımsaklı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-93",
+    "title": "Darıdere Tabiat Parkı",
+    "place": "Darıdere Tabiat Parkı",
+    "city": "Balıkesir",
+    "cities": [
+      "Balıkesir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Balıkesir sınırlarındaki Darıdere Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Dar%C4%B1dere_Tabiat_Park%C4%B1_-_A%C4%9Fustos_2019_DSC07864_hamdigumus.jpg/1280px-Dar%C4%B1dere_Tabiat_Park%C4%B1_-_A%C4%9Fustos_2019_DSC07864_hamdigumus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Darıdere Tabiat Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Dar%C4%B1dere_Tabiat_Park%C4%B1_-_A%C4%9Fustos_2019_DSC07864_hamdigumus.jpg",
+    "imageArtist": "Hamdigumus",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Darıdere Tabiat Parkı - Ağustos 2019 DSC07864 hamdigumus.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-94",
+    "title": "Değirmenboğazı Tabiat Parkı",
+    "place": "Değirmenboğazı Tabiat Parkı",
+    "city": "Balıkesir",
+    "cities": [
+      "Balıkesir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Balıkesir sınırlarındaki Değirmenboğazı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/De%C4%9Firmenbo%C4%9Faz%C4%B1_Tabiat_Park%C4%B1.jpg/1280px-De%C4%9Firmenbo%C4%9Faz%C4%B1_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Değirmenboğazı Tabiat Parkı · Balıkesir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:De%C4%9Firmenbo%C4%9Faz%C4%B1_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Fatma Nur Karakurt",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Değirmenboğazı Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-95",
+    "title": "Ahatlar Tabiat Parkı",
+    "place": "Ahatlar Tabiat Parkı",
+    "city": "Bartın",
+    "cities": [
+      "Bartın"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bartın sınırlarındaki Ahatlar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-96",
+    "title": "Balamba Tabiat Parkı",
+    "place": "Balamba Tabiat Parkı",
+    "city": "Bartın",
+    "cities": [
+      "Bartın"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bartın sınırlarındaki Balamba Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Balamba_tabiat_park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Balamba Tabiat Parkı · Bartın",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Balamba_tabiat_park%C4%B1.jpg",
+    "imageArtist": "Ünaydın",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Balamba tabiat parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-97",
+    "title": "Gürcüoluk Mağarası Tabiat Parkı",
+    "place": "Gürcüoluk Mağarası Tabiat Parkı",
+    "city": "Bartın",
+    "cities": [
+      "Bartın"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bartın sınırlarındaki Gürcüoluk Mağarası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-98",
+    "title": "Malabadi Tabiat Parkı",
+    "place": "Malabadi Tabiat Parkı",
+    "city": "Batman",
+    "cities": [
+      "Batman"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Batman sınırlarındaki Malabadi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Malabadi-bridge.JPG/1280px-Malabadi-bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Malabadi Tabiat Parkı · Batman",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Malabadi-bridge.JPG",
+    "imageArtist": "Vikiçizer",
+    "imageLicense": "Public domain",
+    "imageFile": "File:Malabadi-bridge.JPG"
+  },
+  {
+    "id": "dkmp-tabiat-99",
+    "title": "Yakupabdal Tabiat Parkı",
+    "place": "Yakupabdal Tabiat Parkı",
+    "city": "Bayburt",
+    "cities": [
+      "Bayburt"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bayburt sınırlarındaki Yakupabdal Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-100",
+    "title": "Küçükelmalı Tabiat Parkı",
+    "place": "Küçükelmalı Tabiat Parkı",
+    "city": "Bilecik",
+    "cities": [
+      "Bilecik"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bilecik sınırlarındaki Küçükelmalı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Bilecik%2C_K%C3%BC%C3%A7%C3%BCkelmal%C4%B1_tabiat_park%C4%B1_g%C3%B6leti.jpg/1280px-Bilecik%2C_K%C3%BC%C3%A7%C3%BCkelmal%C4%B1_tabiat_park%C4%B1_g%C3%B6leti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Küçükelmalı Tabiat Parkı · Bilecik",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bilecik,_K%C3%BC%C3%A7%C3%BCkelmal%C4%B1_tabiat_park%C4%B1_g%C3%B6leti.jpg",
+    "imageArtist": "Guraysamber",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Bilecik, Küçükelmalı tabiat parkı göleti.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-101",
+    "title": "Harmankaya Kanyonu Tabiat Parkı",
+    "place": "Harmankaya Kanyonu Tabiat Parkı",
+    "city": "Bilecik",
+    "cities": [
+      "Bilecik"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bilecik sınırlarındaki Harmankaya Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Harmankaya_Kanyonu.jpg/1280px-Harmankaya_Kanyonu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Harmankaya Kanyonu Tabiat Parkı · Bilecik",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Harmankaya_Kanyonu.jpg",
+    "imageArtist": "Acar54",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Harmankaya Kanyonu.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-102",
+    "title": "Kınık Şelalesi Tabiat Parkı",
+    "place": "Kınık Şelalesi Tabiat Parkı",
+    "city": "Bilecik",
+    "cities": [
+      "Bilecik"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bilecik sınırlarındaki Kınık Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-103",
+    "title": "Erikli Tabiat Parkı",
+    "place": "Erikli Tabiat Parkı",
+    "city": "Bilecik",
+    "cities": [
+      "Bilecik"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bilecik sınırlarındaki Erikli Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-104",
+    "title": "Göksu Tabiat Parkı",
+    "place": "Göksu Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Göksu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/G%C3%B6ksu_tabiat_park%C4%B1.jpg/1280px-G%C3%B6ksu_tabiat_park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Göksu Tabiat Parkı · Bolu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:G%C3%B6ksu_tabiat_park%C4%B1.jpg",
+    "imageArtist": "Yasemin Gökşen",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Göksu tabiat parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-105",
+    "title": "Beşpınarlar Tabiat Parkı",
+    "place": "Beşpınarlar Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Beşpınarlar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-106",
+    "title": "Bolu Karagöl Tabiat Parkı",
+    "place": "Bolu Karagöl Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Bolu Karagöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Bolu_-_Karag%C3%B6l.jpg/1280px-Bolu_-_Karag%C3%B6l.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Bolu Karagöl Tabiat Parkı · Bolu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bolu_-_Karag%C3%B6l.jpg",
+    "imageArtist": "Uweys90",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Bolu - Karagöl.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-107",
+    "title": "Sünnet Gölü Tabiat Parkı",
+    "place": "Sünnet Gölü Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Sünnet Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Lake_S%C3%BCnnet_in_the_fall_01.jpg/1280px-Lake_S%C3%BCnnet_in_the_fall_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Sünnet Gölü Tabiat Parkı · Bolu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lake_S%C3%BCnnet_in_the_fall_01.jpg",
+    "imageArtist": "Linda M Caldwell",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Lake Sünnet in the fall 01.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-108",
+    "title": "Bolu Gölcük Tabiat Parkı",
+    "place": "Bolu Gölcük Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Bolu Gölcük Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Bolu_G%C3%B6lc%C3%BCk_Tabiat_Park%C4%B1_A%C4%9Fustos_2024_03.jpg/1280px-Bolu_G%C3%B6lc%C3%BCk_Tabiat_Park%C4%B1_A%C4%9Fustos_2024_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Bolu Gölcük Tabiat Parkı · Bolu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Bolu_G%C3%B6lc%C3%BCk_Tabiat_Park%C4%B1_A%C4%9Fustos_2024_03.jpg",
+    "imageArtist": "Sezenkerem",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Bolu Gölcük Tabiat Parkı Ağustos 2024 03.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-109",
+    "title": "Sülüklügöl Tabiat Parkı",
+    "place": "Sülüklügöl Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Sülüklügöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-110",
+    "title": "Kargalı Gölcük Tabiat Parkı",
+    "place": "Kargalı Gölcük Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Kargalı Gölcük Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-111",
+    "title": "Ayıkayası Tabiat Parkı",
+    "place": "Ayıkayası Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Ayıkayası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-112",
+    "title": "Karaca Tabiat Parkı",
+    "place": "Karaca Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Karaca Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-113",
+    "title": "Deregöl Tabiat Parkı",
+    "place": "Deregöl Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Deregöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-114",
+    "title": "Arkut Dağı Tabiat Parkı",
+    "place": "Arkut Dağı Tabiat Parkı",
+    "city": "Bolu",
+    "cities": [
+      "Bolu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bolu sınırlarındaki Arkut Dağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-116",
+    "title": "Serenler Tepesi Tabiat Parkı",
+    "place": "Serenler Tepesi Tabiat Parkı",
+    "city": "Burdur",
+    "cities": [
+      "Burdur"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Burdur sınırlarındaki Serenler Tepesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-117",
+    "title": "Karanlıkdere Kanyonu Tabiat Parkı",
+    "place": "Karanlıkdere Kanyonu Tabiat Parkı",
+    "city": "Burdur",
+    "cities": [
+      "Burdur",
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Burdur-Muğla sınırlarındaki Karanlıkdere Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-118",
+    "title": "Suuçtu Tabiat Parkı",
+    "place": "Suuçtu Tabiat Parkı",
+    "city": "Bursa",
+    "cities": [
+      "Bursa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bursa sınırlarındaki Suuçtu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/SUU%C3%87TU_KAYIN_ORMANI_KARTPOSTALLIK_B%C4%B0R_FOTO%C4%9ERAF_-_panoramio.jpg/1280px-SUU%C3%87TU_KAYIN_ORMANI_KARTPOSTALLIK_B%C4%B0R_FOTO%C4%9ERAF_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Suuçtu Tabiat Parkı · Bursa",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:SUU%C3%87TU_KAYIN_ORMANI_KARTPOSTALLIK_B%C4%B0R_FOTO%C4%9ERAF_-_panoramio.jpg",
+    "imageArtist": "MERMERCİ ÖZGÜR",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:SUUÇTU KAYIN ORMANI KARTPOSTALLIK BİR FOTOĞRAF - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-119",
+    "title": "Sadağı Kanyonu Tabiat Parkı",
+    "place": "Sadağı Kanyonu Tabiat Parkı",
+    "city": "Bursa",
+    "cities": [
+      "Bursa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bursa sınırlarındaki Sadağı Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Sada%C4%9F%C4%B1_kanyonu.jpg/1280px-Sada%C4%9F%C4%B1_kanyonu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Sadağı Kanyonu Tabiat Parkı · Bursa",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sada%C4%9F%C4%B1_kanyonu.jpg",
+    "imageArtist": "Ouzannnn",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sadağı kanyonu.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-120",
+    "title": "Sansarak Kanyonu Tabiat Parkı",
+    "place": "Sansarak Kanyonu Tabiat Parkı",
+    "city": "Bursa",
+    "cities": [
+      "Bursa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Bursa sınırlarındaki Sansarak Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-121",
+    "title": "Ayazmapınarı Tabiat Parkı",
+    "place": "Ayazmapınarı Tabiat Parkı",
+    "city": "Çanakkale",
+    "cities": [
+      "Çanakkale"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çanakkale sınırlarındaki Ayazmapınarı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-122",
+    "title": "Denizgöründü Tabiat Parkı",
+    "place": "Denizgöründü Tabiat Parkı",
+    "city": "Çanakkale",
+    "cities": [
+      "Çanakkale"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çanakkale sınırlarındaki Denizgöründü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-123",
+    "title": "Hazım Dağlı Tabiat Parkı",
+    "place": "Hazım Dağlı Tabiat Parkı",
+    "city": "Çankırı",
+    "cities": [
+      "Çankırı"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çankırı sınırlarındaki Hazım Dağlı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-124",
+    "title": "Kenbağ Tabiat Parkı",
+    "place": "Kenbağ Tabiat Parkı",
+    "city": "Çankırı",
+    "cities": [
+      "Çankırı"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çankırı sınırlarındaki Kenbağ Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Kenbag_nature_park.jpg/1280px-Kenbag_nature_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kenbağ Tabiat Parkı · Çankırı",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kenbag_nature_park.jpg",
+    "imageArtist": "Ugur E. Yidirim",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kenbag nature park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-125",
+    "title": "Kadınçayırı Tabiat Parkı",
+    "place": "Kadınçayırı Tabiat Parkı",
+    "city": "Çankırı",
+    "cities": [
+      "Çankırı"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çankırı sınırlarındaki Kadınçayırı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Kad%C4%B1n_%C3%A7ay%C4%B1r%C4%B13.jpg/1280px-Kad%C4%B1n_%C3%A7ay%C4%B1r%C4%B13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kadınçayırı Tabiat Parkı · Çankırı",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kad%C4%B1n_%C3%A7ay%C4%B1r%C4%B13.jpg",
+    "imageArtist": "Canbax",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kadın çayırı3.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-126",
+    "title": "Çatak Tabiat Parkı",
+    "place": "Çatak Tabiat Parkı",
+    "city": "Çorum",
+    "cities": [
+      "Çorum"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çorum sınırlarındaki Çatak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-127",
+    "title": "Sıklık Tabiat Parkı",
+    "place": "Sıklık Tabiat Parkı",
+    "city": "Çorum",
+    "cities": [
+      "Çorum"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çorum sınırlarındaki Sıklık Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/The_Landscape_of_S%C4%B1kl%C4%B1k_Gate.jpg/1280px-The_Landscape_of_S%C4%B1kl%C4%B1k_Gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Sıklık Tabiat Parkı · Çorum",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:The_Landscape_of_S%C4%B1kl%C4%B1k_Gate.jpg",
+    "imageArtist": "Yunus Gergerlioğlu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:The Landscape of Sıklık Gate.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-128",
+    "title": "Aksu Tabiat Parkı",
+    "place": "Aksu Tabiat Parkı",
+    "city": "Çorum",
+    "cities": [
+      "Çorum"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Çorum sınırlarındaki Aksu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-129",
+    "title": "Eğil Peygamberler Tabiat Parkı",
+    "place": "Eğil Peygamberler Tabiat Parkı",
+    "city": "Diyarbakır",
+    "cities": [
+      "Diyarbakır"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Diyarbakır sınırlarındaki Eğil Peygamberler Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-130",
+    "title": "Yabanardıl Şeyhandede Tabiat Parkı",
+    "place": "Yabanardıl Şeyhandede Tabiat Parkı",
+    "city": "Diyarbakır",
+    "cities": [
+      "Diyarbakır"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Diyarbakır sınırlarındaki Yabanardıl Şeyhandede Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-131",
+    "title": "Korugöl Tabiat Parkı",
+    "place": "Korugöl Tabiat Parkı",
+    "city": "Düzce",
+    "cities": [
+      "Düzce"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Düzce sınırlarındaki Korugöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-133",
+    "title": "Aydınpınar Şelaleleri Tabiat Parkı",
+    "place": "Aydınpınar Şelaleleri Tabiat Parkı",
+    "city": "Düzce",
+    "cities": [
+      "Düzce"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Düzce sınırlarındaki Aydınpınar Şelaleleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-134",
+    "title": "Danişment Tabiat Parkı",
+    "place": "Danişment Tabiat Parkı",
+    "city": "Edirne",
+    "cities": [
+      "Edirne"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Edirne sınırlarındaki Danişment Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Dani%C5%9Fment_-_panoramio_%281%29.jpg/1280px-Dani%C5%9Fment_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Danişment Tabiat Parkı · Edirne",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Dani%C5%9Fment_-_panoramio_(1).jpg",
+    "imageArtist": "abd.ovalı",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Danişment - panoramio (1).jpg"
+  },
+  {
+    "id": "dkmp-tabiat-135",
+    "title": "Gökçetepe Tabiat Parkı",
+    "place": "Gökçetepe Tabiat Parkı",
+    "city": "Edirne",
+    "cities": [
+      "Edirne"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Edirne sınırlarındaki Gökçetepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-136",
+    "title": "Vakıf Tabiat Parkı",
+    "place": "Vakıf Tabiat Parkı",
+    "city": "Edirne",
+    "cities": [
+      "Edirne"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Edirne sınırlarındaki Vakıf Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-137",
+    "title": "Hazar Gölü Tabiat Parkı",
+    "place": "Hazar Gölü Tabiat Parkı",
+    "city": "Elazığ",
+    "cities": [
+      "Elazığ"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Elazığ sınırlarındaki Hazar Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/21/Hazar_G%C3%B6l%C3%BC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Hazar Gölü Tabiat Parkı · Elazığ",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Hazar_G%C3%B6l%C3%BC.JPG",
+    "imageArtist": "Berke Keleş",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Hazar Gölü.JPG"
+  },
+  {
+    "id": "dkmp-tabiat-138",
+    "title": "Saklıkapı Kanyonu Tabiat Parkı",
+    "place": "Saklıkapı Kanyonu Tabiat Parkı",
+    "city": "Elazığ",
+    "cities": [
+      "Elazığ"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Elazığ sınırlarındaki Saklıkapı Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-139",
+    "title": "Dumanlı Tabiat Parkı",
+    "place": "Dumanlı Tabiat Parkı",
+    "city": "Erzincan",
+    "cities": [
+      "Erzincan"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Erzincan sınırlarındaki Dumanlı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-140",
+    "title": "Musaözü Tabiat Parkı",
+    "place": "Musaözü Tabiat Parkı",
+    "city": "Eskişehir",
+    "cities": [
+      "Eskişehir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Eskişehir sınırlarındaki Musaözü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-141",
+    "title": "Yunus Emre Tabiat Parkı",
+    "place": "Yunus Emre Tabiat Parkı",
+    "city": "Eskişehir",
+    "cities": [
+      "Eskişehir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Eskişehir sınırlarındaki Yunus Emre Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-142",
+    "title": "Kanlıpınar Tabiat Parkı",
+    "place": "Kanlıpınar Tabiat Parkı",
+    "city": "Eskişehir",
+    "cities": [
+      "Eskişehir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Eskişehir sınırlarındaki Kanlıpınar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-143",
+    "title": "Dülükbaba Tabiat Parkı",
+    "place": "Dülükbaba Tabiat Parkı",
+    "city": "Gaziantep",
+    "cities": [
+      "Gaziantep"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gaziantep sınırlarındaki Dülükbaba Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Dulukbaba_03.jpg/1280px-Dulukbaba_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Dülükbaba Tabiat Parkı · Gaziantep",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Dulukbaba_03.jpg",
+    "imageArtist": "Ramazancirakoglu",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Dulukbaba 03.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-144",
+    "title": "Burç Tabiat Parkı",
+    "place": "Burç Tabiat Parkı",
+    "city": "Gaziantep",
+    "cities": [
+      "Gaziantep"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gaziantep sınırlarındaki Burç Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-145",
+    "title": "Huzurlu Tabiat Parkı",
+    "place": "Huzurlu Tabiat Parkı",
+    "city": "Gaziantep",
+    "cities": [
+      "Gaziantep"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gaziantep sınırlarındaki Huzurlu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-146",
+    "title": "Alleben-Yamaçtepe Tabiat Parkı",
+    "place": "Alleben-Yamaçtepe Tabiat Parkı",
+    "city": "Gaziantep",
+    "cities": [
+      "Gaziantep"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gaziantep sınırlarındaki Alleben-Yamaçtepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-147",
+    "title": "Gaziantep Milli Mücadele Tabiat Parkı",
+    "place": "Gaziantep Milli Mücadele Tabiat Parkı",
+    "city": "Gaziantep",
+    "cities": [
+      "Gaziantep"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gaziantep sınırlarındaki Gaziantep Milli Mücadele Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-148",
+    "title": "Ağaçbaşı Tabiat Parkı",
+    "place": "Ağaçbaşı Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Ağaçbaşı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-149",
+    "title": "Koçkayası Tabiat Parkı",
+    "place": "Koçkayası Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Koçkayası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-150",
+    "title": "Yedideğirmenler Tabiat Parkı",
+    "place": "Yedideğirmenler Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Yedideğirmenler Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Seven_Watermills_Nature_Park%2C_Giresun_05.jpg/1280px-Seven_Watermills_Nature_Park%2C_Giresun_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Yedideğirmenler Tabiat Parkı · Giresun",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Seven_Watermills_Nature_Park,_Giresun_05.jpg",
+    "imageArtist": "Zeynel Cebeci",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Seven Watermills Nature Park, Giresun 05.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-151",
+    "title": "Kuzalan Tabiat Parkı",
+    "place": "Kuzalan Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Kuzalan Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Waterfall_Kuzalan_-_Kuzalan_%C5%9Eelalesi%2C_Giresun_2017-07-07_01-1.jpg/1280px-Waterfall_Kuzalan_-_Kuzalan_%C5%9Eelalesi%2C_Giresun_2017-07-07_01-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kuzalan Tabiat Parkı · Giresun",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Waterfall_Kuzalan_-_Kuzalan_%C5%9Eelalesi,_Giresun_2017-07-07_01-1.jpg",
+    "imageArtist": "Zeynel Cebeci",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Waterfall Kuzalan - Kuzalan Şelalesi, Giresun 2017-07-07 01-1.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-152",
+    "title": "Köroğlu Tabiat Parkı",
+    "place": "Köroğlu Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Köroğlu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-153",
+    "title": "Aymaç Tabiat Parkı",
+    "place": "Aymaç Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Aymaç Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-154",
+    "title": "Harşit Tabiat Parkı",
+    "place": "Harşit Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Harşit Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-155",
+    "title": "Şaban Kalesi Tabiat Parkı",
+    "place": "Şaban Kalesi Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Şaban Kalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-156",
+    "title": "Efendioğlu Hanyanı Tabiat Parkı",
+    "place": "Efendioğlu Hanyanı Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Efendioğlu Hanyanı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-157",
+    "title": "Paşaca Tabiat Parkı",
+    "place": "Paşaca Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Paşaca Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Pasaca-selalesi.jpg/1280px-Pasaca-selalesi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Paşaca Tabiat Parkı · Giresun",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Pasaca-selalesi.jpg",
+    "imageArtist": "Thecatcherintherye (mesaj)",
+    "imageLicense": "GFDL",
+    "imageFile": "File:Pasaca-selalesi.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-158",
+    "title": "Hızırilyas Tepesi Tabiat Parkı",
+    "place": "Hızırilyas Tepesi Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Hızırilyas Tepesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-159",
+    "title": "Artabel Gölleri Tabiat Parkı",
+    "place": "Artabel Gölleri Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Artabel Gölleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Artabel_G%C3%B6lleri..._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Artabel Gölleri Tabiat Parkı · Gümüşhane",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Artabel_G%C3%B6lleri..._-_panoramio.jpg",
+    "imageArtist": "Sinan Şahin",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Artabel Gölleri... - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-160",
+    "title": "Tomara Şelalesi Tabiat Parkı",
+    "place": "Tomara Şelalesi Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Tomara Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Tomara_%C5%9Eelalesi..._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Tomara Şelalesi Tabiat Parkı · Gümüşhane",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Tomara_%C5%9Eelalesi..._-_panoramio.jpg",
+    "imageArtist": "Sinan Şahin",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Tomara Şelalesi... - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-161",
+    "title": "Limni Gölü Tabiat Parkı",
+    "place": "Limni Gölü Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Limni Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Limni_G%C3%B6l%C3%BC..._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Limni Gölü Tabiat Parkı · Gümüşhane",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Limni_G%C3%B6l%C3%BC..._-_panoramio.jpg",
+    "imageArtist": "Sinan Şahin",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Limni Gölü... - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-162",
+    "title": "Çağlayandibi Şelalesi Tabiat Parkı",
+    "place": "Çağlayandibi Şelalesi Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Çağlayandibi Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-163",
+    "title": "Gümüşhane Karşıyaka Tabiat Parkı",
+    "place": "Gümüşhane Karşıyaka Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Gümüşhane Karşıyaka Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-164",
+    "title": "Köse Tabiat Parkı",
+    "place": "Köse Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Köse Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-165",
+    "title": "Telme Tabiat Parkı",
+    "place": "Telme Tabiat Parkı",
+    "city": "Gümüşhane",
+    "cities": [
+      "Gümüşhane"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gümüşhane sınırlarındaki Telme Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-166",
+    "title": "Belen Geçidi Tabiat Parkı",
+    "place": "Belen Geçidi Tabiat Parkı",
+    "city": "Hatay",
+    "cities": [
+      "Hatay"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Hatay sınırlarındaki Belen Geçidi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Belen_Ge%C3%A7idi%2C_Belen_Gate.jpg/1280px-Belen_Ge%C3%A7idi%2C_Belen_Gate.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Belen Geçidi Tabiat Parkı · Hatay",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Belen_Ge%C3%A7idi,_Belen_Gate.jpg",
+    "imageArtist": "Aligulpinar",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Belen Geçidi, Belen Gate.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-167",
+    "title": "Şahin Tepesi Tabiat Parkı",
+    "place": "Şahin Tepesi Tabiat Parkı",
+    "city": "Hatay",
+    "cities": [
+      "Hatay"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Hatay sınırlarındaki Şahin Tepesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-168",
+    "title": "Yazılı Kanyon Tabiat Parkı",
+    "place": "Yazılı Kanyon Tabiat Parkı",
+    "city": "Isparta",
+    "cities": [
+      "Isparta"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Isparta sınırlarındaki Yazılı Kanyon Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-169",
+    "title": "Isparta Gölcük Tabiat Parkı",
+    "place": "Isparta Gölcük Tabiat Parkı",
+    "city": "Isparta",
+    "cities": [
+      "Isparta"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Isparta sınırlarındaki Isparta Gölcük Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-170",
+    "title": "Başpınar Tabiat Parkı",
+    "place": "Başpınar Tabiat Parkı",
+    "city": "Isparta",
+    "cities": [
+      "Isparta"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Isparta sınırlarındaki Başpınar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/10.10.26_Ba%C5%9Fp%C4%B1nar_E39008.jpg/1280px-10.10.26_Ba%C5%9Fp%C4%B1nar_E39008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Başpınar Tabiat Parkı · Isparta",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:10.10.26_Ba%C5%9Fp%C4%B1nar_E39008.jpg",
+    "imageArtist": "Phil Richards",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:10.10.26 Başpınar E39008.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-171",
+    "title": "Polonezköy Tabiat Parkı",
+    "place": "Polonezköy Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Polonezköy Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/22/Adampol_Polonezkoy_7261_Nevit.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Polonezköy Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Adampol_Polonezkoy_7261_Nevit.JPG",
+    "imageArtist": "Nevit Dilmen",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Adampol Polonezkoy 7261 Nevit.JPG"
+  },
+  {
+    "id": "dkmp-tabiat-172",
+    "title": "Türkmenbaşı Tabiat Parkı",
+    "place": "Türkmenbaşı Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Türkmenbaşı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-173",
+    "title": "Park Ormanı Tabiat Parkı",
+    "place": "Park Ormanı Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Park Ormanı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-175",
+    "title": "Kömürcübent Tabiat Parkı",
+    "place": "Kömürcübent Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Kömürcübent Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/K%C3%B6m%C3%BCrc%C3%BCbentNaturePark_%283%29.jpg/1280px-K%C3%B6m%C3%BCrc%C3%BCbentNaturePark_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kömürcübent Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:K%C3%B6m%C3%BCrc%C3%BCbentNaturePark_(3).jpg",
+    "imageArtist": "CeeGee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:KömürcübentNaturePark (3).jpg"
+  },
+  {
+    "id": "dkmp-tabiat-176",
+    "title": "Dilburnu Tabiat Parkı",
+    "place": "Dilburnu Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Dilburnu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-177",
+    "title": "Irmak Tabiat Parkı",
+    "place": "Irmak Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Irmak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-178",
+    "title": "Değirmenburnu Tabiat Parkı",
+    "place": "Değirmenburnu Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Değirmenburnu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/De%C4%9Firmenburnu_Tabiat_Park%C4%B1_Manzaras%C4%B1.jpg/1280px-De%C4%9Firmenburnu_Tabiat_Park%C4%B1_Manzaras%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Değirmenburnu Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:De%C4%9Firmenburnu_Tabiat_Park%C4%B1_Manzaras%C4%B1.jpg",
+    "imageArtist": "Ceyda Turus",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Değirmenburnu Tabiat Parkı Manzarası.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-179",
+    "title": "Elmasburnu Tabiat Parkı",
+    "place": "Elmasburnu Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Elmasburnu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-180",
+    "title": "Bentler Tabiat Parkı",
+    "place": "Bentler Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Bentler Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-181",
+    "title": "F. Rıfkı Atay Tabiat Parkı",
+    "place": "F. Rıfkı Atay Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki F. Rıfkı Atay Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-182",
+    "title": "Kirazlıbent Tabiat Parkı",
+    "place": "Kirazlıbent Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Kirazlıbent Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Kirazl%C4%B1bent_Nature_Park.jpg/1280px-Kirazl%C4%B1bent_Nature_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kirazlıbent Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kirazl%C4%B1bent_Nature_Park.jpg",
+    "imageArtist": "Mohammed",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kirazlıbent Nature Park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-183",
+    "title": "Çilingoz Tabiat Parkı",
+    "place": "Çilingoz Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Çilingoz Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/%C3%87ilingozNaturePark_%282%29.jpg/1280px-%C3%87ilingozNaturePark_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Çilingoz Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C3%87ilingozNaturePark_(2).jpg",
+    "imageArtist": "CeeGee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:ÇilingozNaturePark (2).jpg"
+  },
+  {
+    "id": "dkmp-tabiat-184",
+    "title": "Mihrabat Tabiat Parkı",
+    "place": "Mihrabat Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Mihrabat Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/MihrabatNaturePark.jpg/1280px-MihrabatNaturePark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Mihrabat Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:MihrabatNaturePark.jpg",
+    "imageArtist": "CeeGee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:MihrabatNaturePark.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-185",
+    "title": "Mehmet Akif Ersoy Tabiat Parkı",
+    "place": "Mehmet Akif Ersoy Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Mehmet Akif Ersoy Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Mehmet_%C3%82kif_Ersoy_Park%C4%B1.JPG/1280px-Mehmet_%C3%82kif_Ersoy_Park%C4%B1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Mehmet Akif Ersoy Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Mehmet_%C3%82kif_Ersoy_Park%C4%B1.JPG",
+    "imageArtist": "",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:Mehmet Âkif Ersoy Parkı.JPG"
+  },
+  {
+    "id": "dkmp-tabiat-186",
+    "title": "Marmaracık Koyu Tabiat Parkı",
+    "place": "Marmaracık Koyu Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Marmaracık Koyu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-187",
+    "title": "Fatih Çeşmesi Tabiat Parkı",
+    "place": "Fatih Çeşmesi Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Fatih Çeşmesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-188",
+    "title": "Ayvatbendi Tabiat Parkı",
+    "place": "Ayvatbendi Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Ayvatbendi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/AyvatBendiNaturePark.jpg/1280px-AyvatBendiNaturePark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ayvatbendi Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:AyvatBendiNaturePark.jpg",
+    "imageArtist": "CeeGee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:AyvatBendiNaturePark.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-189",
+    "title": "Göktürk Göleti Tabiat Parkı",
+    "place": "Göktürk Göleti Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Göktürk Göleti Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-190",
+    "title": "Neşetsuyu Tabiat Parkı",
+    "place": "Neşetsuyu Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Neşetsuyu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Ne%C5%9FetsuyuNaturePark.jpg/1280px-Ne%C5%9FetsuyuNaturePark.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Neşetsuyu Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ne%C5%9FetsuyuNaturePark.jpg",
+    "imageArtist": "CeeGee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:NeşetsuyuNaturePark.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-191",
+    "title": "Fatih Sultan Mehmet Tabiat Parkı",
+    "place": "Fatih Sultan Mehmet Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Fatih Sultan Mehmet Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-192",
+    "title": "Şamlar Tabiat Parkı",
+    "place": "Şamlar Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Şamlar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-193",
+    "title": "Avcıkoru Tabiat Parkı",
+    "place": "Avcıkoru Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Avcıkoru Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-194",
+    "title": "Hacet Deresi Tabiat Parkı",
+    "place": "Hacet Deresi Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Hacet Deresi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-195",
+    "title": "Göztepe Tabiat Parkı",
+    "place": "Göztepe Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Göztepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-196",
+    "title": "Danamandıra Tabiat Parkı",
+    "place": "Danamandıra Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Danamandıra Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Danamand%C4%B1raNP_%284%29.jpg/1280px-Danamand%C4%B1raNP_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Danamandıra Tabiat Parkı · İstanbul",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Danamand%C4%B1raNP_(4).jpg",
+    "imageArtist": "CeeGee",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:DanamandıraNP (4).jpg"
+  },
+  {
+    "id": "dkmp-tabiat-197",
+    "title": "Kâğıthane Hasdal Tabiat Parkı",
+    "place": "Kâğıthane Hasdal Tabiat Parkı",
+    "city": "İstanbul",
+    "cities": [
+      "İstanbul"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İstanbul sınırlarındaki Kâğıthane Hasdal Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-198",
+    "title": "Meryemana Tabiat Parkı",
+    "place": "Meryemana Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Meryemana Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-199",
+    "title": "Gümüldür Tabiat Parkı",
+    "place": "Gümüldür Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Gümüldür Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-200",
+    "title": "Ekmeksiz Plajı Tabiat Parkı",
+    "place": "Ekmeksiz Plajı Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Ekmeksiz Plajı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-201",
+    "title": "İzmir Karagöl Tabiat Parkı",
+    "place": "İzmir Karagöl Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki İzmir Karagöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-202",
+    "title": "Çiçekli Tabiat Parkı",
+    "place": "Çiçekli Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Çiçekli Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-203",
+    "title": "Efeoğlu Tabiat Parkı",
+    "place": "Efeoğlu Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Efeoğlu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-204",
+    "title": "Tanay Tabiat Parkı",
+    "place": "Tanay Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Tanay Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-205",
+    "title": "Yamanlardağı Tabiat Parkı",
+    "place": "Yamanlardağı Tabiat Parkı",
+    "city": "İzmir",
+    "cities": [
+      "İzmir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "İzmir sınırlarındaki Yamanlardağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Yamanlardagi.jpg/1280px-Yamanlardagi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Yamanlardağı Tabiat Parkı · İzmir",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Yamanlardagi.jpg",
+    "imageArtist": "squieler",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Yamanlardagi.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-206",
+    "title": "Kapıçam Tabiat Parkı",
+    "place": "Kapıçam Tabiat Parkı",
+    "city": "Kahramanmaraş",
+    "cities": [
+      "Kahramanmaraş"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kahramanmaraş sınırlarındaki Kapıçam Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-207",
+    "title": "Yavşan Yaylası Tabiat Parkı",
+    "place": "Yavşan Yaylası Tabiat Parkı",
+    "city": "Kahramanmaraş",
+    "cities": [
+      "Kahramanmaraş"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kahramanmaraş sınırlarındaki Yavşan Yaylası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-208",
+    "title": "Baklabostan Tabiat Parkı",
+    "place": "Baklabostan Tabiat Parkı",
+    "city": "Karabük",
+    "cities": [
+      "Karabük"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Karabük sınırlarındaki Baklabostan Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-209",
+    "title": "Soğuksu Tabiat Parkı",
+    "place": "Soğuksu Tabiat Parkı",
+    "city": "Kars",
+    "cities": [
+      "Kars"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kars sınırlarındaki Soğuksu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-210",
+    "title": "Yeşilyuva Tabiat Parkı",
+    "place": "Yeşilyuva Tabiat Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu sınırlarındaki Yeşilyuva Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Ye%C5%9Filyuva%2C_Abana.JPG/1280px-Ye%C5%9Filyuva%2C_Abana.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Yeşilyuva Tabiat Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ye%C5%9Filyuva,_Abana.JPG",
+    "imageArtist": "Crmtrm",
+    "imageLicense": "Public domain",
+    "imageFile": "File:Yeşilyuva, Abana.JPG"
+  },
+  {
+    "id": "dkmp-tabiat-211",
+    "title": "Dipsizgöl Tabiat Parkı",
+    "place": "Dipsizgöl Tabiat Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu sınırlarındaki Dipsizgöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Tosya_Dipsizg%C3%B6l_Seniseven_-_panoramio.jpg/1280px-Tosya_Dipsizg%C3%B6l_Seniseven_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Dipsizgöl Tabiat Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Tosya_Dipsizg%C3%B6l_Seniseven_-_panoramio.jpg",
+    "imageArtist": "seniseven",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Tosya Dipsizgöl Seniseven - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-212",
+    "title": "Şehit Şerifebacı Tabiat Parkı",
+    "place": "Şehit Şerifebacı Tabiat Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu sınırlarındaki Şehit Şerifebacı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-213",
+    "title": "Ersizlerdere Kanyonu Tabiat Parkı",
+    "place": "Ersizlerdere Kanyonu Tabiat Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu sınırlarındaki Ersizlerdere Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/20240613_Ersizlerdere_Kanyonu.jpg/1280px-20240613_Ersizlerdere_Kanyonu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ersizlerdere Kanyonu Tabiat Parkı · Kastamonu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:20240613_Ersizlerdere_Kanyonu.jpg",
+    "imageArtist": "Witchevx",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:20240613 Ersizlerdere Kanyonu.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-214",
+    "title": "Derebağ Şelalesi Tabiat Parkı",
+    "place": "Derebağ Şelalesi Tabiat Parkı",
+    "city": "Kayseri",
+    "cities": [
+      "Kayseri"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kayseri sınırlarındaki Derebağ Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Dereba%C4%9F_%C5%9Eelalesi_karl%C4%B1.jpg/1280px-Dereba%C4%9F_%C5%9Eelalesi_karl%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Derebağ Şelalesi Tabiat Parkı · Kayseri",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Dereba%C4%9F_%C5%9Eelalesi_karl%C4%B1.jpg",
+    "imageArtist": "Bircan3438",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Derebağ Şelalesi karlı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-215",
+    "title": "Karaahmetli Tabiat Parkı",
+    "place": "Karaahmetli Tabiat Parkı",
+    "city": "Kırıkkale",
+    "cities": [
+      "Kırıkkale"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kırıkkale sınırlarındaki Karaahmetli Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-216",
+    "title": "Kavaklımeşe Korusu Tabiat Parkı",
+    "place": "Kavaklımeşe Korusu Tabiat Parkı",
+    "city": "Kırklareli",
+    "cities": [
+      "Kırklareli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kırklareli sınırlarındaki Kavaklımeşe Korusu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-217",
+    "title": "Aşıkpaşa Tabiat Parkı",
+    "place": "Aşıkpaşa Tabiat Parkı",
+    "city": "Kırşehir",
+    "cities": [
+      "Kırşehir"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kırşehir sınırlarındaki Aşıkpaşa Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-218",
+    "title": "Hisar Çamlığı Tabiat Parkı",
+    "place": "Hisar Çamlığı Tabiat Parkı",
+    "city": "Kilis",
+    "cities": [
+      "Kilis"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kilis sınırlarındaki Hisar Çamlığı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-219",
+    "title": "Ballıkayalar Tabiat Parkı",
+    "place": "Ballıkayalar Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Ballıkayalar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/BALLIKAYALAR.jpg/1280px-BALLIKAYALAR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ballıkayalar Tabiat Parkı · Kocaeli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:BALLIKAYALAR.jpg",
+    "imageArtist": "Acar54",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:BALLIKAYALAR.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-220",
+    "title": "Beşkayalar Tabiat Parkı",
+    "place": "Beşkayalar Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Beşkayalar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-221",
+    "title": "Suadiye Tabiat Parkı",
+    "place": "Suadiye Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Suadiye Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-222",
+    "title": "Eriklitepe Tabiat Parkı",
+    "place": "Eriklitepe Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Eriklitepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Karl%C4%B1_Eriklitepe.jpg/1280px-Karl%C4%B1_Eriklitepe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Eriklitepe Tabiat Parkı · Kocaeli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karl%C4%B1_Eriklitepe.jpg",
+    "imageArtist": "Nida Nur Yalçınkaya",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Karlı Eriklitepe.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-223",
+    "title": "Kuzuyayla Tabiat Parkı",
+    "place": "Kuzuyayla Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Kuzuyayla Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/KUZUYAYLA%2C_KARTEPE.jpg/1280px-KUZUYAYLA%2C_KARTEPE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kuzuyayla Tabiat Parkı · Kocaeli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:KUZUYAYLA,_KARTEPE.jpg",
+    "imageArtist": "Acar54",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:KUZUYAYLA, KARTEPE.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-224",
+    "title": "Ormanya Tabiat Parkı",
+    "place": "Ormanya Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Ormanya Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Ormanya_%281%29_02.jpg/1280px-Ormanya_%281%29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ormanya Tabiat Parkı · Kocaeli",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ormanya_(1)_02.jpg",
+    "imageArtist": "Kocaeligönüllüsü",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Ormanya (1) 02.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-225",
+    "title": "Gazilerdağı Tabiat Parkı",
+    "place": "Gazilerdağı Tabiat Parkı",
+    "city": "Kocaeli",
+    "cities": [
+      "Kocaeli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kocaeli sınırlarındaki Gazilerdağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-226",
+    "title": "Kocakoru Ormanı Tabiat Parkı",
+    "place": "Kocakoru Ormanı Tabiat Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Kocakoru Ormanı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-227",
+    "title": "Akyokuş Tabiat Parkı",
+    "place": "Akyokuş Tabiat Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Akyokuş Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-228",
+    "title": "Yakamanastır Tabiat Parkı",
+    "place": "Yakamanastır Tabiat Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Yakamanastır Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-229",
+    "title": "Kuğulu Tabiat Parkı",
+    "place": "Kuğulu Tabiat Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Kuğulu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-230",
+    "title": "Gürleyen Kanyon Tabiat Parkı",
+    "place": "Gürleyen Kanyon Tabiat Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Gürleyen Kanyon Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-231",
+    "title": "Mavi Boğaz Tabiat Parkı",
+    "place": "Mavi Boğaz Tabiat Parkı",
+    "city": "Konya",
+    "cities": [
+      "Konya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Konya sınırlarındaki Mavi Boğaz Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-232",
+    "title": "Çamlıca Tabiat Parkı",
+    "place": "Çamlıca Tabiat Parkı",
+    "city": "Kütahya",
+    "cities": [
+      "Kütahya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kütahya sınırlarındaki Çamlıca Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-233",
+    "title": "Enne Barajı Tabiat Parkı",
+    "place": "Enne Barajı Tabiat Parkı",
+    "city": "Kütahya",
+    "cities": [
+      "Kütahya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kütahya sınırlarındaki Enne Barajı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Enne_Baraj%C4%B1_Tabiat_Park%C4%B1.jpg/1280px-Enne_Baraj%C4%B1_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Enne Barajı Tabiat Parkı · Kütahya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Enne_Baraj%C4%B1_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Emrziel",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Enne Barajı Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-234",
+    "title": "Topuk Yaylası Tabiat Parkı",
+    "place": "Topuk Yaylası Tabiat Parkı",
+    "city": "Kütahya",
+    "cities": [
+      "Kütahya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kütahya sınırlarındaki Topuk Yaylası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-235",
+    "title": "Çavdarhisar Barajı Tabiat Parkı",
+    "place": "Çavdarhisar Barajı Tabiat Parkı",
+    "city": "Kütahya",
+    "cities": [
+      "Kütahya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kütahya sınırlarındaki Çavdarhisar Barajı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-236",
+    "title": "Turgut Özal Tabiat Parkı",
+    "place": "Turgut Özal Tabiat Parkı",
+    "city": "Malatya",
+    "cities": [
+      "Malatya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Malatya sınırlarındaki Turgut Özal Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-237",
+    "title": "Beydağı Tabiat Parkı",
+    "place": "Beydağı Tabiat Parkı",
+    "city": "Malatya",
+    "cities": [
+      "Malatya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Malatya sınırlarındaki Beydağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-238",
+    "title": "Günpınar Şelalesi Tabiat Parkı",
+    "place": "Günpınar Şelalesi Tabiat Parkı",
+    "city": "Malatya",
+    "cities": [
+      "Malatya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Malatya sınırlarındaki Günpınar Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-239",
+    "title": "Mesir Tabiat Parkı",
+    "place": "Mesir Tabiat Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki Mesir Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-240",
+    "title": "Süreyya Tabiat Parkı",
+    "place": "Süreyya Tabiat Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki Süreyya Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-241",
+    "title": "Emir Kaplıcaları Tabiat Parkı",
+    "place": "Emir Kaplıcaları Tabiat Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki Emir Kaplıcaları Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-242",
+    "title": "Gap Şelalesi Tabiat Parkı",
+    "place": "Gap Şelalesi Tabiat Parkı",
+    "city": "Mardin",
+    "cities": [
+      "Mardin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mardin sınırlarındaki Gap Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-243",
+    "title": "Şehitlik Tabiat Parkı",
+    "place": "Şehitlik Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Şehitlik Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-244",
+    "title": "Karaekşi Tabiat Parkı",
+    "place": "Karaekşi Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Karaekşi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/Karaek%C5%9Fi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Karaekşi Tabiat Parkı · Mersin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Karaek%C5%9Fi.jpg",
+    "imageArtist": "Özdenozdemir",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Karaekşi.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-245",
+    "title": "Pullu Tabiat Parkı",
+    "place": "Pullu Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Pullu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-246",
+    "title": "Kuyuluk Tabiat Parkı",
+    "place": "Kuyuluk Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Kuyuluk Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Kuyuluk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Kuyuluk Tabiat Parkı · Mersin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kuyuluk.jpg",
+    "imageArtist": "Özdenozdemir",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kuyuluk.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-247",
+    "title": "Gümüşkum Tabiat Parkı",
+    "place": "Gümüşkum Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Gümüşkum Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/G%C3%BCm%C3%BC%C5%9Fkum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Gümüşkum Tabiat Parkı · Mersin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:G%C3%BCm%C3%BC%C5%9Fkum.jpg",
+    "imageArtist": "Özdenozdemir",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Gümüşkum.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-248",
+    "title": "Aydıncık Tabiat Parkı",
+    "place": "Aydıncık Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Aydıncık Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-249",
+    "title": "Talat Göktepe Tabiat Parkı",
+    "place": "Talat Göktepe Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Talat Göktepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Talat_G%C3%B6ktepe_tabiat_park%C4%B12.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "imageAlt": "Talat Göktepe Tabiat Parkı · Mersin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Talat_G%C3%B6ktepe_tabiat_park%C4%B12.jpg",
+    "imageArtist": "1071and1453",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Talat Göktepe tabiat parkı2.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-250",
+    "title": "Dikilitaş Tabiat Parkı",
+    "place": "Dikilitaş Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Dikilitaş Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-251",
+    "title": "Sarıkayalar Tabiat Parkı",
+    "place": "Sarıkayalar Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Sarıkayalar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-252",
+    "title": "Karamanastır Şelalesi Tabiat Parkı",
+    "place": "Karamanastır Şelalesi Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Karamanastır Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-253",
+    "title": "Gilindire Mağarası Tabiat Parkı",
+    "place": "Gilindire Mağarası Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Gilindire Mağarası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-254",
+    "title": "Yerköprü Şelalesi Tabiat Parkı",
+    "place": "Yerköprü Şelalesi Tabiat Parkı",
+    "city": "Mersin",
+    "cities": [
+      "Mersin"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Mersin sınırlarındaki Yerköprü Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/196-Yerk%C3%B6pr%C3%BC_%C5%9Eelalesi_Tabiat_Park%C4%B1_Mersin.jpg/1280px-196-Yerk%C3%B6pr%C3%BC_%C5%9Eelalesi_Tabiat_Park%C4%B1_Mersin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Yerköprü Şelalesi Tabiat Parkı · Mersin",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:196-Yerk%C3%B6pr%C3%BC_%C5%9Eelalesi_Tabiat_Park%C4%B1_Mersin.jpg",
+    "imageArtist": "Drdilara98",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:196-Yerköprü Şelalesi Tabiat Parkı Mersin.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-255",
+    "title": "Ölüdeniz Kıdrak Tabiat Parkı",
+    "place": "Ölüdeniz Kıdrak Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Ölüdeniz Kıdrak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/View_to_Oludeniz-Kidrak_nature_park.jpg/1280px-View_to_Oludeniz-Kidrak_nature_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ölüdeniz Kıdrak Tabiat Parkı · Muğla",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:View_to_Oludeniz-Kidrak_nature_park.jpg",
+    "imageArtist": "Maksym Bespalov",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:View to Oludeniz-Kidrak nature park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-256",
+    "title": "Kovanlık Tabiat Parkı",
+    "place": "Kovanlık Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Kovanlık Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-257",
+    "title": "Ömer Eşen Tabiat Parkı",
+    "place": "Ömer Eşen Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Ömer Eşen Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-258",
+    "title": "Usuluk Koyu Tabiat Parkı",
+    "place": "Usuluk Koyu Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Usuluk Koyu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-259",
+    "title": "Küçük Kargı Tabiat Parkı",
+    "place": "Küçük Kargı Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Küçük Kargı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-260",
+    "title": "Güvercinlik Tabiat Parkı",
+    "place": "Güvercinlik Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Güvercinlik Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-261",
+    "title": "Çubucak Tabiat Parkı",
+    "place": "Çubucak Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Çubucak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-262",
+    "title": "Katrancu Koyu Tabiat Parkı",
+    "place": "Katrancu Koyu Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki Katrancu Koyu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-263",
+    "title": "İnbükü Tabiat Parkı",
+    "place": "İnbükü Tabiat Parkı",
+    "city": "Muğla",
+    "cities": [
+      "Muğla"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muğla sınırlarındaki İnbükü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-264",
+    "title": "Sazlıkbaşı Tabiat Parkı",
+    "place": "Sazlıkbaşı Tabiat Parkı",
+    "city": "Muş",
+    "cities": [
+      "Muş"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Muş sınırlarındaki Sazlıkbaşı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-265",
+    "title": "Ulugöl Tabiat Parkı",
+    "place": "Ulugöl Tabiat Parkı",
+    "city": "Ordu",
+    "cities": [
+      "Ordu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ordu sınırlarındaki Ulugöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-266",
+    "title": "Çınarsuyu Tabiat Parkı",
+    "place": "Çınarsuyu Tabiat Parkı",
+    "city": "Ordu",
+    "cities": [
+      "Ordu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Ordu sınırlarındaki Çınarsuyu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/%C3%87%C4%B1narsuyu_Nature_Park%2C_%C3%9Cnye.jpg/1280px-%C3%87%C4%B1narsuyu_Nature_Park%2C_%C3%9Cnye.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Çınarsuyu Tabiat Parkı · Ordu",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C3%87%C4%B1narsuyu_Nature_Park,_%C3%9Cnye.jpg",
+    "imageArtist": "Rime",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Çınarsuyu Nature Park, Ünye.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-267",
+    "title": "Çiftmazı Tabiat Parkı",
+    "place": "Çiftmazı Tabiat Parkı",
+    "city": "Osmaniye",
+    "cities": [
+      "Osmaniye"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Osmaniye sınırlarındaki Çiftmazı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/%C3%87iftmaz%C4%B1_tabiat_park%C4%B1.jpg/1280px-%C3%87iftmaz%C4%B1_tabiat_park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Çiftmazı Tabiat Parkı · Osmaniye",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:%C3%87iftmaz%C4%B1_tabiat_park%C4%B1.jpg",
+    "imageArtist": "Alikaanyilmaz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Çiftmazı tabiat parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-268",
+    "title": "Tunca Vadisi Tabiat Parkı",
+    "place": "Tunca Vadisi Tabiat Parkı",
+    "city": "Rize",
+    "cities": [
+      "Rize"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Rize sınırlarındaki Tunca Vadisi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-269",
+    "title": "Hemşin Şelaleleri Tabiat Parkı",
+    "place": "Hemşin Şelaleleri Tabiat Parkı",
+    "city": "Rize",
+    "cities": [
+      "Rize"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Rize sınırlarındaki Hemşin Şelaleleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-270",
+    "title": "Handüzü Tabiat Parkı",
+    "place": "Handüzü Tabiat Parkı",
+    "city": "Rize",
+    "cities": [
+      "Rize"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Rize sınırlarındaki Handüzü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-271",
+    "title": "Isırlık Tabiat Parkı",
+    "place": "Isırlık Tabiat Parkı",
+    "city": "Rize",
+    "cities": [
+      "Rize"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Rize sınırlarındaki Isırlık Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-272",
+    "title": "Gençlik Tabiat Parkı",
+    "place": "Gençlik Tabiat Parkı",
+    "city": "Rize",
+    "cities": [
+      "Rize"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Rize sınırlarındaki Gençlik Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-273",
+    "title": "Kuzuluk Tabiat Parkı",
+    "place": "Kuzuluk Tabiat Parkı",
+    "city": "Sakarya",
+    "cities": [
+      "Sakarya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sakarya sınırlarındaki Kuzuluk Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-274",
+    "title": "İl Ormanı Tabiat Parkı",
+    "place": "İl Ormanı Tabiat Parkı",
+    "city": "Sakarya",
+    "cities": [
+      "Sakarya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sakarya sınırlarındaki İl Ormanı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/SAKARYA_%C4%B0L_ORMANI.jpg/1280px-SAKARYA_%C4%B0L_ORMANI.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "İl Ormanı Tabiat Parkı · Sakarya",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:SAKARYA_%C4%B0L_ORMANI.jpg",
+    "imageArtist": "Acar54",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:SAKARYA İL ORMANI.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-275",
+    "title": "Poyrazlar Gölü Tabiat Parkı",
+    "place": "Poyrazlar Gölü Tabiat Parkı",
+    "city": "Sakarya",
+    "cities": [
+      "Sakarya"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sakarya sınırlarındaki Poyrazlar Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-276",
+    "title": "Kaşyayla Tabiat Parkı",
+    "place": "Kaşyayla Tabiat Parkı",
+    "city": "Samsun",
+    "cities": [
+      "Samsun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Samsun sınırlarındaki Kaşyayla Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-277",
+    "title": "Sarıgazel Tabiat Parkı",
+    "place": "Sarıgazel Tabiat Parkı",
+    "city": "Samsun",
+    "cities": [
+      "Samsun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Samsun sınırlarındaki Sarıgazel Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Sar%C4%B1gazel_Nature_Park.jpg/1280px-Sar%C4%B1gazel_Nature_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Sarıgazel Tabiat Parkı · Samsun",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sar%C4%B1gazel_Nature_Park.jpg",
+    "imageArtist": "Leyla kılınç",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Sarıgazel Nature Park.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-278",
+    "title": "Vezirsuyu Tabiat Parkı",
+    "place": "Vezirsuyu Tabiat Parkı",
+    "city": "Samsun",
+    "cities": [
+      "Samsun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Samsun sınırlarındaki Vezirsuyu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Vezirsuyu_Lake_View.jpg/1280px-Vezirsuyu_Lake_View.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Vezirsuyu Tabiat Parkı · Samsun",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Vezirsuyu_Lake_View.jpg",
+    "imageArtist": "Nisanur Koç",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Vezirsuyu Lake View.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-279",
+    "title": "Amazon Tabiat Parkı",
+    "place": "Amazon Tabiat Parkı",
+    "city": "Samsun",
+    "cities": [
+      "Samsun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Samsun sınırlarındaki Amazon Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-280",
+    "title": "Şahinkaya Kanyonu Tabiat Parkı",
+    "place": "Şahinkaya Kanyonu Tabiat Parkı",
+    "city": "Samsun",
+    "cities": [
+      "Samsun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Samsun sınırlarındaki Şahinkaya Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-281",
+    "title": "Bayraktepe Tabiat Parkı",
+    "place": "Bayraktepe Tabiat Parkı",
+    "city": "Samsun",
+    "cities": [
+      "Samsun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Samsun sınırlarındaki Bayraktepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-282",
+    "title": "Tillo Tabiat Parkı",
+    "place": "Tillo Tabiat Parkı",
+    "city": "Siirt",
+    "cities": [
+      "Siirt"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Siirt sınırlarındaki Tillo Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Siirt-Tillo_dan_Alkumru_ya_bak%C4%B1%C5%9F_%28rak%C4%B1m_fark%C4%B1_850_mt.%29_-_panoramio.jpg/1280px-Siirt-Tillo_dan_Alkumru_ya_bak%C4%B1%C5%9F_%28rak%C4%B1m_fark%C4%B1_850_mt.%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Tillo Tabiat Parkı · Siirt",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Siirt-Tillo_dan_Alkumru_ya_bak%C4%B1%C5%9F_(rak%C4%B1m_fark%C4%B1_850_mt.)_-_panoramio.jpg",
+    "imageArtist": "Lacivert71",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Siirt-Tillo dan Alkumru ya bakış (rakım farkı 850 mt.) - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-283",
+    "title": "Hamsilos Tabiat Parkı",
+    "place": "Hamsilos Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki Hamsilos Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/HAMSILOS-3._SINOP_-_panoramio.jpg/1280px-HAMSILOS-3._SINOP_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Hamsilos Tabiat Parkı · Sinop",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:HAMSILOS-3._SINOP_-_panoramio.jpg",
+    "imageArtist": "Kayhan ERTUGRUL",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageFile": "File:HAMSILOS-3. SINOP - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-284",
+    "title": "Topalçam Tabiat Parkı",
+    "place": "Topalçam Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki Topalçam Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-285",
+    "title": "Tatlıca Tabiat Parkı",
+    "place": "Tatlıca Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki Tatlıca Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-286",
+    "title": "Çatak Kanyonu Tabiat Parkı",
+    "place": "Çatak Kanyonu Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki Çatak Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-287",
+    "title": "Akgöl Tabiat Parkı",
+    "place": "Akgöl Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki Akgöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-288",
+    "title": "İnaltı Mağarası Tabiat Parkı",
+    "place": "İnaltı Mağarası Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki İnaltı Mağarası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-289",
+    "title": "Buzluk Tabiat Parkı",
+    "place": "Buzluk Tabiat Parkı",
+    "city": "Sinop",
+    "cities": [
+      "Sinop"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sinop sınırlarındaki Buzluk Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-290",
+    "title": "Dipsizgöl Şelalesi Tabiat Parkı",
+    "place": "Dipsizgöl Şelalesi Tabiat Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Dipsizgöl Şelalesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-291",
+    "title": "Karşıyaka Tabiat Parkı",
+    "place": "Karşıyaka Tabiat Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Karşıyaka Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-292",
+    "title": "Canköy Tabiat Parkı",
+    "place": "Canköy Tabiat Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Canköy Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-293",
+    "title": "Oymalık Tabiat Parkı",
+    "place": "Oymalık Tabiat Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Oymalık Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-294",
+    "title": "Gölpınar Tabiat Parkı",
+    "place": "Gölpınar Tabiat Parkı",
+    "city": "Şanlıurfa",
+    "cities": [
+      "Şanlıurfa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Şanlıurfa sınırlarındaki Gölpınar Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-295",
+    "title": "Çamlıkoy Tabiat Parkı",
+    "place": "Çamlıkoy Tabiat Parkı",
+    "city": "Tekirdağ",
+    "cities": [
+      "Tekirdağ"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Tekirdağ sınırlarındaki Çamlıkoy Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-296",
+    "title": "Kartaltepe Tabiat Parkı",
+    "place": "Kartaltepe Tabiat Parkı",
+    "city": "Tekirdağ",
+    "cities": [
+      "Tekirdağ"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Tekirdağ sınırlarındaki Kartaltepe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kartaltepe_Tabiat_Park%C4%B1.jpg/1280px-Kartaltepe_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kartaltepe Tabiat Parkı · Tekirdağ",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kartaltepe_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Mehmet Mert Akar",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kartaltepe Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-298",
+    "title": "Zinav Gölü Tabiat Parkı",
+    "place": "Zinav Gölü Tabiat Parkı",
+    "city": "Tokat",
+    "cities": [
+      "Tokat"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Tokat sınırlarındaki Zinav Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-300",
+    "title": "Sera Gölü Tabiat Parkı",
+    "place": "Sera Gölü Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Sera Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Sera_G%C3%B6l%C3%BC.._-_panoramio.jpg/1280px-Sera_G%C3%B6l%C3%BC.._-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Sera Gölü Tabiat Parkı · Trabzon",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sera_G%C3%B6l%C3%BC.._-_panoramio.jpg",
+    "imageArtist": "Sinan Şahin",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Sera Gölü.. - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-301",
+    "title": "Görnek Tabiat Parkı",
+    "place": "Görnek Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Görnek Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-302",
+    "title": "Sürmene Çamburnu Tabiat Parkı",
+    "place": "Sürmene Çamburnu Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Sürmene Çamburnu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-303",
+    "title": "Çalcamili Tabiat Parkı",
+    "place": "Çalcamili Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Çalcamili Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/CalcamiliNaturePark3.jpg/1280px-CalcamiliNaturePark3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Çalcamili Tabiat Parkı · Trabzon",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:CalcamiliNaturePark3.jpg",
+    "imageArtist": "Varvara Kless-Kaminskaia",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:CalcamiliNaturePark3.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-304",
+    "title": "Kayabaşı Tabiat Parkı",
+    "place": "Kayabaşı Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Kayabaşı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-305",
+    "title": "Beşikdağı Tabiat Parkı",
+    "place": "Beşikdağı Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Beşikdağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-306",
+    "title": "Kadıralak Tabiat Parkı",
+    "place": "Kadıralak Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Kadıralak Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Kadiralak_Yaylas%C4%B1_Tabiat_Park%C4%B1.jpg/1280px-Kadiralak_Yaylas%C4%B1_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Kadıralak Tabiat Parkı · Trabzon",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Kadiralak_Yaylas%C4%B1_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "Yavuz Meyveci",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Kadiralak Yaylası Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-307",
+    "title": "Sis Dağı Tabiat Parkı",
+    "place": "Sis Dağı Tabiat Parkı",
+    "city": "Trabzon",
+    "cities": [
+      "Trabzon"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Trabzon sınırlarındaki Sis Dağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-308",
+    "title": "Örenönü Tabiat Parkı",
+    "place": "Örenönü Tabiat Parkı",
+    "city": "Tunceli",
+    "cities": [
+      "Tunceli"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Tunceli sınırlarındaki Örenönü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-309",
+    "title": "Ulubey Kanyonu Tabiat Parkı",
+    "place": "Ulubey Kanyonu Tabiat Parkı",
+    "city": "Uşak",
+    "cities": [
+      "Uşak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Uşak sınırlarındaki Ulubey Kanyonu Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ulubey_Kanyonu_Tabiat_Park%C4%B1_-_%C5%9Eubat_2014_IMG_4892_hamdigumus.jpg/1280px-Ulubey_Kanyonu_Tabiat_Park%C4%B1_-_%C5%9Eubat_2014_IMG_4892_hamdigumus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Ulubey Kanyonu Tabiat Parkı · Uşak",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ulubey_Kanyonu_Tabiat_Park%C4%B1_-_%C5%9Eubat_2014_IMG_4892_hamdigumus.jpg",
+    "imageArtist": "Hamdigumus",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Ulubey Kanyonu Tabiat Parkı - Şubat 2014 IMG 4892 hamdigumus.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-310",
+    "title": "Taşyaran Vadisi Tabiat Parkı",
+    "place": "Taşyaran Vadisi Tabiat Parkı",
+    "city": "Uşak",
+    "cities": [
+      "Uşak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Uşak sınırlarındaki Taşyaran Vadisi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Ta%C5%9Fyaran_Vadisi.jpg/1280px-Ta%C5%9Fyaran_Vadisi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Taşyaran Vadisi Tabiat Parkı · Uşak",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ta%C5%9Fyaran_Vadisi.jpg",
+    "imageArtist": "Fatih Renkligil",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Taşyaran Vadisi.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-311",
+    "title": "Göğem Zafer Tabiat Parkı",
+    "place": "Göğem Zafer Tabiat Parkı",
+    "city": "Uşak",
+    "cities": [
+      "Uşak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Uşak sınırlarındaki Göğem Zafer Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-312",
+    "title": "Harmankaya Tabiat Parkı",
+    "place": "Harmankaya Tabiat Parkı",
+    "city": "Yalova",
+    "cities": [
+      "Yalova"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yalova sınırlarındaki Harmankaya Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Harmankaya_Tabiat_Park%C4%B1.jpg/1280px-Harmankaya_Tabiat_Park%C4%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Harmankaya Tabiat Parkı · Yalova",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Harmankaya_Tabiat_Park%C4%B1.jpg",
+    "imageArtist": "User:Anonimous892750265153261",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Harmankaya Tabiat Parkı.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-313",
+    "title": "Delmece Yaylası Tabiat Parkı",
+    "place": "Delmece Yaylası Tabiat Parkı",
+    "city": "Yalova",
+    "cities": [
+      "Yalova"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yalova sınırlarındaki Delmece Yaylası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Delmece_Yaylas%C4%B1_-_panoramio.jpg/1280px-Delmece_Yaylas%C4%B1_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Delmece Yaylası Tabiat Parkı · Yalova",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Delmece_Yaylas%C4%B1_-_panoramio.jpg",
+    "imageArtist": "Oğuz Han Erol",
+    "imageLicense": "CC BY 3.0",
+    "imageFile": "File:Delmece Yaylası - panoramio.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-314",
+    "title": "Ortaburun Tabiat Parkı",
+    "place": "Ortaburun Tabiat Parkı",
+    "city": "Yalova",
+    "cities": [
+      "Yalova"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yalova sınırlarındaki Ortaburun Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-315",
+    "title": "Karlık Yaylası Tabiat Parkı",
+    "place": "Karlık Yaylası Tabiat Parkı",
+    "city": "Yalova",
+    "cities": [
+      "Yalova"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yalova sınırlarındaki Karlık Yaylası Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-316",
+    "title": "Kadıpınarı Tabiat Parkı",
+    "place": "Kadıpınarı Tabiat Parkı",
+    "city": "Yozgat",
+    "cities": [
+      "Yozgat"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yozgat sınırlarındaki Kadıpınarı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-317",
+    "title": "Oluközü Tabiat Parkı",
+    "place": "Oluközü Tabiat Parkı",
+    "city": "Yozgat",
+    "cities": [
+      "Yozgat"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yozgat sınırlarındaki Oluközü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-318",
+    "title": "Üçtepeler Tabiat Parkı",
+    "place": "Üçtepeler Tabiat Parkı",
+    "city": "Yozgat",
+    "cities": [
+      "Yozgat"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Yozgat sınırlarındaki Üçtepeler Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-319",
+    "title": "Göldağı Tabiat Parkı",
+    "place": "Göldağı Tabiat Parkı",
+    "city": "Zonguldak",
+    "cities": [
+      "Zonguldak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Zonguldak sınırlarındaki Göldağı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-320",
+    "title": "Milli Egemenlik Tabiat Parkı",
+    "place": "Milli Egemenlik Tabiat Parkı",
+    "city": "Zonguldak",
+    "cities": [
+      "Zonguldak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Zonguldak sınırlarındaki Milli Egemenlik Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-321",
+    "title": "Danaağzı Tabiat Parkı",
+    "place": "Danaağzı Tabiat Parkı",
+    "city": "Zonguldak",
+    "cities": [
+      "Zonguldak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Zonguldak sınırlarındaki Danaağzı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-322",
+    "title": "Harmankaya Şelaleleri Tabiat Parkı",
+    "place": "Harmankaya Şelaleleri Tabiat Parkı",
+    "city": "Zonguldak",
+    "cities": [
+      "Zonguldak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Zonguldak sınırlarındaki Harmankaya Şelaleleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-323",
+    "title": "Olukbaşı Tabiat Parkı",
+    "place": "Olukbaşı Tabiat Parkı",
+    "city": "Kastamonu",
+    "cities": [
+      "Kastamonu"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Kastamonu sınırlarındaki Olukbaşı Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-324",
+    "title": "Kayalıdere Şelaleleri Tabiat Parkı",
+    "place": "Kayalıdere Şelaleleri Tabiat Parkı",
+    "city": "Zonguldak",
+    "cities": [
+      "Zonguldak"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Zonguldak sınırlarındaki Kayalıdere Şelaleleri Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-325",
+    "title": "Gelin Uçtu Kayalıkları Tabiat Parkı",
+    "place": "Gelin Uçtu Kayalıkları Tabiat Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki Gelin Uçtu Kayalıkları Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-326",
+    "title": "Kangal Balıklıgöl Tabiat Parkı",
+    "place": "Kangal Balıklıgöl Tabiat Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Kangal Balıklıgöl Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-327",
+    "title": "Gökpınar Gölü Tabiat Parkı",
+    "place": "Gökpınar Gölü Tabiat Parkı",
+    "city": "Sivas",
+    "cities": [
+      "Sivas"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Sivas sınırlarındaki Gökpınar Gölü Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/G%C3%B6kp%C4%B1nar_G%C3%B6l%C3%BC.jpg/1280px-G%C3%B6kp%C4%B1nar_G%C3%B6l%C3%BC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "imageAlt": "Gökpınar Gölü Tabiat Parkı · Sivas",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:G%C3%B6kp%C4%B1nar_G%C3%B6l%C3%BC.jpg",
+    "imageArtist": "Mitat Alagöz",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageFile": "File:Gökpınar Gölü.jpg"
+  },
+  {
+    "id": "dkmp-tabiat-328",
+    "title": "Yedimeşe Tabiat Parkı",
+    "place": "Yedimeşe Tabiat Parkı",
+    "city": "Giresun",
+    "cities": [
+      "Giresun"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Giresun sınırlarındaki Yedimeşe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-329",
+    "title": "Akhisar Musala r Tabiat Parkı",
+    "place": "Akhisar Musala r Tabiat Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki Akhisar Musala r Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-330",
+    "title": "Erikçe Tabiat Parkı",
+    "place": "Erikçe Tabiat Parkı",
+    "city": "Gaziantep",
+    "cities": [
+      "Gaziantep"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Gaziantep sınırlarındaki Erikçe Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-331",
+    "title": "İnderesi Tabiat Parkı",
+    "place": "İnderesi Tabiat Parkı",
+    "city": "Manisa",
+    "cities": [
+      "Manisa"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Manisa sınırlarındaki İnderesi Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
+  },
+  {
+    "id": "dkmp-tabiat-332",
+    "title": "Çamlık Tabiat Parkı",
+    "place": "Çamlık Tabiat Parkı",
+    "city": "Karabük",
+    "cities": [
+      "Karabük"
+    ],
+    "category": "tabiat",
+    "tag": "Tabiat Parkları",
+    "icon": "🌲",
+    "duration": "Ziyaret planına göre",
+    "body": "Karabük sınırlarındaki Çamlık Tabiat Parkı. Park çevresinde izin verilen ziyaret ve seyir alanlarını keşfetmek için bir gezi önerisi.",
+    "tip": "Yola çıkmadan önce DKMP’den giriş, mevsimsel kapanış, izin ve ziyaretçi güzergâhlarını kontrol edin. Harita bağlantısı park konumunu arar; işaretli yürüyüş parkurunu sahada doğrulayın.",
+    "source": "https://www.tarimorman.gov.tr/DKMP/Menu/28/",
+    "sourceLabel": "DKMP resmî park listesi"
   }
 ];
+

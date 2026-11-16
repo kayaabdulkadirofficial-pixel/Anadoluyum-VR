@@ -17,6 +17,13 @@ if (routeCount) routeCount.textContent = window.ACTIVITIES.length;
 if (cityCount) cityCount.textContent = new Set(window.ACTIVITIES.map(item => item.city)).size;
 const categoryCount = document.getElementById("category-count");
 if (categoryCount) categoryCount.textContent = new Set(window.ACTIVITIES.map(item => item.category)).size;
+chips.forEach(chip => {
+ const key = chip.dataset.filter;
+ const count = key === "all" ? window.ACTIVITIES.length : window.ACTIVITIES.filter(item => item.category === key).length;
+ const label = chip.textContent.replace(/\s*\(\d+\)\s*$/, "").trim();
+ chip.textContent = label + " (" + count + ")";
+});
+
 
 function getGoogleMapsApiKey() {
   return "AIzaSyCMRZZwKdNxXekhQw05xEKv9PmRXBxYZHc";
@@ -52,9 +59,11 @@ function buildEmbedUrl(item, mode) {
 }
 
 function matches(item, q) {
-  const hay = normalize(`${item.title} ${item.city} ${item.tag} ${item.body}`);
-  const okFilter = filter === "all" || item.category === filter;
-  return okFilter && (!citySelect.value || item.city === citySelect.value) && hay.includes(q);
+ const hay = normalize([item.title,item.place,item.city,...(item.cities || []),item.tag,item.body,item.category === "milli" ? "milli millî park parkı parkları" : item.category === "tabiat" ? "tabiat park parkı parkları" : ""].join(" "));
+ const words = q.split(/\s+/).filter(Boolean);
+ return (filter === "all" || item.category === filter) &&
+ (!citySelect.value || item.city === citySelect.value || item.cities?.includes(citySelect.value)) &&
+ words.every(word => hay.includes(word));
 }
 
 function render() {
@@ -70,7 +79,7 @@ function render() {
     if (city) link.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(city + ", Türkiye")}`;
     else link.removeAttribute("href");
   }
-  document.getElementById("result-count").textContent = `${city || "Tüm şehirler"} · ${items.length} rota gösteriliyor`;
+  document.getElementById("result-count").textContent = `${city || "Tüm şehirler"} · Toplam ${window.ACTIVITIES.length} rotadan ${items.length} rota gösteriliyor`;
   grid.innerHTML = items
     .map(
       (item) => `
@@ -85,6 +94,19 @@ function render() {
     )
     .join("");
 
+  const routesList = document.getElementById("routes-list");
+  if (routesList) {
+    document.getElementById("routes-list-count").textContent = `Toplam ${window.ACTIVITIES.length} rotadan ${items.length} rota listeleniyor.`;
+    routesList.innerHTML = items.length ? items.map(item => `
+      <article>
+        <p class="tag">${item.tag} · ${(item.cities || [item.city]).join(", ")}</p>
+        <h3>${item.title}</h3>
+        <p>${item.body}</p>
+        <p>${item.duration}</p>
+        <button type="button" class="btn primary" data-route-open="${item.id}">Rota ayrıntıları</button>
+        <a class="btn ghost" href="${mapsSearchUrl(item)}" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>
+      </article>`).join("") : '<p>Bu seçimle eşleşen rota yok. Keşfet bölümünden filtreleri temizleyebilirsin.</p>';
+  }
   routeDirectory.innerHTML = items.map(item => {
     const place = item.place || item.title;
     let steps;
@@ -92,7 +114,7 @@ function render() {
     else if (["arkeoloji","muze","inanc","kultur"].includes(item.category)) steps = [place + " için ziyaret saati, bilet ve kapalı gün bilgisini doğrula.", "Mekânı ve kültürel mirası kendi akışında keşfet.", "Fotoğraf ve ziyaret kurallarına uy."];
     else if (["magara","selale"].includes(item.category)) steps = ["Mevsim, hava ve alanın ziyarete açık olup olmadığını kontrol et.", place + " çevresindeki işaretli ziyaret güzergâhını takip et.", "Zemin ve hava koşullarına uygun giysi ve ayakkabı seç."];
     else steps = [place + " için ulaşım ve hava durumunu yola çıkmadan kontrol et.", "Ziyaret alanında keşif ve manzara molası ver.", "Dönüş saatini ve ulaşım planını önceden belirle."];
-    return '<article class="route-detail"><img src="' + item.image + '" alt="' + (item.imageAlt || place) + '" loading="lazy"><div class="route-detail-content"><p class="tag">' + (item.icon || "✦") + ' ' + item.tag + ' · ' + item.city + '</p><h3>' + item.title + '</h3><p>' + item.body + '</p><div class="route-facts"><span>⏱ ' + item.duration + '</span><span>📍 ' + place + '</span></div><h4>Gezi akışı</h4><ol>' + steps.map(step=>'<li>'+step+'</li>').join("") + '</ol><p class="tip">' + (item.tip || "Ziyaret öncesi açılış saatlerini, ulaşımı ve alan kurallarını doğrulayın.") + '</p><div class="map-links"><a class="btn primary" href="' + streetViewDirectUrl(item) + '" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a><a class="btn ghost" href="' + mapsSearchUrl(item) + '" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>' + (item.source ? '<a href="' + item.source + '" target="_blank" rel="noopener noreferrer">Kaynak ↗</a>' : '') + '</div></div></article>';
+    return '<article class="route-detail">' + (item.image ? '<img src="' + item.image + '" alt="' + (item.imageAlt || place) + '" loading="lazy">' : '<div class="route-cover"><span>' + (item.icon || "🌿") + '</span><small>Fotoğraf henüz eklenmedi</small></div>') + '<div class="route-detail-content"><p class="tag">' + (item.icon || "✦") + ' ' + item.tag + ' · ' + item.city + '</p><h3>' + item.title + '</h3><p>' + item.body + '</p><div class="route-facts"><span>⏱ ' + item.duration + '</span><span>📍 ' + place + '</span></div><h4>Gezi akışı</h4><ol>' + steps.map(step=>'<li>'+step+'</li>').join("") + '</ol><p class="tip">' + (item.tip || "Ziyaret öncesi açılış saatlerini, ulaşımı ve alan kurallarını doğrulayın.") + '</p><div class="map-links"><a class="btn primary" href="' + streetViewDirectUrl(item) + '" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a><a class="btn ghost" href="' + mapsSearchUrl(item) + '" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>' + (item.source ? '<a href="' + item.source + '" target="_blank" rel="noopener noreferrer">Kaynak ↗</a>' : '') + '</div></div></article>';
   }).join("");
   if (!items.length) {
     grid.innerHTML = city && !cityTotal
@@ -184,11 +206,17 @@ chips.forEach((chip) => {
     chip.classList.add("active");
     chip.setAttribute("aria-pressed", "true");
     filter = chip.dataset.filter;
+    search.value = "";
     render();
   });
 });
 
-search.addEventListener("input", render);
+search.addEventListener("input", () => {
+ filter = "all";
+ chips.forEach(c => { const active = c.dataset.filter === "all"; c.classList.toggle("active", active); c.setAttribute("aria-pressed", String(active)); });
+ render();
+});
+document.getElementById("search-form")?.addEventListener("submit", event => { event.preventDefault(); render(); document.getElementById("result-count").scrollIntoView({block:"nearest"}); });
 citySelect.addEventListener("change", render);
 document.getElementById("reset-filters").addEventListener("click", () => {
   citySelect.value = "";
@@ -217,7 +245,7 @@ render();
 // Lightweight photo tour preview + Keyless 360° Pannellum VR & Google Maps Satellite Embed
 const tourScene = document.getElementById("tour-scene");
 if (tourScene) {
-  const tourSlides = window.ACTIVITIES.filter((item) => item.image);
+  const tourSlides = window.ACTIVITIES;
   const tourImage = document.getElementById("tour-image");
   const tourStops = document.getElementById("tour-stops");
   const tourEmbed = document.getElementById("tour-embed");
@@ -299,7 +327,9 @@ if (tourScene) {
     tourIndex = (index + tourSlides.length) % tourSlides.length;
     const item = tourSlides[tourIndex];
     tourScene.classList.remove("is-moving");
-    tourImage.src = item.image;
+    tourImage.hidden = !item.image;
+    if (item.image) tourImage.src = item.image;
+    else tourImage.removeAttribute("src");
     tourImage.alt = item.imageAlt || `${item.city} destinasyon görünümü`;
     document.getElementById("tour-location").textContent = `${item.city} · ${item.tag}`;
     document.getElementById("tour-title").textContent = item.title;
@@ -331,7 +361,7 @@ if (tourScene) {
     btn.addEventListener("click", () => setTourMode(btn.dataset.tourMode));
   });
 
-  tourStops.innerHTML = tourSlides.map((item, i) => `<button type="button" class="tour-stop" data-index="${i}" aria-label="${item.city}: ${item.title}" aria-current="false"><img src="${item.image}" alt="" loading="lazy"><span>${item.city}<small>${item.tag} · ${item.duration}</small></span></button>`).join("");
+  tourStops.innerHTML = tourSlides.map((item, i) => `<button type="button" class="tour-stop" data-index="${i}" aria-label="${item.city}: ${item.title}" aria-current="false">${item.image ? `<img src="${item.image}" alt="" loading="lazy">` : `<span aria-hidden="true">${item.icon || "🌿"}</span>`}<span>${item.city}<small>${item.tag} · ${item.duration}</small></span></button>`).join("");
   tourStops.addEventListener("click", (event) => {
     const stop = event.target.closest("button[data-index]");
     if (stop) { showTourSlide(Number(stop.dataset.index)); setTourPlaying(false); }
@@ -342,3 +372,8 @@ if (tourScene) {
   showTourSlide(0);
   setTourPlaying(tourPlaying);
 }
+
+document.getElementById("routes-list")?.addEventListener("click", event => {
+ const button = event.target.closest("[data-route-open]");
+ if (button) openDetail(button.dataset.routeOpen);
+});
