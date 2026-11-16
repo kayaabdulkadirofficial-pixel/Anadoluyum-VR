@@ -125,11 +125,11 @@
       <section id="kesfet" class="panel">
         <div class="section-head">
           <h2>Keşfet</h2>
-          <p>81 ilde 100 rota: şehrini ve 12 kategoriden birini seç. Kartlardan gezi ayrıntılarını ve kaynakları aç.</p>
+          <p>81 ilde 420 gezi önerisi: 54 millî park ve 279 tabiat parkını şehir ve kategoriye göre keşfet. Park adı veya şehir yazarak ara.</p>
         </div>
         <div class="filters" role="toolbar" aria-label="Aktivite filtreleri">
           <button class="chip active" data-filter="all" aria-pressed="true"><span aria-hidden="true">✦</span> Tümü</button>
-          <button class="chip active" data-filter="doga" aria-pressed="true"><span aria-hidden="true">🌿</span> Doğa</button>
+          <button class="chip" data-filter="doga" aria-pressed="false"><span aria-hidden="true">🌿</span> Doğa</button>
           <button class="chip" data-filter="sehir" aria-pressed="false"><span aria-hidden="true">🏙️</span> Şehir</button>
           <button class="chip" data-filter="kultur" aria-pressed="false"><span aria-hidden="true">🏛️</span> Kültür</button>
           <button class="chip" data-filter="su" aria-pressed="false"><span aria-hidden="true">🌊</span> Su</button>
@@ -235,10 +235,10 @@
             <a id="city-google-map" class="btn ghost" target="_blank" rel="noopener noreferrer" hidden>Google Maps ↗</a>
           </div>
         </div>
-        <label class="search">
+        <form id="search-form" role="search"><label class="search">
           <span class="sr-only">Ara</span>
-          <input id="search" type="search" placeholder="Park, müze, yürüyüş, şehir…" />
-        </label>
+          <input id="search" type="search" placeholder="Park adı, millî park, tabiat parkı veya şehir ara…" />
+        </label><button class="btn primary" type="submit">Ara</button></form>
         <p id="result-count" class="result-count" role="status"></p>
         <button id="reset-filters" class="chip" type="button">Seçimleri temizle</button>
         <div id="grid" class="grid"></div>
@@ -301,7 +301,7 @@
           </ol>
         </div>
       </section>
-      <section id="rota-rehberi" class="panel route-guide"><div class="section-head"><p class="eyebrow">81 il · 100 gezi önerisi</p><h2>Detaylı rota rehberi</h2><p>Her rota için gezi özeti, planlama aşamaları, süre ve harita bağlantıları.</p></div><div id="route-directory" class="route-directory"></div></section>
+      <section id="rota-rehberi" class="panel route-guide"><div class="section-head"><p class="eyebrow">81 il · 420 gezi önerisi</p><h2>Detaylı rota rehberi</h2><p>Her rota için gezi özeti, planlama aşamaları, süre ve harita bağlantıları.</p></div><div id="route-directory" class="route-directory"></div></section>
     </main>
 
     <!-- ── Modal ──────────────────────────────────── -->
@@ -340,8 +340,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <script src="data.js?v=all-100-photos"></script>
-    <script src="app.js?v=referrer-fix-4"></script>
+    <script src="data.js?v=all-parks-1"></script>
+    <script src="app.js?v=all-parks-1"></script>
     <script src="photo-credits.js"></script>
   </body>
 </html>
