@@ -70,11 +70,11 @@ function enhance(frame,modeSelector) {
  const url=new URL(src);const coords=url.searchParams.get("location")?.split(",").map(Number);
  if(!coords||coords.length!==2)throw new Error("Konum bilgisi bulunamadı");
  const service=new google.maps.StreetViewService();
- const result=await service.getPanorama({location:{lat:coords[0],lng:coords[1]},radius:50000,preference:google.maps.StreetViewPreference.NEAREST,source:google.maps.StreetViewSource.OUTDOOR});
+ const result=await service.getPanorama({location:{lat:coords[0],lng:coords[1]},radius:1000,preference:google.maps.StreetViewPreference.NEAREST,source:google.maps.StreetViewSource.OUTDOOR});
  if(versionNow!==version)return;
  overlay.style.display="block"; viewer.style.height="100%";
  if(!panorama){
- panorama=new google.maps.StreetViewPanorama(viewer,{linksControl:true,clickToGo:true,panControl:true,zoomControl:true,fullscreenControl:true,showRoadLabels:true,motionTracking:false,addressControl:true});
+ panorama=new google.maps.StreetViewPanorama(viewer,{linksControl:true,clickToGo:true,panControl:true,zoomControl:true,fullscreenControl:true,showRoadLabels:true,motionTracking:false});
  for(const event of ["links_changed","pov_changed","status_changed"])panorama.addListener(event,update);
  }
  panorama.setPano(result.data.location.pano);
