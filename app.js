@@ -52,9 +52,11 @@ function buildEmbedUrl(item, mode) {
 }
 
 function matches(item, q) {
-  const hay = normalize(`${item.title} ${item.city} ${item.tag} ${item.body}`);
-  const okFilter = filter === "all" || item.category === filter;
-  return okFilter && (!citySelect.value || item.city === citySelect.value) && hay.includes(q);
+ const hay = normalize([item.title,item.place,item.city,...(item.cities || []),item.tag,item.body,item.category === "milli" ? "milli millî park parkı parkları" : item.category === "tabiat" ? "tabiat park parkı parkları" : ""].join(" "));
+ const words = q.split(/\s+/).filter(Boolean);
+ return (filter === "all" || item.category === filter) &&
+ (!citySelect.value || item.city === citySelect.value || item.cities?.includes(citySelect.value)) &&
+ words.every(word => hay.includes(word));
 }
 
 function render() {
@@ -92,7 +94,7 @@ function render() {
     else if (["arkeoloji","muze","inanc","kultur"].includes(item.category)) steps = [place + " için ziyaret saati, bilet ve kapalı gün bilgisini doğrula.", "Mekânı ve kültürel mirası kendi akışında keşfet.", "Fotoğraf ve ziyaret kurallarına uy."];
     else if (["magara","selale"].includes(item.category)) steps = ["Mevsim, hava ve alanın ziyarete açık olup olmadığını kontrol et.", place + " çevresindeki işaretli ziyaret güzergâhını takip et.", "Zemin ve hava koşullarına uygun giysi ve ayakkabı seç."];
     else steps = [place + " için ulaşım ve hava durumunu yola çıkmadan kontrol et.", "Ziyaret alanında keşif ve manzara molası ver.", "Dönüş saatini ve ulaşım planını önceden belirle."];
-    return '<article class="route-detail"><img src="' + item.image + '" alt="' + (item.imageAlt || place) + '" loading="lazy"><div class="route-detail-content"><p class="tag">' + (item.icon || "✦") + ' ' + item.tag + ' · ' + item.city + '</p><h3>' + item.title + '</h3><p>' + item.body + '</p><div class="route-facts"><span>⏱ ' + item.duration + '</span><span>📍 ' + place + '</span></div><h4>Gezi akışı</h4><ol>' + steps.map(step=>'<li>'+step+'</li>').join("") + '</ol><p class="tip">' + (item.tip || "Ziyaret öncesi açılış saatlerini, ulaşımı ve alan kurallarını doğrulayın.") + '</p><div class="map-links"><a class="btn primary" href="' + streetViewDirectUrl(item) + '" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a><a class="btn ghost" href="' + mapsSearchUrl(item) + '" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>' + (item.source ? '<a href="' + item.source + '" target="_blank" rel="noopener noreferrer">Kaynak ↗</a>' : '') + '</div></div></article>';
+    return '<article class="route-detail">' + (item.image ? '<img src="' + item.image + '" alt="' + (item.imageAlt || place) + '" loading="lazy">' : '<div class="route-cover"><span>' + (item.icon || "🌿") + '</span><small>Fotoğraf henüz eklenmedi</small></div>') + '<div class="route-detail-content"><p class="tag">' + (item.icon || "✦") + ' ' + item.tag + ' · ' + item.city + '</p><h3>' + item.title + '</h3><p>' + item.body + '</p><div class="route-facts"><span>⏱ ' + item.duration + '</span><span>📍 ' + place + '</span></div><h4>Gezi akışı</h4><ol>' + steps.map(step=>'<li>'+step+'</li>').join("") + '</ol><p class="tip">' + (item.tip || "Ziyaret öncesi açılış saatlerini, ulaşımı ve alan kurallarını doğrulayın.") + '</p><div class="map-links"><a class="btn primary" href="' + streetViewDirectUrl(item) + '" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a><a class="btn ghost" href="' + mapsSearchUrl(item) + '" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>' + (item.source ? '<a href="' + item.source + '" target="_blank" rel="noopener noreferrer">Kaynak ↗</a>' : '') + '</div></div></article>';
   }).join("");
   if (!items.length) {
     grid.innerHTML = city && !cityTotal
@@ -184,11 +186,17 @@ chips.forEach((chip) => {
     chip.classList.add("active");
     chip.setAttribute("aria-pressed", "true");
     filter = chip.dataset.filter;
+    search.value = "";
     render();
   });
 });
 
-search.addEventListener("input", render);
+search.addEventListener("input", () => {
+ filter = "all";
+ chips.forEach(c => { const active = c.dataset.filter === "all"; c.classList.toggle("active", active); c.setAttribute("aria-pressed", String(active)); });
+ render();
+});
+document.getElementById("search-form")?.addEventListener("submit", event => { event.preventDefault(); render(); document.getElementById("result-count").scrollIntoView({block:"nearest"}); });
 citySelect.addEventListener("change", render);
 document.getElementById("reset-filters").addEventListener("click", () => {
   citySelect.value = "";
