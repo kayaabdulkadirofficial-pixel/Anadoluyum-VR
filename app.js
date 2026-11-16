@@ -66,10 +66,10 @@ function render() {
   citySummary.textContent = city
     ? `${city} · ${cityTotal ? cityTotal + " rota mevcut" : "Bu il için ayrıntılı rotalar henüz eklenmedi."}`
     : "81 il arasından seçim yapın veya tüm mevcut rotaları keşfedin.";
-  for (const [link, provider] of [[cityGoogleMap, "google"]]) {
-    link.hidden = !city;
-    if (city) link.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(city + ", Türkiye")}`;
-    else link.removeAttribute("href");
+  if (cityGoogleMap) {
+    cityGoogleMap.hidden = !city;
+    if (city) cityGoogleMap.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(city + ", Türkiye")}`;
+    else cityGoogleMap.removeAttribute("href");
   }
   document.getElementById("result-count").textContent = `${city || "Tüm şehirler"} · Toplam ${window.ACTIVITIES.length} rotadan ${items.length} rota gösteriliyor`;
   grid.innerHTML = items
@@ -96,7 +96,6 @@ function render() {
         <p>${item.body}</p>
         <p>${item.duration}</p>
         <button type="button" class="btn primary" data-route-open="${item.id}">Rota ayrıntıları</button>
-        <a class="btn ghost" href="${mapsSearchUrl(item)}" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>
       </article>`).join("") : '<p>Bu seçimle eşleşen rota yok. Keşfet bölümünden filtreleri temizleyebilirsin.</p>';
   }
   routeDirectory.innerHTML = items.map(item => {
@@ -106,7 +105,7 @@ function render() {
     else if (["arkeoloji","muze","inanc","kultur"].includes(item.category)) steps = [place + " için ziyaret saati, bilet ve kapalı gün bilgisini doğrula.", "Mekânı ve kültürel mirası kendi akışında keşfet.", "Fotoğraf ve ziyaret kurallarına uy."];
     else if (["magara","selale"].includes(item.category)) steps = ["Mevsim, hava ve alanın ziyarete açık olup olmadığını kontrol et.", place + " çevresindeki işaretli ziyaret güzergâhını takip et.", "Zemin ve hava koşullarına uygun giysi ve ayakkabı seç."];
     else steps = [place + " için ulaşım ve hava durumunu yola çıkmadan kontrol et.", "Ziyaret alanında keşif ve manzara molası ver.", "Dönüş saatini ve ulaşım planını önceden belirle."];
-    return '<article class="route-detail">' + (item.image ? '<img src="' + item.image + '" alt="' + (item.imageAlt || place) + '" loading="lazy">' : '<div class="route-cover"><span>' + (item.icon || "🌿") + '</span><small>Fotoğraf henüz eklenmedi</small></div>') + '<div class="route-detail-content"><p class="tag">' + (item.icon || "✦") + ' ' + item.tag + ' · ' + item.city + '</p><h3>' + item.title + '</h3><p>' + item.body + '</p><div class="route-facts"><span>⏱ ' + item.duration + '</span><span>📍 ' + place + '</span></div><h4>Gezi akışı</h4><ol>' + steps.map(step=>'<li>'+step+'</li>').join("") + '</ol><p class="tip">' + (item.tip || "Ziyaret öncesi açılış saatlerini, ulaşımı ve alan kurallarını doğrulayın.") + '</p><div class="map-links"><a class="btn primary" href="' + streetViewDirectUrl(item) + '" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a><a class="btn ghost" href="' + mapsSearchUrl(item) + '" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>' + (item.source ? '<a href="' + item.source + '" target="_blank" rel="noopener noreferrer">Kaynak ↗</a>' : '') + '</div></div></article>';
+    return '<article class="route-detail">' + (item.image ? '<img src="' + item.image + '" alt="' + (item.imageAlt || place) + '" loading="lazy">' : '<div class="route-cover"><span>' + (item.icon || "🌿") + '</span><small>Fotoğraf henüz eklenmedi</small></div>') + '<div class="route-detail-content"><p class="tag">' + (item.icon || "✦") + ' ' + item.tag + ' · ' + item.city + '</p><h3>' + item.title + '</h3><p>' + item.body + '</p><div class="route-facts"><span>⏱ ' + item.duration + '</span><span>📍 ' + place + '</span></div><h4>Gezi akışı</h4><ol>' + steps.map(step=>'<li>'+step+'</li>').join("") + '</ol><p class="tip">' + (item.tip || "Ziyaret öncesi açılış saatlerini, ulaşımı ve alan kurallarını doğrulayın.") + '</p>' + (item.source ? '<div class="map-links"><a href="' + item.source + '" target="_blank" rel="noopener noreferrer">Kaynak ↗</a></div>' : '') + '</div></article>';
   }).join("");
   if (!items.length) {
     grid.innerHTML = city && !cityTotal
@@ -183,8 +182,10 @@ function openDetail(id) {
   document.getElementById("d-meta").textContent = item.duration;
   document.getElementById("d-body").textContent = item.body;
   document.getElementById("d-tip").textContent = `\u0130pucu: ${item.tip}`;
-  document.getElementById("d-streetview-map").href = streetViewDirectUrl(item);
-  document.getElementById("d-google-map").href = mapsSearchUrl(item);
+  const svMapEl = document.getElementById("d-streetview-map");
+  if (svMapEl) svMapEl.href = streetViewDirectUrl(item);
+  const gMapEl = document.getElementById("d-google-map");
+  if (gMapEl) gMapEl.href = mapsSearchUrl(item);
   const sourceLink = document.getElementById("d-source");
   sourceLink.hidden = !item.source;
   if (item.source) {
@@ -335,7 +336,8 @@ if (tourScene) {
     document.getElementById("tour-duration").textContent = `◷ ${item.duration}`;
     document.getElementById("tour-category").textContent = `${item.icon || categoryIcons[item.category] || "✦"} ${item.tag}`;
     document.getElementById("tour-tip").textContent = `Gezi notu: ${item.tip}`;
-    document.getElementById("tour-map-link").href = mapsSearchUrl(item);
+    const tourMapEl = document.getElementById("tour-map-link");
+    if (tourMapEl) tourMapEl.href = mapsSearchUrl(item);
     document.getElementById("tour-counter").textContent = `${tourIndex + 1} / ${tourSlides.length}`;
     tourStops.querySelectorAll("button").forEach((button, i) => {
       const active = i === tourIndex;
