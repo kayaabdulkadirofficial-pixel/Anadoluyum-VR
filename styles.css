@@ -40,7 +40,8 @@ body {
 .orb-b { width:220px; height:220px; left:4%;   bottom:18%; background: radial-gradient(circle,#e4c27a,transparent 70%); }
 
 /* ── Typography ─────────────────────────────────────────── */
-a { color: inherit; }
+a { color: inherit; text-decoration: none; }
+a:visited { color: inherit; }
 
 h1, h2, h3 {
   font-family: Fraunces, Georgia, "Times New Roman", serif;
