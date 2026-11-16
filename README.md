@@ -8,7 +8,7 @@
 - **Gök:** Sınırları aşan kuşbakışı vizyonu, drone ve 360° sanal gerçeklik teknolojisinin özgürlüğünü simgeler.
 
 ## 🚀 Canlı Web Sitesini Açmak İçin Tıklayın:
-👉 **[https://kayaabdulkadirofficial-pixel.github.io/NovaGeosferVR-/](https://kayaabdulkadirofficial-pixel.github.io/NovaGeosferVR-/)**
+👉 **[https://kayaabdulkadirofficial-pixel.github.io/alagokvr/](https://kayaabdulkadirofficial-pixel.github.io/alagokvr/)**
 
 ---
 
