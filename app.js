@@ -113,24 +113,48 @@ function render() {
 
 let currentModalItem = null;
 let currentModalMode = "map";
+let modalPanoViewer = null;
+
+function destroyModalPano() {
+  if (modalPanoViewer) {
+    try { modalPanoViewer.destroy(); } catch {}
+    modalPanoViewer = null;
+  }
+}
 
 function updateModalEmbed() {
   if (!currentModalItem) return;
   const iframe = document.getElementById("d-embed");
-  const fallback = document.getElementById("d-sv-fallback");
-  const svDirect = document.getElementById("d-sv-direct");
-  if (!iframe || !fallback) return;
+  const pano = document.getElementById("d-pano");
+  if (!iframe || !pano) return;
 
-  const url = buildEmbedUrl(currentModalItem, currentModalMode);
+  if (currentModalMode === "vr360" && window.pannellum && currentModalItem.image) {
+    iframe.hidden = true;
+    iframe.removeAttribute("src");
+    pano.hidden = false;
+    destroyModalPano();
+    modalPanoViewer = window.pannellum.viewer("d-pano", {
+      type: "equirectangular",
+      panorama: currentModalItem.image,
+      autoLoad: true,
+      autoRotate: -2,
+      haov: 150,
+      vaov: 75,
+      minPitch: -35,
+      maxPitch: 35,
+      hfov: 75,
+      title: currentModalItem.title,
+      author: `Alagök VR · ${currentModalItem.city}`
+    });
+    return;
+  }
+
+  destroyModalPano();
+  pano.hidden = true;
+  const url = buildEmbedUrl(currentModalItem, "map");
   if (url) {
     iframe.src = url;
     iframe.hidden = false;
-    fallback.hidden = true;
-  } else {
-    iframe.removeAttribute("src");
-    iframe.hidden = true;
-    fallback.hidden = false;
-    if (svDirect) svDirect.href = streetViewDirectUrl(currentModalItem);
   }
 }
 
@@ -194,59 +218,75 @@ dialog.addEventListener("click", (e) => {
   if (e.target === dialog) dialog.close();
 });
 
+dialog.addEventListener("close", destroyModalPano);
+
 document.querySelector(".close").addEventListener("click", () => dialog.close());
 
 render();
 
 
-// Lightweight photo tour preview + Google Maps Embed (360° Street View & Satellite Map)
+// Lightweight photo tour preview + Keyless 360° Pannellum VR & Google Maps Satellite Embed
 const tourScene = document.getElementById("tour-scene");
 if (tourScene) {
   const tourSlides = window.ACTIVITIES.filter((item) => item.image);
   const tourImage = document.getElementById("tour-image");
   const tourStops = document.getElementById("tour-stops");
   const tourEmbed = document.getElementById("tour-embed");
-  const tourSvFallback = document.getElementById("tour-sv-fallback");
+  const tourPano = document.getElementById("tour-pano");
   const tourSvLink = document.getElementById("tour-sv-link");
-  const svDirectLink = document.getElementById("sv-direct-link");
-  const gmapsKeyForm = document.getElementById("gmaps-key-form");
-  const gmapsKeyInput = document.getElementById("gmaps-key-input");
-  const gmapsKeyClear = document.getElementById("gmaps-key-clear");
   const modeButtons = document.querySelectorAll("[data-tour-mode]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let tourIndex = 0;
   let tourTimer = null;
   let tourPlaying = !reducedMotion;
   let tourMode = "photo";
+  let tourPanoViewer = null;
 
-  function syncKeyUi() {
-    const key = getGoogleMapsApiKey();
-    if (gmapsKeyInput && key) gmapsKeyInput.value = key;
-    if (gmapsKeyClear) gmapsKeyClear.hidden = !key;
+  function destroyTourPano() {
+    if (tourPanoViewer) {
+      try { tourPanoViewer.destroy(); } catch {}
+      tourPanoViewer = null;
+    }
   }
 
   function updateTourModeView(item) {
     if (!item) return;
     const svUrl = streetViewDirectUrl(item);
     if (tourSvLink) tourSvLink.href = svUrl;
-    if (svDirectLink) svDirectLink.href = svUrl;
-    const svTitle = document.getElementById("sv-fallback-title");
-    if (svTitle) svTitle.textContent = `${item.title} · 360° Street View`;
 
     if (tourMode === "photo") {
+      destroyTourPano();
+      if (tourPano) tourPano.hidden = true;
       if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
-      if (tourSvFallback) tourSvFallback.hidden = true;
       return;
     }
 
-    const embedUrl = buildEmbedUrl(item, tourMode);
+    if (tourMode === "vr360" && window.pannellum && tourPano) {
+      if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
+      tourPano.hidden = false;
+      destroyTourPano();
+      tourPanoViewer = window.pannellum.viewer("tour-pano", {
+        type: "equirectangular",
+        panorama: item.image,
+        autoLoad: true,
+        autoRotate: -2,
+        haov: 150,
+        vaov: 75,
+        minPitch: -35,
+        maxPitch: 35,
+        hfov: 75,
+        title: item.title,
+        author: `Alagök VR · ${item.city}`
+      });
+      return;
+    }
+
+    destroyTourPano();
+    if (tourPano) tourPano.hidden = true;
+    const embedUrl = buildEmbedUrl(item, "map");
     if (embedUrl && tourEmbed) {
       tourEmbed.src = embedUrl;
       tourEmbed.hidden = false;
-      if (tourSvFallback) tourSvFallback.hidden = true;
-    } else {
-      if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
-      if (tourSvFallback) tourSvFallback.hidden = false;
     }
   }
 
@@ -298,29 +338,6 @@ if (tourScene) {
     btn.addEventListener("click", () => setTourMode(btn.dataset.tourMode));
   });
 
-  if (gmapsKeyForm) {
-    gmapsKeyForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const val = (gmapsKeyInput?.value || "").trim();
-      if (val) {
-        localStorage.setItem("alagok_gmaps_key", val);
-        syncKeyUi();
-        updateTourModeView(tourSlides[tourIndex]);
-        updateModalEmbed();
-      }
-    });
-  }
-
-  if (gmapsKeyClear) {
-    gmapsKeyClear.addEventListener("click", () => {
-      localStorage.removeItem("alagok_gmaps_key");
-      if (gmapsKeyInput) gmapsKeyInput.value = "";
-      syncKeyUi();
-      updateTourModeView(tourSlides[tourIndex]);
-      updateModalEmbed();
-    });
-  }
-
   tourStops.innerHTML = tourSlides.map((item, i) => `<button type="button" class="tour-stop" data-index="${i}" aria-label="${item.city}: ${item.title}" aria-current="false"><img src="${item.image}" alt="" loading="lazy"><span>${item.city}<small>${item.tag} · ${item.duration}</small></span></button>`).join("");
   tourStops.addEventListener("click", (event) => {
     const stop = event.target.closest("button[data-index]");
@@ -329,7 +346,6 @@ if (tourScene) {
   document.getElementById("tour-prev").addEventListener("click", () => showTourSlide(tourIndex - 1));
   document.getElementById("tour-next").addEventListener("click", () => showTourSlide(tourIndex + 1));
   document.getElementById("tour-toggle").addEventListener("click", () => setTourPlaying(!tourPlaying));
-  syncKeyUi();
   showTourSlide(0);
   setTourPlaying(tourPlaying);
 }

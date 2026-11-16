@@ -9,6 +9,7 @@
       content="Alagök VR: Yerin Rengi, Göğün Ufku: Keşfetmenin Yeni Boyutu. Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi."
     />
     <link rel="stylesheet" href="styles.css?v=81-rota-1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,7 +81,7 @@
         <div class="visual-tour" aria-label="Destinasyon görsel ve 360° önizlemesi">
           <div class="tour-mode-bar" role="tablist" aria-label="Görünüm modu">
             <button class="tour-mode-btn active" type="button" data-tour-mode="photo" role="tab" aria-selected="true">🖼️ Görsel Tur</button>
-            <button class="tour-mode-btn" type="button" data-tour-mode="streetview" role="tab" aria-selected="false">🌐 360° Sokak Görünümü</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="vr360" role="tab" aria-selected="false">🥽 360° Küresel Bakış (API'siz)</button>
             <button class="tour-mode-btn" type="button" data-tour-mode="map" role="tab" aria-selected="false">🛰️ Uydu &amp; Harita</button>
           </div>
           <div class="tour-scene" id="tour-scene">
@@ -93,42 +94,27 @@
               <p id="tour-description"></p>
               <p class="tour-tip" id="tour-tip"></p>
             </div>
+            <div id="tour-pano" class="tour-pano" hidden></div>
             <iframe
               id="tour-embed"
               class="tour-embed"
-              title="Google Maps 360° ve Harita Gömülü Görünüm"
+              title="Google Maps Uydu ve Harita Gömülü Görünüm"
               loading="lazy"
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
               hidden
             ></iframe>
-            <div id="tour-sv-fallback" class="tour-sv-fallback" hidden>
-              <div class="sv-fallback-card">
-                <p class="eyebrow">Google Maps Embed API · Street View</p>
-                <h3 id="sv-fallback-title">360° Sokak Görünümü</h3>
-                <p>Bu rotayı sayfa içinde gömülü 360° Street View olarak gezmek için Google Maps Embed API anahtarınızı girin veya doğrudan Google Haritalar 360° görünümünü açın.</p>
-                <div class="sv-actions">
-                  <a id="sv-direct-link" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Street View'da Aç ↗</a>
-                </div>
-                <form id="gmaps-key-form" class="gmaps-key-form">
-                  <label class="sr-only" for="gmaps-key-input">Google Maps Embed API Anahtarı</label>
-                  <input id="gmaps-key-input" type="password" placeholder="Google Maps Embed API Key (AIza...)" autocomplete="off" />
-                  <button class="tour-button" type="submit">Anahtarı Kaydet</button>
-                  <button id="gmaps-key-clear" class="tour-button" type="button" hidden>Temizle</button>
-                </form>
-              </div>
-            </div>
             <span class="tour-counter" id="tour-counter"></span>
           </div>
           <div class="tour-controls">
             <button class="tour-button" id="tour-prev" type="button" aria-label="Önceki destinasyon">←</button>
             <button class="tour-button tour-play" id="tour-toggle" type="button" aria-pressed="true">⏸ Duraklat</button>
             <button class="tour-button" id="tour-next" type="button" aria-label="Sonraki destinasyon">Sonraki →</button>
-            <a class="tour-button map-link" id="tour-sv-link" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Gez ↗</a>
+            <a class="tour-button map-link" id="tour-sv-link" href="#" target="_blank" rel="noopener noreferrer">🌐 Google Street View 360° ↗</a>
             <a class="tour-button map-link" id="tour-map-link" href="#" target="_blank" rel="noopener noreferrer">📍 Google Haritalar’da aç</a>
           </div>
           <div class="tour-stops" id="tour-stops" aria-label="Destinasyon seç"></div>
-          <p class="tour-note"><strong>Google Maps Embed entegrasyonu:</strong> Rotalar koordinat (<code>lat/lng</code>) ve 360° kamera açılarıyla (<code>heading</code>, <code>pitch</code>, <code>fov</code>) yapılandırılmıştır. Uydu haritası doğrudan gömülü çalışır; sayfa içi gömülü 360° Street View için Google Cloud Maps Embed API anahtarı bağlayabilir veya <strong>360° Gez</strong> butonuyla doğrudan açabilirsiniz.</p>
+          <p class="tour-note"><strong>API Anahtarı Gerekmez:</strong> <em>360° Küresel Bakış</em> modunda fareyle veya parmağınızla görüntüyü döndürebilir, yakınlaştırıp tam ekran gezebilirsiniz. <em>Uydu &amp; Harita</em> ve <em>Google Street View 360°</em> bağlantıları da doğrudan ücretsiz çalışır.</p>
         </div>
       </section>
 
@@ -308,7 +294,7 @@
         <div class="modal-embed-box">
           <div class="modal-embed-tabs" role="tablist" aria-label="Rota harita görünümü">
             <button class="tour-mode-btn active" type="button" data-modal-mode="map">🛰️ Uydu &amp; Konum</button>
-            <button class="tour-mode-btn" type="button" data-modal-mode="streetview">🌐 360° Street View</button>
+            <button class="tour-mode-btn" type="button" data-modal-mode="vr360">🥽 360° Küresel Bakış</button>
           </div>
           <div class="modal-embed-frame">
             <iframe
@@ -318,10 +304,7 @@
               allowfullscreen
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div id="d-sv-fallback" class="modal-sv-fallback" hidden>
-              <p>Gömülü 360° Street View için üstteki Türkiye Destinasyon Atlası'ndan API anahtarı bağlayabilir veya doğrudan 360° görünümü açabilirsiniz.</p>
-              <a id="d-sv-direct" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">🌐 360° Street View'da Aç ↗</a>
-            </div>
+            <div id="d-pano" class="modal-pano" hidden></div>
           </div>
         </div>
         <p><a id="d-source" target="_blank" rel="noopener noreferrer" hidden>Resmî kaynak ↗</a></p>
@@ -333,6 +316,7 @@
       <p>Alagök VR (@alagokvr) · Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi · 2026</p><p><a href="image-credits.html">Fotoğraf kaynakları ve lisanslar</a></p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <script src="data.js?v=81-rota-1"></script>
     <script src="app.js?v=81-rota-1"></script>
   </body>
