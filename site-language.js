@@ -1,4 +1,4 @@
-/* Native Turkish / English interface; place names and editorial route texts retain their originals. */
+/* Native Turkish / English / German interface; place names and editorial route texts retain their originals. */
 (() => {
   "use strict";
   const translations = {
@@ -39,15 +39,102 @@
     "Fotoğrafı büyütüp sürükleyerek inceleyebilirsin. Bu bir yer fotoğrafıdır; gerçek 360° yürüyüş, Google Street View kapsamına bağlıdır.":"Zoom and drag to explore this photo. Real 360° walking depends on Google Street View coverage.",
     "Yakınlaştır":"Zoom in","Uzaklaştır":"Zoom out","Sıfırla":"Reset","Tam ekran":"Fullscreen"
   };
+  const german = {
+  "Explore": "Entdecken",
+  "360° Atlas": "360°-Atlas",
+  "420 Routes": "420 Routen",
+  "VR Vision": "VR-Vision",
+  "AI-powered virtual reality recreation guide": "KI-gestützter Freizeitführer mit virtueller Realität",
+  "Colours of the Earth, Horizons of the Sky: A New Dimension of Discovery.": "Farben der Erde, Weite des Himmels: Eine neue Dimension des Entdeckens.",
+  "Your guide to places to unwind, recharge and explore.": "Ihr Wegweiser zu Orten zum Durchatmen, Erholen und Entdecken.",
+  "Explore activities": "Aktivitäten entdecken",
+  "VR roadmap": "VR-Fahrplan",
+  "routes": "Routen",
+  "cities": "Städte",
+  "categories": "Kategorien",
+  "360° and map preview — no headset required": "360°- und Kartenvorschau — ohne VR-Brille",
+  "Türkiye destination atlas · 420 routes": "Reiseatlas der Türkei · 420 Routen",
+  "Browse photos and explore destinations using available street imagery or satellite maps.": "Entdecken Sie Reiseziele anhand von Fotos, verfügbaren Straßenaufnahmen und Satellitenkarten.",
+  "Photo Tour": "Fototour",
+  "Explore photo": "Foto erkunden",
+  "Satellite & Location": "Satellit & Standort",
+  "Satellite & Map": "Satellit & Karte",
+  "Previous destination": "Vorheriges Reiseziel",
+  "Next destination": "Nächstes Reiseziel",
+  "Next": "Weiter",
+  "Pause": "Pause",
+  "Play": "Abspielen",
+  "Choose a destination": "Reiseziel auswählen",
+  "View mode": "Ansichtsmodus",
+  "Destination photos and 360° preview": "Reiseziel-Fotos und 360°-Vorschau",
+  "420 trip ideas across 81 provinces: explore 54 national parks and 279 nature parks by city and category. Search by park or city.": "420 Ausflugsideen in 81 Provinzen: Entdecken Sie 54 Nationalparks und 279 Naturparks nach Stadt und Kategorie. Suchen Sie nach Park oder Stadt.",
+  "All": "Alle",
+  "Nature": "Natur",
+  "City": "Stadt",
+  "Culture": "Kultur",
+  "Water": "Wasser",
+  "Active": "Bewegung",
+  "Family": "Familie",
+  "Museums": "Museen",
+  "Archaeology": "Archäologie",
+  "Faith": "Religion",
+  "Caves": "Höhlen",
+  "Waterfalls": "Wasserfälle",
+  "Thermal": "Thermal",
+  "National Parks": "Nationalparks",
+  "Nature Parks": "Naturparks",
+  "Choose a city · Türkiye’s 81 provinces": "Stadt auswählen · Die 81 Provinzen der Türkei",
+  "All cities": "Alle Städte",
+  "Activity filters": "Aktivitätsfilter",
+  "Search": "Suchen",
+  "Clear filters": "Filter zurücksetzen",
+  "Search for a park, national park, nature park or city…": "Nach Park, Nationalpark, Naturpark oder Stadt suchen…",
+  "81 provinces · 420 trip ideas": "81 Provinzen · 420 Ausflugsideen",
+  "420 routes · Explore city by city": "420 Routen · Stadt für Stadt entdecken",
+  "54 national parks, 279 nature parks and 87 other routes. Open each route for details and its Google Maps location.": "54 Nationalparks, 279 Naturparks und 87 weitere Routen. Öffnen Sie eine Route für Details und den Standort auf Google Maps.",
+  "Filter by city, category or park name": "Nach Stadt, Kategorie oder Parkname filtern",
+  "Start with route content and develop 360° and interactive VR experiences through pilot projects.": "Beginnen Sie mit Routeninhalten und entwickeln Sie in Pilotprojekten 360°- und interaktive VR-Erlebnisse.",
+  "1. Content foundation": "1. Inhaltliche Grundlage",
+  "Standardise destination, activity, accessibility and source information.": "Informationen zu Reisezielen, Aktivitäten, Barrierefreiheit und Quellen vereinheitlichen.",
+  "2. Web preview": "2. Web-Vorschau",
+  "Add mobile-friendly 360° photos and scene points to selected routes.": "Ausgewählte Routen um mobilfreundliche 360°-Fotos und Szenenpunkte ergänzen.",
+  "3. Interactive pilot": "3. Interaktives Pilotprojekt",
+  "Try information labels and scene navigation on a small set of routes.": "Informationstafeln und Szenenwechsel auf einigen Routen erproben.",
+  "4. Device support and comfort": "4. Geräteunterstützung und Komfort",
+  "Evaluate performance, readability, movement comfort and accessibility.": "Leistung, Lesbarkeit, Bewegungskomfort und Barrierefreiheit bewerten.",
+  "5. Grow through feedback": "5. Anhand von Rückmeldungen erweitern",
+  "Expand based on loading performance, task completion and feedback.": "Den Umfang anhand von Ladezeiten, Aufgabenerfüllung und Rückmeldungen erweitern.",
+  "Detailed route guide": "Ausführlicher Routenführer",
+  "Trip summaries, planning steps, durations and map links for each route.": "Ausflugsübersichten, Planungsschritte, Dauer und Kartenlinks für jede Route.",
+  "Trip plan": "Ausflugsplan",
+  "Source": "Quelle",
+  "Official source": "Offizielle Quelle",
+  "Close": "Schließen",
+  "Route map view": "Routenkartenansicht",
+  "Embedded Google Maps route view": "Eingebettete Google-Maps-Routenansicht",
+  "Embedded Google Maps satellite and map view": "Eingebettete Google-Maps-Satelliten- und Kartenansicht",
+  "Photo sources and licences": "Fotoquellen und Lizenzen",
+  "Photo not yet available": "Foto noch nicht verfügbar",
+  "Alagök VR · Route explorer": "Alagök VR · Routen erkunden",
+  "Explore real 360° imagery on Google": "Echte 360°-Aufnahmen auf Google entdecken",
+  "Photo: route image": "Foto: Routenbild",
+  "Photo source": "Fotoquelle",
+  "Image source": "Bildquelle",
+  "Zoom and drag to explore this photo. Real 360° walking depends on Google Street View coverage.": "Vergrößern und verschieben Sie das Foto, um es zu erkunden. Echte 360°-Rundgänge hängen von der Google-Street-View-Abdeckung ab.",
+  "Zoom in": "Vergrößern",
+  "Zoom out": "Verkleinern",
+  "Reset": "Zurücksetzen",
+  "Fullscreen": "Vollbild"
+};
   const sorted = Object.entries(translations).sort((a,b) => b[0].length-a[0].length);
   const records = new WeakMap();
   const ignored = "script,style,noscript,code,textarea,[data-language-control]";
   let language = "tr";
-  try { if(localStorage.getItem("alagok-language")==="en") language="en"; } catch {}
+  try { const saved=localStorage.getItem("alagok-language"); if(["en","de"].includes(saved)) language=saved; } catch {}
   const control = document.createElement("label");
   control.dataset.languageControl = "";
   control.className = "language-control";
-  control.innerHTML = '<span>🌐 Dil / Language</span><select id="site-language" aria-label="Dil / Language"><option value="tr">Türkçe</option><option value="en">English</option></select>';
+  control.innerHTML = '<span>🌐 Dil / Language</span><select id="site-language" aria-label="Dil / Language"><option value="tr">Türkçe</option><option value="en">English</option><option value="de">Deutsch</option></select>';
   document.querySelector(".topbar")?.append(control);
   const notice = document.createElement("p");
   notice.className = "language-notice"; notice.dataset.languageControl = "";
@@ -80,6 +167,28 @@
       .replace(/Yarım gün/g,"Half day")
       .replace(/^İpucu: /,"Tip: ").replace(/^Gezi notu: /,"Trip note: ");
   }
+  function translate(text) {
+    const en = english(text);
+    if(language !== "de") return en;
+    if(german[en]) return german[en];
+    for(const [label, translated] of Object.entries(german).sort((a,b)=>b[0].length-a[0].length)) {
+      const start=en.indexOf(label);
+      if(start<0) continue;
+      const before=en.slice(0,start), after=en.slice(start+label.length);
+      if(!/[\p{L}]/u.test(before.replace(/Alagök VR/g,"")) && !/[\p{L}]/u.test(after)) return before+translated+after;
+    }
+    return en
+      .replace(/Choose a destination · (\d+) routes/g,"Reiseziel auswählen · $1 Routen")
+      .replace(/Showing (\d+) of (\d+) routes/g,"$1 von $2 Routen werden angezeigt")
+      .replace(/Listing (\d+) of (\d+) routes\.?/g,"$1 von $2 Routen werden aufgelistet.")
+      .replace(/Listing (\d+) routes\.?/g,"$1 Routen werden aufgelistet.")
+      .replace(/All cities/g,"Alle Städte")
+      .replace(/(\d+) routes/g,"$1 Routen")
+      .replace(/(\d+(?:[–-]\d+)?) hours/g,"$1 Stunden")
+      .replace(/(\d+) minutes/g,"$1 Minuten")
+      .replace(/Half day/g,"Halber Tag")
+      .replace(/^Tip: /,"Tipp: ").replace(/^Trip note: /,"Ausflugshinweis: ");
+  }
   function changeText(node,attribute) {
     const current = attribute ? node.getAttribute(attribute) : node.nodeValue;
     if(!current?.trim()) return;
@@ -88,7 +197,7 @@
     if(!record[key] || current!==record[key].last) record[key]={original:current,last:current};
     const source=record[key].original;
     const leading=source.match(/^\s*/)[0], trailing=source.match(/\s*$/)[0];
-    const next=language==="en" ? leading+english(source.trim())+trailing : source;
+    const next=language!=="tr" ? leading+translate(source.trim())+trailing : source;
     record[key].last=next;
     if(current!==next) { if(attribute) node.setAttribute(attribute,next); else node.nodeValue=next; }
   }
@@ -106,12 +215,13 @@
   }
   const select=control.querySelector("select"); select.value=language;
   function apply() {
-    document.documentElement.lang=language; notice.hidden=language!=="en";
+    document.documentElement.lang=language; notice.hidden=language==="tr";
+    notice.textContent=language==="de" ? "Deutsche Benutzeroberfläche · Ortsnamen und Routenbeschreibungen bleiben im türkischen Original." : "English interface · Place names and route descriptions remain in their original Turkish.";
     visit(document.body);
-    document.title=language==="en" ? "Alagök VR — Virtual Reality Recreation Guide" : "Alagök VR — Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi";
+    document.title=language==="de" ? "Alagök VR — Freizeitführer mit virtueller Realität" : language==="en" ? "Alagök VR — Virtual Reality Recreation Guide" : "Alagök VR — Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi";
   }
   select.addEventListener("change",()=>{
-    language=select.value==="en"?"en":"tr";
+    language=["en","de"].includes(select.value)?select.value:"tr";
     try {localStorage.setItem("alagok-language",language);} catch {}
     apply();
   });
