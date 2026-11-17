@@ -195,7 +195,7 @@
     const key=attribute||"text"; let record=records.get(node);
     if(!record) { record={}; records.set(node,record); }
     if(!record[key] || current!==record[key].last) record[key]={original:current,last:current};
-    const source=record[key].original.replace(/Alagök VR/g,"Anadoluyum VR").replace(/ \\(@alagokvr\\)/g,"");
+    const source=record[key].original.replace(/Alagök VR/g,"Anadoluyum VR").replace(" (@alagokvr)","");
     const leading=source.match(/^\s*/)[0], trailing=source.match(/\s*$/)[0];
     const next=language!=="tr" ? leading+translate(source.trim())+trailing : source;
     record[key].last=next;
