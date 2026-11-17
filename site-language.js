@@ -1,4 +1,4 @@
-/* Native Turkish / English / German interface; place names and editorial route texts retain their originals. */
+/* Complete Turkish / English / German interface and route translations. */
 (() => {
   "use strict";
   const translations = {
@@ -127,6 +127,10 @@
   "Fullscreen": "Vollbild"
 };
   const sorted = Object.entries(translations).sort((a,b) => b[0].length-a[0].length);
+  const fullTexts = window.ANADOLUYUM_TEXTS || {};
+  for (const [tr,en] of Object.entries(translations)) {
+    if(!fullTexts[tr]) fullTexts[tr]={en,de:german[en]||en};
+  }
   const records = new WeakMap();
   const ignored = "script,style,noscript,code,textarea,[data-language-control]";
   let language = "tr";
@@ -135,11 +139,8 @@
   control.dataset.languageControl = "";
   control.className = "language-control";
   control.innerHTML = '<span>🌐 Dil / Language</span><select id="site-language" aria-label="Dil / Language"><option value="tr">Türkçe</option><option value="en">English</option><option value="de">Deutsch</option></select>';
-  document.querySelector(".topbar")?.append(control);
-  const notice = document.createElement("p");
-  notice.className = "language-notice"; notice.dataset.languageControl = "";
-  notice.textContent = "English interface · Place names and route descriptions remain in their original Turkish.";
-  notice.hidden = true; document.querySelector("main")?.prepend(notice);
+  const languageHost=document.querySelector(".topbar");
+  if(languageHost) languageHost.append(control); else document.body.prepend(control);
   const style = document.createElement("style");
   style.textContent = '.language-control{display:flex;flex-direction:column;gap:5px;color:var(--muted,#aec9c0);font-size:.75rem;flex-shrink:0}.language-control select{font:inherit;font-size:.9rem;padding:8px 12px;color:#e8f4ee;background:#102b35;border:1px solid #47685e;border-radius:10px;min-height:40px}.language-notice{margin:16px 6vw;color:#b6cdc6;font-size:.9rem}.language-notice[hidden]{display:none!important}@media(max-width:850px){.topbar{flex-wrap:wrap}.topbar nav{order:3;width:100%;flex-wrap:wrap}.language-control{margin-left:auto}.brand{min-width:0}.brand small{max-width:210px}}';
   document.head.append(style);
@@ -167,9 +168,26 @@
       .replace(/Yarım gün/g,"Half day")
       .replace(/^İpucu: /,"Tip: ").replace(/^Gezi notu: /,"Trip note: ");
   }
+  function completeText(text) {
+    if(fullTexts[text]) return fullTexts[text][language];
+    const decorated=text.match(/^([^\p{L}\p{N}]*)(.*?)(\s*(?:\(\d+\)|[↗↑→])\s*)?$/u);
+    if(decorated && fullTexts[decorated[2]]) return decorated[1]+fullTexts[decorated[2]][language]+(decorated[3]||"");
+    const segments=text.split(" · ");
+    if(segments.length>1) return segments.map(part=>translate(part.trim())).join(" · ");
+    for(const prefix of ["İpucu: ","Gezi notu: ","Fotoğraf / görsel: ","Fotoğraf: ","Lisans: ","Kaynak: "]) {
+      if(text.startsWith(prefix)) return fullTexts[prefix.trim()][language]+" "+translate(text.slice(prefix.length));
+    }
+    return null;
+  }
   function translate(text) {
+    if(language==="tr") return text;
+    const complete=completeText(text);
+    if(complete!==null) return complete;
     const en = english(text);
-    if(language !== "de") return en;
+    if(language !== "de") return en
+      .replace(/\(öneri\)/g,"(suggested)")
+      .replace(/(\d+) rota mevcut/g,"$1 routes available")
+      .replace(/(\d+) routes mevcut/g,"$1 routes available");
     if(german[en]) return german[en];
     for(const [label, translated] of Object.entries(german).sort((a,b)=>b[0].length-a[0].length)) {
       const start=en.indexOf(label);
@@ -187,6 +205,8 @@
       .replace(/(\d+(?:[–-]\d+)?) hours/g,"$1 Stunden")
       .replace(/(\d+) minutes/g,"$1 Minuten")
       .replace(/Half day/g,"Halber Tag")
+      .replace(/\(öneri\)/g,"(Vorschlag)")
+      .replace(/(\d+) Routen mevcut/g,"$1 Routen verfügbar")
       .replace(/^Tip: /,"Tipp: ").replace(/^Trip note: /,"Ausflugshinweis: ");
   }
   function changeText(node,attribute) {
@@ -208,17 +228,20 @@
     if(root.nodeType!==Node.ELEMENT_NODE || root.closest(ignored)) return;
     const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
     let node; while((node=walker.nextNode())) if(!node.parentElement?.closest(ignored)) changeText(node);
-    [root,...root.querySelectorAll("[placeholder],[aria-label],[title]")].forEach(el=>{
+    [root,...root.querySelectorAll("[placeholder],[aria-label],[title],[alt]")].forEach(el=>{
       if(el.closest(ignored)) return;
-      ["placeholder","aria-label","title"].forEach(attr=>{if(el.hasAttribute(attr)) changeText(el,attr);});
+      ["placeholder","aria-label","title","alt"].forEach(attr=>{if(el.hasAttribute(attr)) changeText(el,attr);});
     });
   }
   const select=control.querySelector("select"); select.value=language;
   function apply() {
-    document.documentElement.lang=language; notice.hidden=language==="tr";
-    notice.textContent=language==="de" ? "Deutsche Benutzeroberfläche · Ortsnamen und Routenbeschreibungen bleiben im türkischen Original." : "English interface · Place names and route descriptions remain in their original Turkish.";
+    document.documentElement.lang=language;
+    control.querySelector("span").textContent=language==="de"?"🌐 Sprache":language==="en"?"🌐 Language":"🌐 Dil";
+    select.setAttribute("aria-label",language==="de"?"Sprache auswählen":language==="en"?"Choose language":"Dil seç");
     visit(document.body);
-    document.title=language==="de" ? "Anadoluyum VR — Freizeitführer mit virtueller Realität" : language==="en" ? "Anadoluyum VR — Virtual Reality Recreation Guide" : "Anadoluyum VR — Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi";
+    const creditsPage=location.pathname.endsWith("image-credits.html");
+    document.title=creditsPage ? (language==="de"?"Fotoquellen":language==="en"?"Photo sources":"Fotoğraf kaynakları")+" · Anadoluyum VR" : language==="de" ? "Anadoluyum VR — Freizeitführer mit virtueller Realität" : language==="en" ? "Anadoluyum VR — Virtual Reality Recreation Guide" : "Anadoluyum VR — Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi";
+    window.dispatchEvent(new CustomEvent("anadoluyum-language-change",{detail:{language}}));
   }
   select.addEventListener("change",()=>{
     language=["en","de"].includes(select.value)?select.value:"tr";
@@ -233,5 +256,21 @@
       else if(mutation.type==="attributes" && !mutation.target.closest(ignored)) changeText(mutation.target,mutation.attributeName);
     }
   });
-  observer.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:["placeholder","aria-label","title"]});
+  observer.observe(document.body,{childList:true,subtree:true,characterData:true,attributes:true,attributeFilter:["placeholder","aria-label","title","alt"]});
+  window.anadoluyumTranslate=(text,targetLanguage=language)=>{
+    const previous=language;
+    try {language=targetLanguage;return translate(text);} finally {language=previous;}
+  };
+  // Keep searches working in all languages without changing route identifiers or map queries.
+  if(typeof matches==="function") {
+    const originalMatches=matches;
+    matches=function(item,query) {
+      if(originalMatches(item,query))return true;
+      if(!originalMatches(item,""))return false;
+      const fields=["title","place","tag","body","tip"];
+      const localised=fields.flatMap(field=>["en","de"].map(lang=>window.anadoluyumTranslate(item[field]||"",lang))).join(" ");
+      const haystack=normalize(localised);
+      return query.split(/\s+/).filter(Boolean).every(word=>haystack.includes(word));
+    };
+  }
 })();
