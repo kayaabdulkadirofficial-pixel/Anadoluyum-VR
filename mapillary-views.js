@@ -21,6 +21,8 @@
   }
   const style = document.createElement("style");
   style.textContent = `
+    .tour-scene[hidden],.modal-embed-frame[hidden]{display:none!important}
+    .visual-tour:has(.mly-panel:not([hidden])) #alagok-atlas-photo-caption,dialog:has(.mly-panel:not([hidden])) #alagok-photo-caption{display:none!important}
     .mly-panel{padding:18px;border:1px solid #33525b;border-radius:16px;background:#102b35;color:#e0eeeb;margin:12px 0;overflow:hidden}
     .mly-panel[hidden]{display:none!important}.mly-panel h3{font-size:1.1rem;margin:0 0 8px}.mly-panel p{line-height:1.6;margin:8px 0}
     .mly-screen{width:100%;height:clamp(320px,55vh,590px);border:0;border-radius:12px;background:#0a1c24;display:block}
@@ -68,6 +70,8 @@
     }
     tab.addEventListener("click", () => {
       if (!active) previousHidden = stage.hidden;
+      const play = document.getElementById("tour-toggle");
+      if (kind === "atlas" && play?.getAttribute("aria-pressed") === "true") play.click();
       active = true; stage.hidden = true; panel.hidden = false;
       bar.querySelectorAll("button").forEach(button => { button.classList.remove("active"); if (button.hasAttribute("aria-selected")) button.setAttribute("aria-selected", "false"); });
       tab.classList.add("active"); tab.setAttribute("aria-expanded", "true"); tab.setAttribute("aria-selected", "true");
