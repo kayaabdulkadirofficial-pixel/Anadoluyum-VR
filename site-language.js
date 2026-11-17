@@ -207,7 +207,8 @@
       .replace(/Half day/g,"Halber Tag")
       .replace(/\(öneri\)/g,"(Vorschlag)")
       .replace(/(\d+) Routen mevcut/g,"$1 Routen verfügbar")
-      .replace(/^Tip: /,"Tipp: ").replace(/^Trip note: /,"Ausflugshinweis: ");
+      .replace(/^Tip: /,"Tipp: ").replace(/^Trip note: /,"Ausflugshinweis: ")
+      .replace(/ destinasyon görünümü/g," – Reisezielansicht");
   }
   function changeText(node,attribute) {
     const current = attribute ? node.getAttribute(attribute) : node.nodeValue;
