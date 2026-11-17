@@ -34,7 +34,7 @@
     "Rota harita görünümü":"Route map view","Rota Google Maps Gömülü Görünümü":"Embedded Google Maps route view",
     "Google Maps Uydu ve Harita Gömülü Görünüm":"Embedded Google Maps satellite and map view",
     "Fotoğraf kaynakları ve lisanslar":"Photo sources and licences","Fotoğraf henüz eklenmedi":"Photo not yet available",
-    "Alagök VR · Rota inceleme":"Alagök VR · Route explorer","Google’da gerçek 360° keşfet":"Explore real 360° imagery on Google",
+    "Anadoluyum VR · Rota inceleme":"Anadoluyum VR · Route explorer","Google’da gerçek 360° keşfet":"Explore real 360° imagery on Google",
     "Fotoğraf: rota görseli":"Photo: route image","Fotoğraf kaynağı":"Photo source","Görsel kaynağı":"Image source",
     "Fotoğrafı büyütüp sürükleyerek inceleyebilirsin. Bu bir yer fotoğrafıdır; gerçek 360° yürüyüş, Google Street View kapsamına bağlıdır.":"Zoom and drag to explore this photo. Real 360° walking depends on Google Street View coverage.",
     "Yakınlaştır":"Zoom in","Uzaklaştır":"Zoom out","Sıfırla":"Reset","Tam ekran":"Fullscreen"
@@ -115,7 +115,7 @@
   "Embedded Google Maps satellite and map view": "Eingebettete Google-Maps-Satelliten- und Kartenansicht",
   "Photo sources and licences": "Fotoquellen und Lizenzen",
   "Photo not yet available": "Foto noch nicht verfügbar",
-  "Alagök VR · Route explorer": "Alagök VR · Routen erkunden",
+  "Anadoluyum VR · Route explorer": "Anadoluyum VR · Routen erkunden",
   "Explore real 360° imagery on Google": "Echte 360°-Aufnahmen auf Google entdecken",
   "Photo: route image": "Foto: Routenbild",
   "Photo source": "Fotoquelle",
@@ -151,7 +151,7 @@
       const start = result.indexOf(tr);
       if(start<0) continue;
       const before=result.slice(0,start), after=result.slice(start+tr.length);
-      if(!/[\p{L}]/u.test(before.replace(/Alagök VR/g,"")) && !/[\p{L}]/u.test(after)) {
+      if(!/[\p{L}]/u.test(before.replace(/Anadoluyum VR/g,"")) && !/[\p{L}]/u.test(after)) {
         result=before+en+after; break;
       }
     }
@@ -175,7 +175,7 @@
       const start=en.indexOf(label);
       if(start<0) continue;
       const before=en.slice(0,start), after=en.slice(start+label.length);
-      if(!/[\p{L}]/u.test(before.replace(/Alagök VR/g,"")) && !/[\p{L}]/u.test(after)) return before+translated+after;
+      if(!/[\p{L}]/u.test(before.replace(/Anadoluyum VR/g,"")) && !/[\p{L}]/u.test(after)) return before+translated+after;
     }
     return en
       .replace(/Choose a destination · (\d+) routes/g,"Reiseziel auswählen · $1 Routen")
@@ -195,7 +195,7 @@
     const key=attribute||"text"; let record=records.get(node);
     if(!record) { record={}; records.set(node,record); }
     if(!record[key] || current!==record[key].last) record[key]={original:current,last:current};
-    const source=record[key].original;
+    const source=record[key].original.replace(/Alagök VR/g,"Anadoluyum VR").replace(/ \\(@alagokvr\\)/g,"");
     const leading=source.match(/^\s*/)[0], trailing=source.match(/\s*$/)[0];
     const next=language!=="tr" ? leading+translate(source.trim())+trailing : source;
     record[key].last=next;
@@ -218,7 +218,7 @@
     document.documentElement.lang=language; notice.hidden=language==="tr";
     notice.textContent=language==="de" ? "Deutsche Benutzeroberfläche · Ortsnamen und Routenbeschreibungen bleiben im türkischen Original." : "English interface · Place names and route descriptions remain in their original Turkish.";
     visit(document.body);
-    document.title=language==="de" ? "Alagök VR — Freizeitführer mit virtueller Realität" : language==="en" ? "Alagök VR — Virtual Reality Recreation Guide" : "Alagök VR — Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi";
+    document.title=language==="de" ? "Anadoluyum VR — Freizeitführer mit virtueller Realität" : language==="en" ? "Anadoluyum VR — Virtual Reality Recreation Guide" : "Anadoluyum VR — Yapay Zekâ Destekli Sanal Gerçeklik Rekreasyon Rehberi";
   }
   select.addEventListener("change",()=>{
     language=["en","de"].includes(select.value)?select.value:"tr";
