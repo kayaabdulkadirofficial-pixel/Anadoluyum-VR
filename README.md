@@ -4,7 +4,7 @@
 
 ## Canlı site
 
-[Anadoluyum VR'yi aç](https://kayaabdulkadirofficial-pixel.github.io/alagokvr/)
+[Anadoluyum VR'yi aç](https://kayaabdulkadirofficial-pixel.github.io/Anadoluyum-VR/)
 
 ## İçerik
 
