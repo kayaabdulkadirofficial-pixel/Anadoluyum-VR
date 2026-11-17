@@ -50,12 +50,8 @@ function mount(container,options){
  document.getElementById(captionId)?.remove();
  const caption=document.createElement("div");caption.id=captionId;caption.className=captionId;
  const brand=document.createElement("strong");brand.textContent="Anadoluyum VR · Rota inceleme";
- const note=document.createElement("p");note.textContent="Fotoğrafı büyütüp sürükleyerek inceleyebilirsin. Bu bir yer fotoğrafıdır; gerçek 360° yürüyüş, Google Street View kapsamasına bağlıdır.";
- const credit=document.createElement("p");credit.textContent=item.imageArtist?("Fotoğraf / görsel: "+item.imageArtist+" · "+(item.imageLicense||"Kaynak bilgisi")):"Fotoğraf: rota görseli";
- caption.append(brand,note,credit);
+ caption.append(brand);
  if(item.imageSource){const a=document.createElement("a");a.href=item.imageSource;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Fotoğraf kaynağı ↗";caption.append(a);}
- const sourceLink={href:typeof streetViewDirectUrl==="function"?streetViewDirectUrl(item):"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(item.title+", "+item.city)};
- if(sourceLink){const a=document.createElement("a");a.href=sourceLink.href;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Google’da gerçek 360° keşfet ↗";a.style.marginLeft="14px";caption.append(a);}
  pano.parentElement.after(caption);
  if(window.ResizeObserver){pano._alagokResize=new ResizeObserver(paint);pano._alagokResize.observe(stage);}
  paint();
@@ -71,6 +67,4 @@ window.pannellum.viewer=function(container,options){
 };
 const active=document.querySelector("[data-tour-mode].active");
 if(active?.dataset.tourMode==="vr360")active.click();
-const note=document.querySelector(".visual-tour .tour-note");
-if(note)note.textContent="Fotoğrafı büyüt, sürükleyerek ayrıntıları incele veya tam ekran aç. Gerçek 360° sokak gezisi Google Street View kapsaması olan yerlerde kullanılabilir.";
 })();
