@@ -10,7 +10,7 @@
     />
     <meta name="referrer" content="origin" />
     <link rel="icon" type="image/png" href="anadoluyum-logo.png?v=1" />
-    <link rel="stylesheet" href="styles.css?v=vr-clean-10" />
+    <link rel="stylesheet" href="styles.css?v=street-pano-1" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -71,11 +71,12 @@
         <div class="section-head">
           <p class="eyebrow">Gözlüksüz 360° &amp; harita önizleme</p>
           <h2>Türkiye destinasyon atlası · 420 rota</h2>
-          <p>Görseller arasında ilerle, 360° Sokak Görünümü veya Uydu Harita moduna geçerek rotaları yerinde keşfet.</p>
+          <p>Görseller arasında ilerle, Panoramax sokak görünümü veya uydu harita moduna geçerek rotaları yerinde keşfet.</p>
         </div>
         <div class="visual-tour" aria-label="Destinasyon görsel ve 360° önizlemesi">
           <div class="tour-mode-bar" role="tablist" aria-label="Görünüm modu">
             <button class="tour-mode-btn active" type="button" data-tour-mode="vr360" role="tab" aria-selected="true">🥽 360° Küresel Panorama (VR)</button>
+            <button class="tour-mode-btn" type="button" data-tour-mode="streetview" role="tab" aria-selected="false">🚶 Sokak görünümü</button>
             <button class="tour-mode-btn" type="button" data-tour-mode="photo" role="tab" aria-selected="false">🖼️ Görsel Tur</button>
             <button class="tour-mode-btn" type="button" data-tour-mode="map" role="tab" aria-selected="false">🛰️ Uydu &amp; Konum</button>
           </div>
@@ -107,7 +108,7 @@
             <button class="tour-button" id="tour-next" type="button" aria-label="Sonraki destinasyon">Sonraki →</button>
           </div>
           <div class="tour-stops" id="tour-stops" aria-label="Destinasyon seç"></div>
-          <p class="tour-note"><strong>360° keşif:</strong> <em>360° Küresel Panorama</em> modunda fareyle veya parmağınızla görüntüyü döndürüp tam ekran inceleyebilir, <em>Uydu &amp; Konum</em> modunda rotayı harita üzerinde görebilirsiniz.</p>
+          <p class="tour-note"><strong>360° keşif:</strong> <em>Sokak görünümü</em> açık kaynaklı Panoramax fotoğraflarını gösterir (Google veya Yandex yok, API anahtarı yok). Haritadaki noktalara tıklayıp yürüyebilirsiniz; her rotada görüntü olmayabilir. <em>360° Küresel Panorama</em> rota fotoğrafını döndürür, <em>Uydu &amp; Konum</em> konumu haritada gösterir.</p>
         </div>
       </section>
 
@@ -276,6 +277,7 @@
         <div class="modal-embed-box">
           <div class="modal-embed-tabs" role="tablist" aria-label="Rota harita görünümü">
             <button class="tour-mode-btn active" type="button" data-modal-mode="vr360">🥽 360° Küresel Panorama (VR)</button>
+            <button class="tour-mode-btn" type="button" data-modal-mode="streetview">🚶 Sokak görünümü</button>
             <button class="tour-mode-btn" type="button" data-modal-mode="map">🛰️ Uydu &amp; Konum</button>
           </div>
           <div class="modal-embed-frame">
@@ -298,13 +300,13 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-    <script src="data.js?v=all-420-visuals"></script>
-    <script src="app.js?v=vr-clean-12"></script>
+    <script src="data.js?v=street-pano-2"></script>
+    <script src="app.js?v=street-pano-2"></script>
     <script src="photo-credits.js?v=vr-clean-10"></script>
     <script src="atlas-selector.js?v=vr-clean-10"></script>
     <script src="route-photo-viewer.js?v=2"></script>
     <script src="content-translations.js?v=2"></script>
-    <script src="site-language.js?v=5"></script>
+    <script src="site-language.js?v=6"></script>
   </body>
 </html>
 

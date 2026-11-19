@@ -34,14 +34,43 @@ function mapsSearchUrl(item) {
  return `https://www.google.com/maps/search/?api=1&query=${query}`;
 }
 
-function streetViewDirectUrl(item) {
-  if (item.lat != null && item.lng != null) {
-    const heading = item.heading ?? 0;
-    const pitch = item.pitch ?? 5;
-    const fov = item.fov ?? 85;
-    return `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${item.lat},${item.lng}&heading=${heading}&pitch=${pitch}&fov=${fov}`;
+function panoramaxEmbedUrl(item) {
+  if (item && item.panoramaxPicId) {
+    return `https://api.panoramax.xyz/?focus=pic&pic=${encodeURIComponent(item.panoramaxPicId)}`;
   }
-  return mapsSearchUrl(item);
+  if (item && item.lat != null && item.lng != null) {
+    return `https://api.panoramax.xyz/?focus=map&map=15/${item.lat}/${item.lng}`;
+  }
+  return "https://api.panoramax.xyz/?focus=map&map=6/39.2/35.2";
+}
+
+async function loadPanoramaxEmbed(item, iframe, isStillActive) {
+  if (!item || !iframe) return;
+  iframe.hidden = false;
+  iframe.title = "Panoramax sokak görünümü";
+  if (item.panoramaxPicId) {
+    const picUrl = panoramaxEmbedUrl(item);
+    if (iframe.getAttribute("src") !== picUrl) iframe.src = picUrl;
+    return;
+  }
+  if (item.lat != null && item.lng != null && !item._panoramaxChecked) {
+    item._panoramaxChecked = true;
+    try {
+      const res = await fetch(`https://api.panoramax.xyz/api/search?place_position=${item.lng},${item.lat}&place_distance=0-55000&limit=1`);
+      if (res.ok) {
+        const data = await res.json();
+        const picId = data?.features?.[0]?.id;
+        if (picId) item.panoramaxPicId = picId;
+      }
+    } catch {}
+  }
+  if (!isStillActive()) return;
+  const targetUrl = panoramaxEmbedUrl(item);
+  if (iframe.getAttribute("src") !== targetUrl) iframe.src = targetUrl;
+}
+
+function streetViewDirectUrl(item) {
+  return panoramaxEmbedUrl(item);
 }
 
 function buildEmbedUrl(item) {
@@ -157,10 +186,16 @@ function updateModalEmbed() {
 
   destroyModalPano();
   pano.hidden = true;
+  if (currentModalMode === "streetview") {
+    const itemSnap = currentModalItem;
+    loadPanoramaxEmbed(itemSnap, iframe, () => currentModalItem === itemSnap && currentModalMode === "streetview");
+    return;
+  }
   const url = buildEmbedUrl(currentModalItem, "map");
   if (url) {
     iframe.src = url;
     iframe.hidden = false;
+    iframe.title = "Rota Google Maps Gömülü Görünümü";
   }
 }
 
@@ -299,10 +334,15 @@ if (tourScene) {
 
     destroyTourPano();
     if (tourPano) tourPano.hidden = true;
+    if (tourMode === "streetview") {
+      loadPanoramaxEmbed(item, tourEmbed, () => tourSlides[tourIndex] === item && tourMode === "streetview");
+      return;
+    }
     const embedUrl = buildEmbedUrl(item, "map");
     if (embedUrl && tourEmbed) {
       tourEmbed.src = embedUrl;
       tourEmbed.hidden = false;
+      tourEmbed.title = "Google Maps Uydu ve Harita Gömülü Görünüm";
     }
   }
 
