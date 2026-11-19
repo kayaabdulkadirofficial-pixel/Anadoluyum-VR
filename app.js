@@ -34,6 +34,25 @@ function mapsSearchUrl(item) {
  return `https://www.google.com/maps/search/?api=1&query=${query}`;
 }
 
+let panoramaxSdkPromise = null;
+function ensurePanoramaxViewer() {
+  if (window.customElements?.get("pnx-viewer")) return Promise.resolve();
+  if (panoramaxSdkPromise) return panoramaxSdkPromise;
+  panoramaxSdkPromise = new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/@panoramax/web-viewer@5.3.1/build/cjs/index.js";
+    s.async = true;
+    s.onload = () => {
+      if (window.customElements?.whenDefined) {
+        window.customElements.whenDefined("pnx-viewer").then(resolve).catch(reject);
+      } else resolve();
+    };
+    s.onerror = () => reject(new Error("Panoramax görüntüleyici yüklenemedi"));
+    document.head.appendChild(s);
+  });
+  return panoramaxSdkPromise;
+}
+
 function panoramaxEmbedUrl(item) {
   if (item && item.panoramaxPicId) {
     return `https://api.panoramax.xyz/?focus=pic&pic=${encodeURIComponent(item.panoramaxPicId)}`;
@@ -44,29 +63,49 @@ function panoramaxEmbedUrl(item) {
   return "https://api.panoramax.xyz/?focus=map&map=6/39.2/35.2";
 }
 
-async function loadPanoramaxEmbed(item, iframe, isStillActive) {
-  if (!item || !iframe) return;
-  iframe.hidden = false;
-  iframe.title = "Panoramax sokak görünümü";
-  if (item.panoramaxPicId) {
-    const picUrl = panoramaxEmbedUrl(item);
-    if (iframe.getAttribute("src") !== picUrl) iframe.src = picUrl;
-    return;
+async function loadPanoramaxViewer(item, container, isStillActive) {
+  if (!item || !container) return;
+  container.hidden = false;
+  container.innerHTML = `<div class="street-loading">🚶 ${item.city} · ${item.title} için Panoramax sokak görünümü yükleniyor…</div>`;
+  try {
+    const searchTask = (item.lat != null && item.lng != null && !item._panoramaxChecked)
+      ? fetch(`https://api.panoramax.xyz/api/search?place_position=${item.lng},${item.lat}&place_distance=0-55000&limit=1`)
+          .then((r) => (r.ok ? r.json() : null))
+          .then((data) => {
+            item._panoramaxChecked = true;
+            const feat = data?.features?.[0];
+            if (feat?.id) {
+              item.panoramaxPicId = feat.id;
+              if (feat.collection) item.panoramaxSeqId = feat.collection;
+            }
+          })
+          .catch(() => { item._panoramaxChecked = true; })
+      : Promise.resolve();
+
+    await Promise.all([ensurePanoramaxViewer(), searchTask]);
+    if (!isStillActive()) return;
+
+    container.replaceChildren();
+    const viewer = document.createElement("pnx-viewer");
+    viewer.setAttribute("endpoint", "https://api.panoramax.xyz/api");
+    viewer.setAttribute("url-state", "false");
+    viewer.setAttribute("lang", document.documentElement.lang || "tr");
+    if (item.panoramaxPicId) {
+      if (item.panoramaxSeqId) viewer.setAttribute("sequence", item.panoramaxSeqId);
+      viewer.setAttribute("picture", item.panoramaxPicId);
+      viewer.setAttribute("focus", "pic");
+    } else if (item.lat != null && item.lng != null) {
+      viewer.setAttribute("focus", "map");
+      viewer.setAttribute("map", `13/${item.lat}/${item.lng}`);
+    } else {
+      viewer.setAttribute("focus", "map");
+      viewer.setAttribute("map", "6/39.2/35.2");
+    }
+    container.appendChild(viewer);
+  } catch {
+    if (!isStillActive()) return;
+    container.innerHTML = `<div class="street-loading">Sokak görünümü şu an yüklenemedi. Lütfen tekrar deneyin veya <strong>Uydu &amp; Konum</strong> sekmesini kullanın.</div>`;
   }
-  if (item.lat != null && item.lng != null && !item._panoramaxChecked) {
-    item._panoramaxChecked = true;
-    try {
-      const res = await fetch(`https://api.panoramax.xyz/api/search?place_position=${item.lng},${item.lat}&place_distance=0-55000&limit=1`);
-      if (res.ok) {
-        const data = await res.json();
-        const picId = data?.features?.[0]?.id;
-        if (picId) item.panoramaxPicId = picId;
-      }
-    } catch {}
-  }
-  if (!isStillActive()) return;
-  const targetUrl = panoramaxEmbedUrl(item);
-  if (iframe.getAttribute("src") !== targetUrl) iframe.src = targetUrl;
 }
 
 function streetViewDirectUrl(item) {
@@ -152,17 +191,24 @@ function destroyModalPano() {
     try { modalPanoViewer.destroy(); } catch {}
     modalPanoViewer = null;
   }
+  const modalStreet = document.getElementById("d-street");
+  if (modalStreet) {
+    modalStreet.hidden = true;
+    modalStreet.replaceChildren();
+  }
 }
 
 function updateModalEmbed() {
   if (!currentModalItem) return;
   const iframe = document.getElementById("d-embed");
   const pano = document.getElementById("d-pano");
+  const modalStreet = document.getElementById("d-street");
   if (!iframe || !pano) return;
 
   if (currentModalMode === "vr360" && window.pannellum && currentModalItem.image) {
     iframe.hidden = true;
     iframe.removeAttribute("src");
+    if (modalStreet) { modalStreet.hidden = true; modalStreet.replaceChildren(); }
     pano.hidden = false;
     destroyModalPano();
     modalPanoViewer = window.pannellum.viewer("d-pano", {
@@ -179,16 +225,18 @@ function updateModalEmbed() {
       maxPitch: 25,
       hfov: 70,
       title: currentModalItem.title,
-      author: `Alagök VR · ${currentModalItem.city}`
+      author: `Anadoluyum VR · ${currentModalItem.city}`
     });
     return;
   }
 
   destroyModalPano();
   pano.hidden = true;
-  if (currentModalMode === "streetview") {
+  if (currentModalMode === "streetview" && modalStreet) {
+    iframe.hidden = true;
+    iframe.removeAttribute("src");
     const itemSnap = currentModalItem;
-    loadPanoramaxEmbed(itemSnap, iframe, () => currentModalItem === itemSnap && currentModalMode === "streetview");
+    loadPanoramaxViewer(itemSnap, modalStreet, () => currentModalItem === itemSnap && currentModalMode === "streetview");
     return;
   }
   const url = buildEmbedUrl(currentModalItem, "map");
@@ -281,6 +329,7 @@ if (tourScene) {
   const tourStops = document.getElementById("tour-stops");
   const tourEmbed = document.getElementById("tour-embed");
   const tourPano = document.getElementById("tour-pano");
+  const tourStreet = document.getElementById("tour-street");
   const tourSvLink = document.getElementById("tour-sv-link");
   const modeButtons = document.querySelectorAll("[data-tour-mode]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -297,6 +346,13 @@ if (tourScene) {
     }
   }
 
+  function clearTourStreet() {
+    if (tourStreet) {
+      tourStreet.hidden = true;
+      tourStreet.replaceChildren();
+    }
+  }
+
   function updateTourModeView(item) {
     if (!item) return;
     const svUrl = streetViewDirectUrl(item);
@@ -304,12 +360,14 @@ if (tourScene) {
 
     if (tourMode === "photo") {
       destroyTourPano();
+      clearTourStreet();
       if (tourPano) tourPano.hidden = true;
       if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
       return;
     }
 
     if (tourMode === "vr360" && window.pannellum && tourPano && item.image) {
+      clearTourStreet();
       if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
       tourPano.hidden = false;
       destroyTourPano();
@@ -327,17 +385,19 @@ if (tourScene) {
         maxPitch: 25,
         hfov: 70,
         title: item.title,
-        author: `Alagök VR · ${item.city}`
+        author: `Anadoluyum VR · ${item.city}`
       });
       return;
     }
 
     destroyTourPano();
     if (tourPano) tourPano.hidden = true;
-    if (tourMode === "streetview") {
-      loadPanoramaxEmbed(item, tourEmbed, () => tourSlides[tourIndex] === item && tourMode === "streetview");
+    if (tourMode === "streetview" && tourStreet) {
+      if (tourEmbed) { tourEmbed.hidden = true; tourEmbed.removeAttribute("src"); }
+      loadPanoramaxViewer(item, tourStreet, () => tourSlides[tourIndex] === item && tourMode === "streetview");
       return;
     }
+    clearTourStreet();
     const embedUrl = buildEmbedUrl(item, "map");
     if (embedUrl && tourEmbed) {
       tourEmbed.src = embedUrl;
