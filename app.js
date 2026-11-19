@@ -63,26 +63,59 @@ function panoramaxEmbedUrl(item) {
   return "https://api.panoramax.xyz/?focus=map&map=6/39.2/35.2";
 }
 
+function pickNearestFeature(features, lat, lng) {
+  if (!Array.isArray(features) || !features.length) return null;
+  const valid = features.filter((f) => f && f.id && f.assets?.hd?.href);
+  const list = valid.length ? valid : features.filter((f) => f && f.id);
+  if (!list.length) return null;
+  let best = list[0];
+  let bestDist = Infinity;
+  for (const f of list) {
+    const coords = f.geometry?.coordinates;
+    if (Array.isArray(coords) && coords.length >= 2) {
+      const dLat = coords[1] - lat;
+      const dLng = (coords[0] - lng) * Math.cos((lat * Math.PI) / 180);
+      const d = dLat * dLat + dLng * dLng;
+      if (d < bestDist) {
+        bestDist = d;
+        best = f;
+      }
+    }
+  }
+  return best;
+}
+
+async function findNearestPanoramax(item) {
+  if (item.lat == null || item.lng == null || item._panoramaxChecked) return;
+  const lat = Number(item.lat);
+  const lng = Number(item.lng);
+  const queries = [
+    `https://api.panoramax.xyz/api/search?place_position=${lng},${lat}&place_distance=0-2500&limit=5`,
+    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.15).toFixed(4)},${(lat - 0.15).toFixed(4)},${(lng + 0.15).toFixed(4)},${(lat + 0.15).toFixed(4)}&limit=12`,
+    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.50).toFixed(4)},${(lat - 0.50).toFixed(4)},${(lng + 0.50).toFixed(4)},${(lat + 0.50).toFixed(4)}&limit=12`
+  ];
+  for (const url of queries) {
+    try {
+      const res = await fetch(url);
+      if (!res.ok) continue;
+      const data = await res.json();
+      const feat = pickNearestFeature(data?.features, lat, lng);
+      if (feat?.id) {
+        item.panoramaxPicId = feat.id;
+        if (feat.collection) item.panoramaxSeqId = feat.collection;
+        break;
+      }
+    } catch {}
+  }
+  item._panoramaxChecked = true;
+}
+
 async function loadPanoramaxViewer(item, container, isStillActive) {
   if (!item || !container) return;
   container.hidden = false;
-  container.innerHTML = `<div class="street-loading">🚶 ${item.city} · ${item.title} için Panoramax sokak görünümü yükleniyor…</div>`;
+  container.innerHTML = `<div class="street-loading">🚶 ${item.city} · ${item.title} için en yakın sokak görünümü aranıyor…</div>`;
   try {
-    const searchTask = (item.lat != null && item.lng != null && !item._panoramaxChecked)
-      ? fetch(`https://api.panoramax.xyz/api/search?place_position=${item.lng},${item.lat}&place_distance=0-55000&limit=1`)
-          .then((r) => (r.ok ? r.json() : null))
-          .then((data) => {
-            item._panoramaxChecked = true;
-            const feat = data?.features?.[0];
-            if (feat?.id) {
-              item.panoramaxPicId = feat.id;
-              if (feat.collection) item.panoramaxSeqId = feat.collection;
-            }
-          })
-          .catch(() => { item._panoramaxChecked = true; })
-      : Promise.resolve();
-
-    await Promise.all([ensurePanoramaxViewer(), searchTask]);
+    await Promise.all([ensurePanoramaxViewer(), findNearestPanoramax(item)]);
     if (!isStillActive()) return;
 
     container.replaceChildren();
@@ -96,10 +129,10 @@ async function loadPanoramaxViewer(item, container, isStillActive) {
       viewer.setAttribute("focus", "pic");
     } else if (item.lat != null && item.lng != null) {
       viewer.setAttribute("focus", "map");
-      viewer.setAttribute("map", `13/${item.lat}/${item.lng}`);
+      viewer.setAttribute("map-options", JSON.stringify({ center: [Number(item.lng), Number(item.lat)], zoom: 11 }));
     } else {
       viewer.setAttribute("focus", "map");
-      viewer.setAttribute("map", "6/39.2/35.2");
+      viewer.setAttribute("map-options", JSON.stringify({ center: [35.2, 39.2], zoom: 6 }));
     }
     container.appendChild(viewer);
   } catch {
