@@ -63,81 +63,161 @@ function panoramaxEmbedUrl(item) {
   return "https://api.panoramax.xyz/?focus=map&map=6/39.2/35.2";
 }
 
-function pickNearestFeature(features, lat, lng) {
+const usedPanoramaxPics = new Set();
+const usedPanoramaxSeqs = new Set();
+
+function pickNearestFeature(features, lat, lng, excludePicId) {
   if (!Array.isArray(features) || !features.length) return null;
   const valid = features.filter((f) => f && f.id && f.assets?.hd?.href);
-  const list = valid.length ? valid : features.filter((f) => f && f.id);
-  if (!list.length) return null;
-  let best = list[0];
-  let bestDist = Infinity;
-  for (const f of list) {
+  const all = valid.length ? valid : features.filter((f) => f && f.id);
+  if (!all.length) return null;
+
+  const distSq = (f) => {
     const coords = f.geometry?.coordinates;
-    if (Array.isArray(coords) && coords.length >= 2) {
-      const dLat = coords[1] - lat;
-      const dLng = (coords[0] - lng) * Math.cos((lat * Math.PI) / 180);
-      const d = dLat * dLat + dLng * dLng;
-      if (d < bestDist) {
-        bestDist = d;
-        best = f;
-      }
-    }
-  }
-  return best;
+    if (!Array.isArray(coords) || coords.length < 2) return Infinity;
+    const dLat = coords[1] - lat;
+    const dLng = (coords[0] - lng) * Math.cos((lat * Math.PI) / 180);
+    return dLat * dLat + dLng * dLng;
+  };
+  const isOsmFr = (f) => (f.assets?.hd?.href || "").includes("panoramax.openstreetmap.fr");
+
+  const sortByQualityAndDist = (arr) =>
+    [...arr].sort((a, b) => {
+      const da = distSq(a);
+      const db = distSq(b);
+      if (Math.abs(da - db) < 0.0004 && isOsmFr(a) !== isOsmFr(b)) return isOsmFr(a) ? -1 : 1;
+      return da - db;
+    });
+
+  const freshSeq = all.filter((f) => f.id !== excludePicId && !usedPanoramaxPics.has(f.id) && (!f.collection || !usedPanoramaxSeqs.has(f.collection)));
+  if (freshSeq.length) return sortByQualityAndDist(freshSeq)[0];
+
+  const freshPic = all.filter((f) => f.id !== excludePicId && !usedPanoramaxPics.has(f.id));
+  if (freshPic.length) return sortByQualityAndDist(freshPic)[0];
+
+  const diffPic = all.filter((f) => f.id !== excludePicId);
+  if (diffPic.length) return sortByQualityAndDist(diffPic)[0];
+
+  return sortByQualityAndDist(all)[0];
 }
 
-async function findNearestPanoramax(item) {
-  if (item.lat == null || item.lng == null || item._panoramaxChecked) return;
+async function findNearestPanoramax(item, excludePicId) {
+  if (item.lat == null || item.lng == null) return;
+  if (item._panoramaxChecked && (!excludePicId || item.panoramaxPicId !== excludePicId)) return;
   const lat = Number(item.lat);
   const lng = Number(item.lng);
   const queries = [
-    `https://api.panoramax.xyz/api/search?place_position=${lng},${lat}&place_distance=0-2500&limit=5`,
-    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.15).toFixed(4)},${(lat - 0.15).toFixed(4)},${(lng + 0.15).toFixed(4)},${(lat + 0.15).toFixed(4)}&limit=12`,
-    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.50).toFixed(4)},${(lat - 0.50).toFixed(4)},${(lng + 0.50).toFixed(4)},${(lat + 0.50).toFixed(4)}&limit=12`
+    `https://api.panoramax.xyz/api/search?place_position=${lng},${lat}&place_distance=0-2500&limit=15`,
+    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.18).toFixed(4)},${(lat - 0.18).toFixed(4)},${(lng + 0.18).toFixed(4)},${(lat + 0.18).toFixed(4)}&limit=30`,
+    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.55).toFixed(4)},${(lat - 0.55).toFixed(4)},${(lng + 0.55).toFixed(4)},${(lat + 0.55).toFixed(4)}&limit=30`
   ];
+  let chosen = null;
   for (const url of queries) {
     try {
       const res = await fetch(url);
       if (!res.ok) continue;
       const data = await res.json();
-      const feat = pickNearestFeature(data?.features, lat, lng);
+      const feat = pickNearestFeature(data?.features, lat, lng, excludePicId);
       if (feat?.id) {
-        item.panoramaxPicId = feat.id;
-        if (feat.collection) item.panoramaxSeqId = feat.collection;
-        break;
+        chosen = feat;
+        if (feat.id !== excludePicId && !usedPanoramaxPics.has(feat.id)) break;
       }
     } catch {}
   }
+  if (chosen?.id) {
+    item.panoramaxPicId = chosen.id;
+    if (chosen.collection) item.panoramaxSeqId = chosen.collection;
+    usedPanoramaxPics.add(chosen.id);
+    if (chosen.collection) usedPanoramaxSeqs.add(chosen.collection);
+  }
   item._panoramaxChecked = true;
+}
+
+function getOrCreatePnxStatus(container) {
+  let pill = container.querySelector(".street-status-pill");
+  if (!pill) {
+    pill = document.createElement("div");
+    pill.className = "street-status-pill";
+    pill.hidden = true;
+    container.appendChild(pill);
+  }
+  return pill;
+}
+
+async function getOrCreatePnxViewer(container, initialItem) {
+  if (container._pnxViewer && container.contains(container._pnxViewer)) {
+    return container._pnxViewer;
+  }
+  const viewer = document.createElement("pnx-viewer");
+  viewer.setAttribute("endpoint", "https://api.panoramax.xyz/api");
+  viewer.setAttribute("url-state", "false");
+  viewer.setAttribute("lang", document.documentElement.lang || "tr");
+  if (initialItem?.panoramaxPicId) {
+    if (initialItem.panoramaxSeqId) viewer.setAttribute("sequence", initialItem.panoramaxSeqId);
+    viewer.setAttribute("picture", initialItem.panoramaxPicId);
+    viewer.setAttribute("focus", "pic");
+  } else if (initialItem?.lat != null && initialItem?.lng != null) {
+    viewer.setAttribute("focus", "map");
+    viewer.setAttribute("map-options", JSON.stringify({ center: [Number(initialItem.lng), Number(initialItem.lat)], zoom: 11 }));
+  }
+  container.prepend(viewer);
+  container._pnxViewer = viewer;
+  container._pnxReady = new Promise((resolve) => {
+    let settled = false;
+    const done = () => { if (!settled) { settled = true; resolve(); } };
+    if (typeof viewer.onceReady === "function") {
+      viewer.onceReady().then(done).catch(done);
+    }
+    viewer.addEventListener("ready", done, { once: true });
+    setTimeout(done, 4500);
+  });
+  await container._pnxReady;
+  return viewer;
 }
 
 async function loadPanoramaxViewer(item, container, isStillActive) {
   if (!item || !container) return;
   container.hidden = false;
-  container.innerHTML = `<div class="street-loading">🚶 ${item.city} · ${item.title} için en yakın sokak görünümü aranıyor…</div>`;
+  const pill = getOrCreatePnxStatus(container);
+  pill.textContent = `🚶 ${item.city} · ${item.title} için sokak görünümü yükleniyor…`;
+  pill.hidden = false;
   try {
-    await Promise.all([ensurePanoramaxViewer(), findNearestPanoramax(item)]);
+    const excludeId = container._lastPicId || null;
+    await Promise.all([ensurePanoramaxViewer(), findNearestPanoramax(item, excludeId)]);
     if (!isStillActive()) return;
 
-    container.replaceChildren();
-    const viewer = document.createElement("pnx-viewer");
-    viewer.setAttribute("endpoint", "https://api.panoramax.xyz/api");
-    viewer.setAttribute("url-state", "false");
-    viewer.setAttribute("lang", document.documentElement.lang || "tr");
+    const alreadyCreated = Boolean(container._pnxViewer && container.contains(container._pnxViewer));
+    const viewer = await getOrCreatePnxViewer(container, item);
+    if (!isStillActive()) return;
+
     if (item.panoramaxPicId) {
-      if (item.panoramaxSeqId) viewer.setAttribute("sequence", item.panoramaxSeqId);
-      viewer.setAttribute("picture", item.panoramaxPicId);
-      viewer.setAttribute("focus", "pic");
-    } else if (item.lat != null && item.lng != null) {
-      viewer.setAttribute("focus", "map");
-      viewer.setAttribute("map-options", JSON.stringify({ center: [Number(item.lng), Number(item.lat)], zoom: 11 }));
+      container._lastPicId = item.panoramaxPicId;
+      if (alreadyCreated && typeof viewer.select === "function") {
+        viewer.select(item.panoramaxSeqId || null, item.panoramaxPicId, true);
+      }
+      if (typeof viewer.setFocus === "function") viewer.setFocus("pic");
+      else viewer.setAttribute("focus", "pic");
+      pill.hidden = true;
     } else {
-      viewer.setAttribute("focus", "map");
-      viewer.setAttribute("map-options", JSON.stringify({ center: [35.2, 39.2], zoom: 6 }));
+      container._lastPicId = null;
+      if (alreadyCreated && typeof viewer.select === "function") {
+        try { viewer.select(null, null); } catch {}
+      }
+      if (typeof viewer.setFocus === "function") viewer.setFocus("map");
+      else viewer.setAttribute("focus", "map");
+      if (item.lat != null && item.lng != null && viewer.map?.jumpTo) {
+        try { viewer.map.jumpTo({ center: [Number(item.lng), Number(item.lat)], zoom: 11 }); } catch {}
+      }
+      pill.textContent = `📍 ${item.city} · ${item.title}: Yakında sokak fotoğrafı yok — haritadaki renkli noktalara tıklayabilirsiniz.`;
+      pill.hidden = false;
     }
-    container.appendChild(viewer);
+    requestAnimationFrame(() => {
+      try { viewer.resize?.(); viewer.map?.resize?.(); } catch {}
+    });
   } catch {
     if (!isStillActive()) return;
-    container.innerHTML = `<div class="street-loading">Sokak görünümü şu an yüklenemedi. Lütfen tekrar deneyin veya <strong>Uydu &amp; Konum</strong> sekmesini kullanın.</div>`;
+    pill.textContent = "Sokak görünümü şu an yüklenemedi. Lütfen tekrar deneyin veya Uydu & Konum sekmesini kullanın.";
+    pill.hidden = false;
   }
 }
 
@@ -227,7 +307,6 @@ function destroyModalPano() {
   const modalStreet = document.getElementById("d-street");
   if (modalStreet) {
     modalStreet.hidden = true;
-    modalStreet.replaceChildren();
   }
 }
 
@@ -241,7 +320,7 @@ function updateModalEmbed() {
   if (currentModalMode === "vr360" && window.pannellum && currentModalItem.image) {
     iframe.hidden = true;
     iframe.removeAttribute("src");
-    if (modalStreet) { modalStreet.hidden = true; modalStreet.replaceChildren(); }
+    if (modalStreet) modalStreet.hidden = true;
     pano.hidden = false;
     destroyModalPano();
     modalPanoViewer = window.pannellum.viewer("d-pano", {
@@ -382,7 +461,6 @@ if (tourScene) {
   function clearTourStreet() {
     if (tourStreet) {
       tourStreet.hidden = true;
-      tourStreet.replaceChildren();
     }
   }
 
