@@ -21,7 +21,14 @@
     <style>
       .home-photos {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
       .home-photos figure {margin:0}
-      .home-photos button {display:block;width:100%;padding:0;border:0;border-radius:12px;overflow:hidden;background:transparent;cursor:pointer}
+      .home-photos figure {display:flex;flex-direction:column;align-items:flex-start;gap:.45rem}
+      .home-photos .photo-zoom {order:1;margin-top:auto}
+      #home-photo-zoom {width:min(94vw,1100px);max-width:none;padding:1rem}
+      #home-photo-zoom img {display:block;width:100%;max-height:78vh;object-fit:contain;margin-top:.75rem}
+      #sanal-turlar {scroll-margin-top:7rem}
+      #home-tour-select {display:block;width:100%;max-width:42rem;margin:.5rem 0 1rem}
+      #home-tour-viewer {display:block;width:100%;height:clamp(320px,65vh,670px);border:1px solid var(--line);border-radius:12px}
+      #home-tour-viewer[hidden] {display:none}
       .home-photos img {display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
       .home-photos figcaption {padding:.45rem 0;font-weight:600}
       .home-photos small {display:block;font-weight:400}
@@ -44,7 +51,7 @@
       <nav>
         <a href="#kesfet">Keşfet</a>
         <a href="#gorsel-tur">Atlas</a>
-        <a href="sanal-turlar.html">360° turlar ve fotoğraflar</a>
+        <a href="#sanal-turlar">360° Turlar</a>
         <a href="#rotalar">423 Rota</a>
         <a href="#vr">VR Vizyonu</a>
       </nav>
@@ -77,46 +84,125 @@
       </section>
 
       <section class="panel" aria-labelledby="home-photo-title">
-        <h2 id="home-photo-title">Fotoğraflarla rotaları keşfet</h2>
+        <h2 id="home-photo-title">Fotoğraf galerisi</h2>
         <div class="home-photos" id="home-photos">
 <figure data-route="efes">
-        <button type="button" data-photo-route="efes" aria-label="Efes • Celsus Kütüphanesi · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ephesus_Library_of_Celsus.jpg/960px-Ephesus_Library_of_Celsus.jpg" alt="Efes • Celsus Kütüphanesi"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ephesus_Library_of_Celsus.jpg/960px-Ephesus_Library_of_Celsus.jpg" alt="Efes • Celsus Kütüphanesi">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Efes • Celsus Kütüphanesi<small>Emre D. · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ephesus_Library_of_Celsus.jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="gobeklitepe">
-        <button type="button" data-photo-route="gobeklitepe" aria-label="Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg/960px-Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg" alt="Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg/960px-Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg" alt="Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi<small>Dosseman · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="pamukkale">
-        <button type="button" data-photo-route="pamukkale" aria-label="Hierapolis • Antik tiyatro · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Theatre_of_Hierapolis%2C_Pamukkale.jpg/960px-The_Theatre_of_Hierapolis%2C_Pamukkale.jpg" alt="Hierapolis • Antik tiyatro"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Theatre_of_Hierapolis%2C_Pamukkale.jpg/960px-The_Theatre_of_Hierapolis%2C_Pamukkale.jpg" alt="Hierapolis • Antik tiyatro">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Hierapolis • Antik tiyatro<small>Slyronit · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Theatre_of_Hierapolis%2C_Pamukkale.jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="nemrut">
-        <button type="button" data-photo-route="nemrut" aria-label="Nemrut Dağı • Batı terasında karlı Antiokhos başı · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mount_nemrut_in_Turkey.jpg/960px-Mount_nemrut_in_Turkey.jpg" alt="Nemrut Dağı • Batı terasında karlı Antiokhos başı"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mount_nemrut_in_Turkey.jpg/960px-Mount_nemrut_in_Turkey.jpg" alt="Nemrut Dağı • Batı terasında karlı Antiokhos başı">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Nemrut Dağı • Batı terasında karlı Antiokhos başı<small>Mkrc85 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mount_nemrut_in_Turkey.jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="il-23">
-        <button type="button" data-photo-route="il-23" aria-label="Hattuşa • Aslanlı Kapı · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hattusa_-_Lion_Gate.jpg/960px-Hattusa_-_Lion_Gate.jpg" alt="Hattuşa • Aslanlı Kapı"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hattusa_-_Lion_Gate.jpg/960px-Hattusa_-_Lion_Gate.jpg" alt="Hattuşa • Aslanlı Kapı">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Hattuşa • Aslanlı Kapı<small><a href="https://exhibo.art">Alena Belova / Exhibo</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hattusa_-_Lion_Gate.jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="eskikaraagac-kus">
-        <button type="button" data-photo-route="eskikaraagac-kus" aria-label="Eskikaraağaç Leylek Köyü • Havadan görünüm · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg/960px-Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg" alt="Eskikaraağaç Leylek Köyü • Havadan görünüm"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg/960px-Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg" alt="Eskikaraağaç Leylek Köyü • Havadan görünüm">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Eskikaraağaç Leylek Köyü • Havadan görünüm<small>Alpertuydes · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="avanos-comlek">
-        <button type="button" data-photo-route="avanos-comlek" aria-label="Avanos • Geleneksel çömlekçilik, kare 1 · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Avanos-Poterie_(2).jpg/960px-Avanos-Poterie_(2).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 1"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Avanos-Poterie_(2).jpg/960px-Avanos-Poterie_(2).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 1">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Avanos • Geleneksel çömlekçilik, kare 1<small>Ji-Elle · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Avanos-Poterie_(2).jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="avanos-comlek">
-        <button type="button" data-photo-route="avanos-comlek" aria-label="Avanos • Geleneksel çömlekçilik, kare 2 · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Avanos-Poterie_(4).jpg/960px-Avanos-Poterie_(4).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 2"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Avanos-Poterie_(4).jpg/960px-Avanos-Poterie_(4).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 2">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Avanos • Geleneksel çömlekçilik, kare 2<small>Ji-Elle · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Avanos-Poterie_(4).jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
 <figure data-route="avanos-comlek">
-        <button type="button" data-photo-route="avanos-comlek" aria-label="Avanos • Geleneksel çömlekçilik, kare 3 · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Avanos-Poterie_(9).jpg/960px-Avanos-Poterie_(9).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 3"></button>
+        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Avanos-Poterie_(9).jpg/960px-Avanos-Poterie_(9).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 3">
+        <button class="btn photo-zoom" type="button" aria-haspopup="dialog">Yakınlaştır</button>
         <figcaption>Avanos • Geleneksel çömlekçilik, kare 3<small>Ji-Elle · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Avanos-Poterie_(9).jpg">Orijinal fotoğraf</a></small></figcaption>
       </figure>
         </div>
       </section>
+      <section id="sanal-turlar" class="panel" aria-labelledby="home-tour-title">
+        <div class="section-head"><h2 id="home-tour-title" tabindex="-1">360° Turlar</h2></div>
+        <label for="home-tour-select">Sanal tur seç</label>
+        <select id="home-tour-select">
+          <option value="">Bir ziyaret noktası seç</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ADANA_MUZESI/" data-tour="26">Adana Arkeoloji Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ADIYAMAN_NEMRUT_ORENYERI/" data-tour="27">Adıyaman Nemrut Ören Yeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/AKSARAY_IHLARA_VADISI/" data-tour="28">Aksaray Ihlara Vadisi Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ankara-anadolu-medeniyetleri-muzesi/" data-tour="29">Ankara Anadolu Medeniyetleri Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ANKARA_CUMHURBASKANLIGI_MILLI_MUCADELE_SERGISI/" data-tour="30">Ankara Cumhurbaşkanlığı Milli Mücadele Sergisi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ankara-cumhuriyet-muzesi/" data-tour="31">Ankara Cumhuriyet Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ANKARA_ETNOGRAFYA_MUZESI/" data-tour="32">Ankara Etnografya Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ankara-kurtulus-savasi-muzesi/" data-tour="33">Ankara Kurtuluş Savaşı Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/TR-291469/ankara-polis-muzesi.html" data-tour="34">Ankara Polis Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/TR-317638/ankara-universitesi-oyuncak-muzesi.html" data-tour="35">Ankara Üniversitesi Oyuncak Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ANTALYA_MUZESI_WEB/" data-tour="36">Antalya Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/BAYBURT-KENAN-YAVUZ-ETNOGRAFYA-MUZESI/" data-tour="37">Bayburt Kenan Yavuz Etnografya Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/TR-371565/bir-idealin-pesinde-ataturk-ve-alaca-hoyuk-sergisi.html" data-tour="38">Bir İdealin Peşinde: Atatürk Ve Alaca Höyük Sergisi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/BITLIS_AHLAT_SELCUKLU_MEYDAN_MEZARLIGI/" data-tour="39">Bitlis Ahlat Selçuklu Mezarlığı</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE_ASSOS_ORENYERI/" data-tour="40">Çanakkale Assos Ören Yeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE_1915_HILAL_I_AHMER_HASTANESI/" data-tour="41">Çanakkale 1915 Hilal İ Ahmer Hastanesi Canlandırma Alanı</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE_ANADOLU_HAMIDIYE_TABYASI_CST_MUZESI/" data-tour="42">Çanakkale Anadolu Hamidiye Tabyası Çanakkale Savaşları Tarih Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE-BIGALI-KALESI/" data-tour="43">Çanakkale Bigalı Kalesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE_DESTANI_TANITIM_MERKEZI/" data-tour="44">Çanakkale Destanı Tanıtım Merkezi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE_KILITBAHIR_KALE_MUZESI/" data-tour="45">Çanakkale Kilitbahir Kale Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE-MEHMETCIK-FENERI/" data-tour="46">Çanakkale Mehmetçik Feneri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CANAKKALE-SEDDULBAHIR-KALESI/" data-tour="47">Çanakkale Seddülbahir Kalesi Sanal Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/canakkale-troya-muzesi/" data-tour="48">Çanakkale Troya Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/COCUK-OYUN-OYUNCAK-SERGISI/" data-tour="49">Çocukça Şeyler: Geçmişten Günümüze Çocuk Oyuncak Sergisi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CORUM_MUZESI_WEB/" data-tour="50">Çorum Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CORUM_BOGAZKOY_MUZESI/" data-tour="51">Çorum Boğazköy Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/CORUM_HATTUSA_ORENYERI/" data-tour="52">Çorum Boğazköy Hattuşa Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/DENIZLI_HIERAPOLIS_ORENYERI/" data-tour="53">Denizli Hierapolis Ören Yeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/DENIZLI_LAODIKEIA_ORENYERI/" data-tour="54">Denizli Laodikeia Ören Yeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/DIYARBAKIR-GRE-FILLA-ORENYERI/" data-tour="55">Diyarbakır Gre Fılla Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ESKISEHIR-ILHALKKUTUPHANESI-SANALTUR/" data-tour="56">Eskişehir İlk Halk Kütüphanesi Sanal Tur</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ESKISEHIR_ODUNPAZARI_MODERN_MUZE/" data-tour="57">Eskişehir Odunpazarı Modern Müze</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/izmir-efes-muzesi/" data-tour="58">Efes Müzesi - İzmir</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ERZINCAN-MUZESI/" data-tour="59">Erzincan Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ERZURUM-MUZESI/" data-tour="60">Erzurum Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/GAZIANTEP_ZEUGMA_MOZAIK_MUZESI/" data-tour="61">Gaziantep Zeugma Mozaik Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/GAZIANTEP_ARKEOLOJI_MUZESI/" data-tour="62">Gaziantep Arkeoloji Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/HATAY_ARKEOLOJI_MUZESI/" data-tour="63">Hatay Arkeoloji Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/TR-310899/hazine-muzesi.html" data-tour="64">Hazine Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ISTANBUL_ARKEOLOJI_MUZELERI/" data-tour="65">İstanbul Arkeoloji Müzeleri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ISTANBUL_TURK_VE_ISLAM_ESERLERI_MUZESI/" data-tour="66">İstanbul Türk Ve İslam Eserleri Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ISTANBUL_HAVALIMANI_MUZESI/" data-tour="67">İstanbul Havalimanı Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/ISTANBUL-TURK-ISLAM-BIL-TEK-TAR-MUZESI/" data-tour="68">İstanbul İslam Bilim Ve Teknoloji Tarihi Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/IZMIR_ATATURK_MUZESI/" data-tour="69">İzmir Atatürk Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/IZMIR_EFES_ORENYERI/" data-tour="70">İzmir Efes Ören Yeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/KONYA-BONCUKLU-HOYUK/" data-tour="71">Konya Boncuklu Höyük</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/KONYA-CATALHOYUK-ORENYERI/" data-tour="72">Konya Çatalhöyük Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/MALATYA-ARSLANTEPE-ORENYERI/" data-tour="73">Malatya Arslantepe Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/MERSIN_ARKEOLOJI_MUZESI/" data-tour="74">Mersin Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/TR-437145/mke-imalat-i-harbiye-muzesi.html" data-tour="75">Mke İmalat-ı Harbiye Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/TR-397105/muze-kumbaram.html" data-tour="76">Müze Kumbaram</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/NEVSEHIR_GOREME_ACIKHAVA_MUZESI/" data-tour="77">Nevşehir Göreme Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/SAMSUN-GAZI-MUZESI/" data-tour="78">Samsun Gazi Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/SIVAS-ASIK-VEYSEL-MUZESI/" data-tour="79">Sivas Aşık Veysel Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/SANLIURFA-GOBEKLITEPE-ORENYERI/" data-tour="80">Şanlıurfa Göbeklitepe Örenyeri</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/SANLIURFA-KARAHANTEPE/" data-tour="81">Şanlıurfa Karahantepe</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/SANLIURFA_MUZESI/" data-tour="82">Şanlıurfa Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/USAK_MUZESI/" data-tour="83">Uşak Müzesi</option>
+          <option value="https://sanalmuze.gov.tr/muzeler/VAN_MUZESI/" data-tour="84">Van Müzesi</option>
+  </select>
+        <p id="home-tour-status" role="status" hidden>Bu rotanın eşleştirilmiş bir turu bulunmuyor. Listeden bir tur seçebilirsin.</p>
+        <iframe id="home-tour-viewer" title="360° sanal tur" allow="fullscreen; xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen hidden></iframe>
+        <p id="home-tour-source" hidden><a target="_blank" rel="noopener">Turu ayrı sekmede aç</a></p>
+      </section>
+
       <section id="gorsel-tur" class="panel visual-tour-panel">
         <div class="section-head">
           <p class="eyebrow">Gözlüksüz 360° &amp; harita önizleme</p>
@@ -151,7 +237,7 @@
               referrerpolicy="strict-origin-when-cross-origin"
               hidden
             ></iframe>
-            <a class="btn" id="tour-gallery" href="sanal-turlar.html">360° turlar ve fotoğraflar</a>
+            <a class="btn" id="tour-gallery" href="#sanal-turlar">360° turu aç</a>
             <span class="tour-counter" id="tour-counter"></span>
           </div>
           <div class="tour-controls">
@@ -318,6 +404,11 @@
     </main>
 
     <!-- ── Modal ──────────────────────────────────── -->
+    <dialog id="home-photo-zoom" aria-label="Büyütülmüş fotoğraf">
+      <form method="dialog"><button class="btn" autofocus>Kapat</button></form>
+      <img alt="">
+    </dialog>
+
     <dialog id="detail">
       <article>
         <button class="close" type="button" aria-label="Kapat">×</button>
@@ -325,7 +416,7 @@
         <h2 id="d-title"></h2>
         <p id="d-meta" class="meta"></p>
         <p id="d-body"></p>
-        <a class="btn primary" id="d-gallery" href="sanal-turlar.html">360° turlar ve fotoğraflar</a>
+        <a class="btn primary" id="d-gallery" href="#sanal-turlar">360° turu aç</a>
         <p id="d-tip" class="tip"></p>
         <div class="modal-embed-box">
           <div class="modal-embed-tabs" role="tablist" aria-label="Rota harita görünümü">
@@ -362,10 +453,73 @@
     <script src="content-translations.js?v=activities-423"></script>
     <script src="site-language.js?v=activities-423"></script>
     <script>
-      document.getElementById("home-photos").addEventListener("click", event => {
-        const button = event.target.closest("button[data-photo-route]");
-        if (button) openDetail(button.dataset.photoRoute);
-      });
+      (() => {
+        const gallery = document.getElementById("home-photos");
+        const zoom = document.getElementById("home-photo-zoom");
+        const enlarged = zoom.querySelector("img");
+        gallery.addEventListener("click", event => {
+          const button = event.target.closest(".photo-zoom");
+          if (!button) return;
+          const photo = button.closest("figure").querySelector("img");
+          enlarged.alt = photo.alt;
+          enlarged.src = photo.currentSrc || photo.src;
+          zoom.showModal();
+        });
+        zoom.addEventListener("click", event => {
+          if (event.target === zoom) zoom.close();
+        });
+
+        const routeTours = {
+          "nemrut": 27,
+          "il-4": 28,
+          "il-17": 39,
+          "il-23": 52,
+          "pamukkale": 53,
+          "il-32": 61,
+          "efes": 70,
+          "catalhoyuk": 72,
+          "il-54": 73,
+          "goreme": 77,
+          "gobeklitepe": 80,
+          "il-76": 83
+        };
+        const select = document.getElementById("home-tour-select");
+        const viewer = document.getElementById("home-tour-viewer");
+        const status = document.getElementById("home-tour-status");
+        const source = document.getElementById("home-tour-source");
+        function showTour() {
+          const choice = select.selectedOptions[0];
+          viewer.hidden = source.hidden = !choice.value;
+          if (!choice.value) {
+            viewer.removeAttribute("src");
+            return;
+          }
+          viewer.title = choice.textContent + " sanal turu";
+          viewer.src = source.querySelector("a").href = choice.value;
+        }
+        function selectRouteTour(route) {
+          const option = Array.from(select.options).find(option => option.dataset.tour === String(routeTours[route]));
+          select.value = option?.value || "";
+          status.hidden = Boolean(option) || !route;
+          showTour();
+        }
+        select.addEventListener("change", () => {
+          status.hidden = true;
+          showTour();
+        });
+        for (const id of ["tour-gallery", "d-gallery"]) {
+          document.getElementById(id).addEventListener("click", event => {
+            event.preventDefault();
+            const link = new URL(event.currentTarget.href);
+            const detail = document.getElementById("detail");
+            if (detail.open) detail.close();
+            selectRouteTour(link.searchParams.get("rota"));
+            location.hash = "sanal-turlar";
+            document.getElementById("home-tour-title").focus();
+          });
+        }
+        selectRouteTour(new URLSearchParams(location.search).get("rota"));
+      })();
     </script>
   </body>
 </html>
