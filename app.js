@@ -372,6 +372,7 @@ function openDetail(id) {
   const item = window.ACTIVITIES.find((a) => a.id === id);
   if (!item) return;
   currentModalItem = item;
+  document.getElementById("d-gallery").href = "sanal-turlar.html?rota=" + encodeURIComponent(item.id);
   document.getElementById("d-tag").textContent = `${item.icon || categoryIcons[item.category] || "✦"} ${item.tag} \u00b7 ${item.city}`;
   document.getElementById("d-title").textContent = item.title;
   document.getElementById("d-meta").textContent = item.duration;
@@ -536,6 +537,7 @@ if (tourScene) {
     if (!tourSlides.length) return;
     tourIndex = (index + tourSlides.length) % tourSlides.length;
     const item = tourSlides[tourIndex];
+    document.getElementById("tour-gallery").href = "sanal-turlar.html?rota=" + encodeURIComponent(item.id);
     tourScene.classList.remove("is-moving");
     tourImage.hidden = !item.image;
     if (item.image) tourImage.src = item.image;
