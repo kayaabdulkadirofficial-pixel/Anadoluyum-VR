@@ -8,7 +8,7 @@
 
 ## İçerik
 
-- 420 rota, 54 millî park ve 279 tabiat parkı
+- 423 rota, 54 millî park ve 279 tabiat parkı
 - Türkçe, English ve Deutsch arayüz seçenekleri
 - Fotoğraf galerisi, rota ayrıntıları ve Google Maps konumları
 - Masaüstünde `index.html` dosyasını tarayıcıda açarak kullanabilirsiniz.
