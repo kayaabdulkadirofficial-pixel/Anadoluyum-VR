@@ -36,7 +36,7 @@ function mount(container,options){
  function zoom(delta){scale=Math.min(5,Math.max(1,scale+delta));paint();}
  function button(label,title,action){const b=document.createElement("button");b.type="button";b.textContent=label;b.title=title;b.setAttribute("aria-label",title);b.addEventListener("click",action);bar.append(b);return b;}
  button("−","Küçült",()=>zoom(-.25));button("+","Büyüt",()=>zoom(.25));
- button("←","Kadrajı sola kaydır",()=>{x+=45;paint();});button("↑","Kadrajı yukarı kaydır",()=>{y+=45;paint();});button("↓","Kadrajı aşağı kaydır",()=>{y-=45;paint();});button("→","Kadrajı sağa kaydır",()=>{x-=45;paint();});
+ button("↑","Kadrajı yukarı kaydır",()=>{y+=45;paint();});button("↓","Kadrajı aşağı kaydır",()=>{y-=45;paint();});
  button("Sıfırla","Fotoğrafı başlangıç görünümüne getir",()=>{scale=1;x=y=0;paint();});
  button("⛶ Tam ekran","Tam ekran fotoğraf",async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await wrap.requestFullscreen();paint();}catch{percent.textContent="Tam ekran bu tarayıcıda açılamadı";}});
  bar.append(percent);
