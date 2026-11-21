@@ -50,6 +50,7 @@ function ensurePanoramaxViewer() {
     s.onerror = () => reject(new Error("Panoramax görüntüleyici yüklenemedi"));
     document.head.appendChild(s);
   });
+  panoramaxSdkPromise = panoramaxSdkPromise.catch(error => { panoramaxSdkPromise = null; throw error; });
   return panoramaxSdkPromise;
 }
 
@@ -63,74 +64,23 @@ function panoramaxEmbedUrl(item) {
   return "https://api.panoramax.xyz/?focus=map&map=6/39.2/35.2";
 }
 
-const usedPanoramaxPics = new Set();
-const usedPanoramaxSeqs = new Set();
-
-function pickNearestFeature(features, lat, lng, excludePicId) {
-  if (!Array.isArray(features) || !features.length) return null;
-  const valid = features.filter((f) => f && f.id && f.assets?.hd?.href);
-  const all = valid.length ? valid : features.filter((f) => f && f.id);
-  if (!all.length) return null;
-
-  const distSq = (f) => {
-    const coords = f.geometry?.coordinates;
-    if (!Array.isArray(coords) || coords.length < 2) return Infinity;
-    const dLat = coords[1] - lat;
-    const dLng = (coords[0] - lng) * Math.cos((lat * Math.PI) / 180);
-    return dLat * dLat + dLng * dLng;
-  };
-  const isOsmFr = (f) => (f.assets?.hd?.href || "").includes("panoramax.openstreetmap.fr");
-
-  const sortByQualityAndDist = (arr) =>
-    [...arr].sort((a, b) => {
-      const da = distSq(a);
-      const db = distSq(b);
-      if (Math.abs(da - db) < 0.0004 && isOsmFr(a) !== isOsmFr(b)) return isOsmFr(a) ? -1 : 1;
-      return da - db;
-    });
-
-  const freshSeq = all.filter((f) => f.id !== excludePicId && !usedPanoramaxPics.has(f.id) && (!f.collection || !usedPanoramaxSeqs.has(f.collection)));
-  if (freshSeq.length) return sortByQualityAndDist(freshSeq)[0];
-
-  const freshPic = all.filter((f) => f.id !== excludePicId && !usedPanoramaxPics.has(f.id));
-  if (freshPic.length) return sortByQualityAndDist(freshPic)[0];
-
-  const diffPic = all.filter((f) => f.id !== excludePicId);
-  if (diffPic.length) return sortByQualityAndDist(diffPic)[0];
-
-  return sortByQualityAndDist(all)[0];
-}
-
-async function findNearestPanoramax(item, excludePicId) {
-  if (item.lat == null || item.lng == null) return;
-  if (item._panoramaxChecked && (!excludePicId || item.panoramaxPicId !== excludePicId)) return;
-  const lat = Number(item.lat);
-  const lng = Number(item.lng);
-  const queries = [
-    `https://api.panoramax.xyz/api/search?place_position=${lng},${lat}&place_distance=0-2500&limit=15`,
-    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.18).toFixed(4)},${(lat - 0.18).toFixed(4)},${(lng + 0.18).toFixed(4)},${(lat + 0.18).toFixed(4)}&limit=30`,
-    `https://api.panoramax.xyz/api/search?bbox=${(lng - 0.55).toFixed(4)},${(lat - 0.55).toFixed(4)},${(lng + 0.55).toFixed(4)},${(lat + 0.55).toFixed(4)}&limit=30`
-  ];
-  let chosen = null;
-  for (const url of queries) {
-    try {
-      const res = await fetch(url);
-      if (!res.ok) continue;
-      const data = await res.json();
-      const feat = pickNearestFeature(data?.features, lat, lng, excludePicId);
-      if (feat?.id) {
-        chosen = feat;
-        if (feat.id !== excludePicId && !usedPanoramaxPics.has(feat.id)) break;
-      }
-    } catch {}
+async function findNearestPanoramax(item) {
+  if (item.lat == null || item.lng == null || item.panoramaxPicId) return;
+  const lat = Number(item.lat), lng = Number(item.lng);
+  const response = await fetch(`https://api.panoramax.xyz/api/search?place_position=${lng},${lat}&place_distance=0-2500&limit=100`, {signal: AbortSignal.timeout(12000)});
+  if (!response.ok) throw new Error("Panoramax araması başarısız");
+  const data = await response.json();
+  let closest = 2500;
+  for (const feature of data.features) {
+    const coords = feature.geometry?.coordinates;
+    if (!feature.id || !coords?.every(Number.isFinite)) continue;
+    const metres = 111320 * Math.hypot(coords[1]-lat, (coords[0]-lng)*Math.cos(lat*Math.PI/180));
+    if (metres <= closest) {
+      closest = metres;
+      item.panoramaxPicId = feature.id;
+      item.panoramaxSeqId = feature.collection;
+    }
   }
-  if (chosen?.id) {
-    item.panoramaxPicId = chosen.id;
-    if (chosen.collection) item.panoramaxSeqId = chosen.collection;
-    usedPanoramaxPics.add(chosen.id);
-    if (chosen.collection) usedPanoramaxSeqs.add(chosen.collection);
-  }
-  item._panoramaxChecked = true;
 }
 
 function getOrCreatePnxStatus(container) {
@@ -178,17 +128,26 @@ async function getOrCreatePnxViewer(container, initialItem) {
 async function loadPanoramaxViewer(item, container, isStillActive) {
   if (!item || !container) return;
   container.hidden = false;
+  const request = Symbol();
+  container._request = request;
+  container._pnxViewer?.remove();
+  const active = () => container._request === request && isStillActive();
   const pill = getOrCreatePnxStatus(container);
   pill.textContent = `🚶 ${item.city} · ${item.title} için sokak görünümü yükleniyor…`;
   pill.hidden = false;
   try {
-    const excludeId = container._lastPicId || null;
-    await Promise.all([ensurePanoramaxViewer(), findNearestPanoramax(item, excludeId)]);
-    if (!isStillActive()) return;
+    if (item.lat == null || item.lng == null) {
+      pill.textContent = "Bu rotanın sokak görünümü için konumu eksik.";
+      return;
+    }
+    await findNearestPanoramax(item);
+    if (!active()) return;
+    await ensurePanoramaxViewer();
+    if (!active()) return;
 
     const alreadyCreated = Boolean(container._pnxViewer && container.contains(container._pnxViewer));
     const viewer = await getOrCreatePnxViewer(container, item);
-    if (!isStillActive()) return;
+    if (!active()) return;
 
     if (item.panoramaxPicId) {
       container._lastPicId = item.panoramaxPicId;
@@ -215,7 +174,7 @@ async function loadPanoramaxViewer(item, container, isStillActive) {
       try { viewer.resize?.(); viewer.map?.resize?.(); } catch {}
     });
   } catch {
-    if (!isStillActive()) return;
+    if (!active()) return;
     pill.textContent = "Sokak görünümü şu an yüklenemedi. Lütfen tekrar deneyin veya Uydu & Konum sekmesini kullanın.";
     pill.hidden = false;
   }
