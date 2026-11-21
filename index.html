@@ -18,6 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .home-photos {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
+      .home-photos figure {margin:0}
+      .home-photos button {display:block;width:100%;padding:0;border:0;border-radius:12px;overflow:hidden;background:transparent;cursor:pointer}
+      .home-photos img {display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+      .home-photos figcaption {padding:.45rem 0;font-weight:600}
+      .home-photos small {display:block;font-weight:400}
+    </style>
   </head>
   <body>
     <div class="orb orb-a" aria-hidden="true"></div>
@@ -68,6 +76,47 @@
         </dl>
       </section>
 
+      <section class="panel" aria-labelledby="home-photo-title">
+        <h2 id="home-photo-title">Fotoğraflarla rotaları keşfet</h2>
+        <div class="home-photos" id="home-photos">
+<figure data-route="efes">
+        <button type="button" data-photo-route="efes" aria-label="Efes • Celsus Kütüphanesi · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Ephesus_Library_of_Celsus.jpg/960px-Ephesus_Library_of_Celsus.jpg" alt="Efes • Celsus Kütüphanesi"></button>
+        <figcaption>Efes • Celsus Kütüphanesi<small>Emre D. · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Ephesus_Library_of_Celsus.jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="gobeklitepe">
+        <button type="button" data-photo-route="gobeklitepe" aria-label="Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg/960px-Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg" alt="Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi"></button>
+        <figcaption>Göbeklitepe D yapısındaki dikilitaşın Şanlıurfa Müzesi’ndeki gösterimi<small>Dosseman · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Gobekli_Tepe%2C_enclosure_D_stela._%C5%9Eanl%C4%B1urfa_Museum.jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="pamukkale">
+        <button type="button" data-photo-route="pamukkale" aria-label="Hierapolis • Antik tiyatro · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Theatre_of_Hierapolis%2C_Pamukkale.jpg/960px-The_Theatre_of_Hierapolis%2C_Pamukkale.jpg" alt="Hierapolis • Antik tiyatro"></button>
+        <figcaption>Hierapolis • Antik tiyatro<small>Slyronit · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:The_Theatre_of_Hierapolis%2C_Pamukkale.jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="nemrut">
+        <button type="button" data-photo-route="nemrut" aria-label="Nemrut Dağı • Batı terasında karlı Antiokhos başı · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Mount_nemrut_in_Turkey.jpg/960px-Mount_nemrut_in_Turkey.jpg" alt="Nemrut Dağı • Batı terasında karlı Antiokhos başı"></button>
+        <figcaption>Nemrut Dağı • Batı terasında karlı Antiokhos başı<small>Mkrc85 · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Mount_nemrut_in_Turkey.jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="il-23">
+        <button type="button" data-photo-route="il-23" aria-label="Hattuşa • Aslanlı Kapı · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Hattusa_-_Lion_Gate.jpg/960px-Hattusa_-_Lion_Gate.jpg" alt="Hattuşa • Aslanlı Kapı"></button>
+        <figcaption>Hattuşa • Aslanlı Kapı<small><a href="https://exhibo.art">Alena Belova / Exhibo</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Hattusa_-_Lion_Gate.jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="eskikaraagac-kus">
+        <button type="button" data-photo-route="eskikaraagac-kus" aria-label="Eskikaraağaç Leylek Köyü • Havadan görünüm · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg/960px-Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg" alt="Eskikaraağaç Leylek Köyü • Havadan görünüm"></button>
+        <figcaption>Eskikaraağaç Leylek Köyü • Havadan görünüm<small>Alpertuydes · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Eskikaraa%C4%9Fa%C3%A7_Leylek_K%C3%B6y%C3%BC.jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="avanos-comlek">
+        <button type="button" data-photo-route="avanos-comlek" aria-label="Avanos • Geleneksel çömlekçilik, kare 1 · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Avanos-Poterie_(2).jpg/960px-Avanos-Poterie_(2).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 1"></button>
+        <figcaption>Avanos • Geleneksel çömlekçilik, kare 1<small>Ji-Elle · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Avanos-Poterie_(2).jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="avanos-comlek">
+        <button type="button" data-photo-route="avanos-comlek" aria-label="Avanos • Geleneksel çömlekçilik, kare 2 · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Avanos-Poterie_(4).jpg/960px-Avanos-Poterie_(4).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 2"></button>
+        <figcaption>Avanos • Geleneksel çömlekçilik, kare 2<small>Ji-Elle · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Avanos-Poterie_(4).jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+<figure data-route="avanos-comlek">
+        <button type="button" data-photo-route="avanos-comlek" aria-label="Avanos • Geleneksel çömlekçilik, kare 3 · Rota ayrıntılarını aç"><img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Avanos-Poterie_(9).jpg/960px-Avanos-Poterie_(9).jpg" alt="Avanos • Geleneksel çömlekçilik, kare 3"></button>
+        <figcaption>Avanos • Geleneksel çömlekçilik, kare 3<small>Ji-Elle · <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> · <a href="https://commons.wikimedia.org/wiki/File:Avanos-Poterie_(9).jpg">Orijinal fotoğraf</a></small></figcaption>
+      </figure>
+        </div>
+      </section>
       <section id="gorsel-tur" class="panel visual-tour-panel">
         <div class="section-head">
           <p class="eyebrow">Gözlüksüz 360° &amp; harita önizleme</p>
@@ -312,6 +361,12 @@
     <script src="route-photo-viewer.js?v=2"></script>
     <script src="content-translations.js?v=activities-423"></script>
     <script src="site-language.js?v=activities-423"></script>
+    <script>
+      document.getElementById("home-photos").addEventListener("click", event => {
+        const button = event.target.closest("button[data-photo-route]");
+        if (button) openDetail(button.dataset.photoRoute);
+      });
+    </script>
   </body>
 </html>
 
