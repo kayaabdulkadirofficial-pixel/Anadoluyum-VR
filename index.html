@@ -27,8 +27,6 @@
       #home-photo-zoom img {display:block;width:100%;max-height:78vh;object-fit:contain;margin-top:.75rem}
       #sanal-turlar {scroll-margin-top:7rem}
       #home-tour-select {display:block;width:100%;max-width:42rem;margin:.5rem 0 1rem}
-      #home-tour-viewer {display:block;width:100%;height:clamp(320px,65vh,670px);border:1px solid var(--line);border-radius:12px}
-      #home-tour-viewer[hidden] {display:none}
       .home-photos img {display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
       .home-photos figcaption {padding:.45rem 0;font-weight:600}
       .home-photos small {display:block;font-weight:400}
@@ -149,8 +147,7 @@
           <option value="https://sanalmuze.gov.tr/muzeler/VAN_MUZESI/" data-tour="84">Van Müzesi</option>
   </select>
         <p id="home-tour-status" role="status" hidden>Bu rotanın eşleştirilmiş bir turu bulunmuyor. Listeden bir tur seçebilirsin.</p>
-        <iframe id="home-tour-viewer" title="360° sanal tur" allow="fullscreen; xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen hidden></iframe>
-        <p id="home-tour-source" hidden><a target="_blank" rel="noopener">Turu ayrı sekmede aç</a></p>
+        <p id="home-tour-source" hidden><a class="btn primary" target="_blank" rel="noopener">Sanal Müze’de turu aç ↗</a></p>
       </section>
 
       <section id="gorsel-tur" class="panel visual-tour-panel">
@@ -484,18 +481,17 @@
           "il-76": 83
         };
         const select = document.getElementById("home-tour-select");
-        const viewer = document.getElementById("home-tour-viewer");
         const status = document.getElementById("home-tour-status");
         const source = document.getElementById("home-tour-source");
         function showTour() {
           const choice = select.selectedOptions[0];
-          viewer.hidden = source.hidden = !choice.value;
+          const link = source.querySelector("a");
+          source.hidden = !choice.value;
           if (!choice.value) {
-            viewer.removeAttribute("src");
+            link.removeAttribute("href");
             return;
           }
-          viewer.title = choice.textContent + " sanal turu";
-          viewer.src = source.querySelector("a").href = choice.value;
+          link.href = choice.value;
         }
         function selectRouteTour(route) {
           const option = Array.from(select.options).find(option => option.dataset.tour === String(routeTours[route]));
